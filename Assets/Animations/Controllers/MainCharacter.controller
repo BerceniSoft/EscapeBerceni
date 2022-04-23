@@ -39,8 +39,8 @@ AnimatorStateMachine:
     m_State: {fileID: -4965607722319427958}
     m_Position: {x: 260, y: 10, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 8490473952638972808}
-    m_Position: {x: 260, y: 120, z: 0}
+    m_State: {fileID: 5612661965542785383}
+    m_Position: {x: 545.3431, y: 115.112946, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -73,14 +73,14 @@ AnimatorController:
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
---- !u!1102 &8490473952638972808
+--- !u!1102 &5612661965542785383
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: idle_animation
+  m_Name: New State
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -93,7 +93,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 882a924e1c515e64bb40d1fc20515ca8, type: 2}
+  m_Motion: {fileID: 7400000, guid: d9052adf8da8d9a458669363f5d5f079, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
