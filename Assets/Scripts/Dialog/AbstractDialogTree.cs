@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class AbstractDialogTree
+public abstract class AbstractDialogTree:MonoBehaviour
 {
     
     /**

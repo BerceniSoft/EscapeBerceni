@@ -5,18 +5,17 @@ using System;
 
 public class Test : MonoBehaviour
 {
+    public DialogManager dialogManager;
+
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    void Start() { }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown("a"))
+        if (Input.GetKeyDown("a"))
         {
-            GameObject.FindGameObjectWithTag(Tags.DIALOG_BOX_TAG).GetComponent<DialogBox>().ShowDialog("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa","Eminescu");
+            this.dialogManager.ShowDialog();
         }
     }
 }

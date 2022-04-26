@@ -4,11 +4,9 @@ using UnityEngine;
 
 public class DialogManager : MonoBehaviour
 {
-
     protected int currentDialogLineIndex;
     public DialogBox dialogBox;
     public AbstractDialogTree dialogTree;
-    public AnswersDialogBox answersDialogBox;
 
     // Start is called before the first frame update
     void Start()
@@ -19,24 +17,30 @@ public class DialogManager : MonoBehaviour
     public void ShowDialog()
     {
         DialogLineInfo dialogLineInfo = this.dialogTree.GetDialogLine(this.currentDialogLineIndex);
-        this.dialogBox.ShowDialog(dialogLineInfo.DialogLine, dialogLineInfo.SpeakerName);
+        StartCoroutine(
+            this.dialogBox.ShowDialog(
+                dialogLineInfo.DialogLine,
+                dialogLineInfo.SpeakerName,
+                dialogLineInfo.Answers
+            )
+        );
 
-        if(dialogLineInfo.Answers.Count > 0)
-        {
-            this.answersDialogBox.ShowAnswers(dialogLineInfo.Answers);
-        }
-
-    
+        // Increment the dialog line index so we get the next line next time around
+        this.currentDialogLineIndex++;
     }
 
+    // Skip to a particular line
+    public void ShowDialog(int lineIndex)
+    {
+        this.currentDialogLineIndex = lineIndex;
+        this.ShowDialog();
+    }
 
     public void OnDialogOptionPicked(int optionIndex)
     {
-        this.currentDialogLineIndex =  this.dialogTree.OnDialogOptionPicked(optionIndex, this.currentDialogLineIndex);
+        this.currentDialogLineIndex = this.dialogTree.OnDialogOptionPicked(
+            optionIndex,
+            this.currentDialogLineIndex
+        );
     }
-
-
-
-
-    
 }

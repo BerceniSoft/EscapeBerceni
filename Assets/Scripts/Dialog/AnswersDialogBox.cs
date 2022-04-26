@@ -19,18 +19,17 @@ public class AnswersDialogBox : MonoBehaviour
         this.title = this.GetComponentsInChildren<TMP_Text>()[0];
 
         // Get a reference to the AnswerGroup and create the Answer objects
-        GameObject answerGroup = this.transform.GetChild(0).gameObject;
+        GameObject answerGroup = this.transform.GetChild(1).gameObject;
         Image[] backgroundImages = answerGroup.GetComponentsInChildren<Image>();
         TMP_Text[] answerTexts = answerGroup.GetComponentsInChildren<TMP_Text>(); 
         Button[] buttons = answerGroup.GetComponentsInChildren<Button>();
 
-        //TODO: Grab the buttons
+        
+
 
         for(int i=0;i<4;i++)
         {
             // Create the Answer objects with the corresponging callback
-            // TODO: Pass in the buttons
-            //TODO: Register the event handler
             this.answerBoxes.Add(new Answer(answerTexts[i], backgroundImages[i], buttons[i]));
         }
     }
