@@ -20,6 +20,7 @@ public class DialogBox : MonoBehaviour
     private Image dialogBoxImage;
     private Image showMoreIcon;
     private TMP_Text speakerName;
+
     // If this is non empty, after the end we'll show an answer dialog box
     private List<string> answers;
 
@@ -41,11 +42,14 @@ public class DialogBox : MonoBehaviour
         this.dialogBoxImage.enabled = true;
     }
 
-    private void HideDialogBox()
+    public void HideDialogBox()
     {
         this.dialogText.enabled = false;
         this.speakerName.enabled = false;
         this.dialogBoxImage.enabled = false;
+
+        this.answersDialogBox.HideAnswersDialogBox();
+        this.DisableShowMoreIcon();
     }
 
     private void EnableShowMoreIcon()
@@ -142,7 +146,7 @@ public class DialogBox : MonoBehaviour
                     this.HideDialogBox();
                     this.dialogText.text = "";
 
-                    if(this.answers != null && this.answers.Count != 0)
+                    if (this.answers != null && this.answers.Count != 0)
                     {
                         this.answersDialogBox.ShowAnswers(this.answers);
                     }

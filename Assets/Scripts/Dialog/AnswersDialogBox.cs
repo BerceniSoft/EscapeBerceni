@@ -45,7 +45,7 @@ public class AnswersDialogBox : MonoBehaviour
         }
     }
 
-    private void HideAnswersDialogBox()
+    public void HideAnswersDialogBox()
     {
         this.title.enabled = false;
         this.backgroundImage.enabled = false;

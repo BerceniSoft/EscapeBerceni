@@ -12,21 +12,29 @@ public class AnswerController : MonoBehaviour
     public void OnOptionAPicked()
     {
         this.dialogManager.OnDialogOptionPicked(0);
+        this.dialogManager.HideDialogBox();
+
     }
 
     public void OnOptionBPicked()
     {
         this.dialogManager.OnDialogOptionPicked(1);
+        this.dialogManager.HideDialogBox();
+
         
     }
     public void OnOptionCPicked()
     {
         this.dialogManager.OnDialogOptionPicked(2);
+        this.dialogManager.HideDialogBox();
+
         
     }
     public void OnOptionDPicked()
     {
         this.dialogManager.OnDialogOptionPicked(3);
+        this.dialogManager.HideDialogBox();
+
         
     }
 

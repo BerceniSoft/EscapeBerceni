@@ -43,4 +43,9 @@ public class DialogManager : MonoBehaviour
             this.currentDialogLineIndex
         );
     }
+
+    public void HideDialogBox()
+    {
+        this.dialogBox.HideDialogBox();
+    }
 }
