@@ -115,7 +115,7 @@ public class DialogBox : MonoBehaviour
 
         this.dialogText.text = token;
 
-        // Increment this to signal that we should wait for the input to show the next token from the dialog
+        // Increment this to signal that we should wait for the input to show the next token from the dialog or close the window
         this.displayedToken++;
         this.showNextToken = true;
     }

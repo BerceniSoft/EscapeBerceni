@@ -7,6 +7,7 @@ public class MainCharacterMovement : MonoBehaviour
     public float movementSpeed = 3.0f;
     Rigidbody2D rigidBody2D;
     Vector2? currentTargetPosition = null;
+    public DialogManager dialogManager;
 
     // Start is called before the first frame update
     void Start()
