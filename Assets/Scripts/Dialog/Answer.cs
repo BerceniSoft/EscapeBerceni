@@ -29,8 +29,8 @@ public class Answer
     public void HideAnswer()
     {
         this.text.text = "";
-        this.text.enabled = true;
-        this.background.enabled = true;
+        this.text.enabled = false;
+        this.background.enabled = false;
         this.button.enabled = false;
 
     }
