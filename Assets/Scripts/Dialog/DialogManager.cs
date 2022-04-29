@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class DialogManager : MonoBehaviour
 {
@@ -34,6 +35,28 @@ public class DialogManager : MonoBehaviour
     {
         this.currentDialogLineIndex = lineIndex;
         this.ShowDialog();
+    }
+
+    public void ShowDialog(Action onDone)
+    {
+        DialogLineInfo dialogLineInfo = this.dialogTree.GetDialogLine(this.currentDialogLineIndex);
+        StartCoroutine(
+            this.dialogBox.ShowDialog(
+                dialogLineInfo.DialogLine,
+                dialogLineInfo.SpeakerName,
+                dialogLineInfo.Answers,
+                onDone
+            )
+        );
+
+        // Increment the dialog line index so we get the next line next time around
+        this.currentDialogLineIndex++;
+    }
+
+    public void ShowDialog(int lineIndex, Action onDone)
+    {
+        this.currentDialogLineIndex = lineIndex;
+        this.ShowDialog(onDone);
     }
 
     public void OnDialogOptionPicked(int optionIndex)

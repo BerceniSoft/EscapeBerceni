@@ -31,7 +31,7 @@ public class Level3Scene1DialogTree : AbstractDialogTree
 
             case 3:
             {
-                return new DialiogLineInfo("Ahm... buna ziua domnule Eminescu... condoleante... Mergeam la facultate, dar nu pot cobora la metrou", "Tu", null);
+                return new DialogLineInfo("Ahm... buna ziua domnule Eminescu... condoleante... Mergeam la facultate, dar nu pot cobora la metrou", "Tu", null);
             }
             case 4:
             {
@@ -49,11 +49,11 @@ public class Level3Scene1DialogTree : AbstractDialogTree
             }
             case 6:
             {
-                return new DialiogLineInfo("Pff... da cine mai stie poezia asta..", "Tu", null);
+                return new DialogLineInfo("Pff... da cine mai stie poezia asta..", "Tu", null);
             }
             case 7:
             {
-                return new DialiogLineInfo("Si asa…am mai picat pe unu", "Eminescu", null);
+                return new DialogLineInfo("Si asa…am mai picat pe unu", "Eminescu", null);
             }
             default:
             {

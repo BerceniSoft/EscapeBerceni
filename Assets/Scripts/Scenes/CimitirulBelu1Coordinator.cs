@@ -12,6 +12,8 @@ public class CimitirulBelu1Coordinator : MonoBehaviour
 
         // Move the player  in scene
         // Start the dialog
+
+        
     }   
 
     // Update is called once per frame

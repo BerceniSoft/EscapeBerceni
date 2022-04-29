@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using System;
 
 public class DialogBox : MonoBehaviour
 {
@@ -20,6 +21,7 @@ public class DialogBox : MonoBehaviour
     private Image dialogBoxImage;
     private Image showMoreIcon;
     private TMP_Text speakerName;
+    private Action doneCallback;
 
     // If this is non empty, after the end we'll show an answer dialog box
     private List<string> answers;
@@ -92,6 +94,12 @@ public class DialogBox : MonoBehaviour
         yield return StartCoroutine(this.TypeToken(this.tokens[0]));
     }
 
+    public IEnumerator ShowDialog(string text, string speakerName, List<string> answers, Action onDone)
+    {
+        this.doneCallback = onDone;
+        yield return this.ShowDialog(text, speakerName, answers);
+    }
+
     private IEnumerator TypeToken(string token)
     {
         if (this.dialogText == null)
@@ -148,8 +156,20 @@ public class DialogBox : MonoBehaviour
 
                     if (this.answers != null && this.answers.Count != 0)
                     {
-                        this.answersDialogBox.ShowAnswers(this.answers);
+                        this.answersDialogBox.ShowAnswers(this.answers, this.doneCallback);
                     }
+                    else
+                    {
+                        // Dialog ended, call the last cb
+                        if(this.doneCallback != null)
+                        {     
+                            this.doneCallback();
+                        }
+                        
+                    }
+                    // Clear the callback
+
+                    this.doneCallback = null;
                 }
             }
         }

@@ -11,6 +11,8 @@ public class AnswersDialogBox : MonoBehaviour
     private List<Answer> answerBoxes = new List<Answer>();
     private TMP_Text title;
     private Image backgroundImage;
+    private Action currentOnDoneCallback;
+
 
     // Start is called before the first frame update
     void Start()
@@ -45,6 +47,12 @@ public class AnswersDialogBox : MonoBehaviour
         }
     }
 
+    public void ShowAnswers(List<string> answers, Action onDone)
+    {
+        this.currentOnDoneCallback = onDone;
+        this.ShowAnswers(answers);
+    }
+
     public void HideAnswersDialogBox()
     {
         this.title.enabled = false;
@@ -52,6 +60,15 @@ public class AnswersDialogBox : MonoBehaviour
         foreach(Answer answer in this.answerBoxes)
         {
             answer.HideAnswer();
+        }
+    }
+
+    public void OnDone()
+    {
+        if(this.currentOnDoneCallback != null)
+        {
+            this.currentOnDoneCallback();
+            this.currentOnDoneCallback = null;
         }
     }
 
