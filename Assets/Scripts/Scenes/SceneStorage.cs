@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System;
 
 #nullable enable
 public class SceneStorage
@@ -25,36 +26,43 @@ public class SceneStorage
 
     public void AddKey(int sceneId, string key, string value)
     {
-        var sceneStorage = this.storage[sceneId];
-
-        if(sceneStorage == null)
+        Dictionary<string,string> sceneStorage;
+        try{
+            sceneStorage = this.storage[sceneId];
+            sceneStorage.Add(key, value);
+        } 
+        catch(Exception)
         {
             // First inserted key for this scene
             sceneStorage = new Dictionary<string, string>();
             sceneStorage.Add(key, value);
             this.storage.Add(sceneId, sceneStorage);
         }
-        else
-        {
-            sceneStorage.Add(key, value);
-        }
     }
 
     public string? GetKey(int sceneId, string key)
     {
-         var sceneStorage = this.storage[sceneId];
-         
-         if(sceneStorage == null)
-         {
-             return null;
-         }
+        try
+        {
+            return this.storage[sceneId][key];
+        }
+        catch(Exception)
+        {
+            return null;
+        }
 
-         return sceneStorage[key];
     }
 
     public Dictionary<string, string>? GetAllKeysForScene(int sceneId)
     {
-        return this.storage[sceneId];
+        try
+        {
+            return this.storage[sceneId];
+        }
+        catch(Exception)
+        {
+            return null;
+        }
     }
 
 }

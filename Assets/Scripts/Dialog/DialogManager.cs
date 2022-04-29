@@ -5,7 +5,7 @@ using System;
 
 public class DialogManager : MonoBehaviour
 {
-    protected int currentDialogLineIndex;
+    public int currentDialogLineIndex;
     public DialogBox dialogBox;
     public AbstractDialogTree dialogTree;
 
@@ -39,6 +39,7 @@ public class DialogManager : MonoBehaviour
 
     public void ShowDialog(Action onDone)
     {
+        Debug.Log(this.currentDialogLineIndex);
         DialogLineInfo dialogLineInfo = this.dialogTree.GetDialogLine(this.currentDialogLineIndex);
         StartCoroutine(
             this.dialogBox.ShowDialog(

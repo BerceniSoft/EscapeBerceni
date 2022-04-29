@@ -90,6 +90,7 @@ public class DialogBox : MonoBehaviour
 
         // Enable the dialog box and start the animation
 
+
         this.ShowDialogBox();
         yield return StartCoroutine(this.TypeToken(this.tokens[0]));
     }
@@ -149,6 +150,7 @@ public class DialogBox : MonoBehaviour
                 }
                 else
                 {
+                    Debug.Log(this.doneCallback);
                     // Finished the text so hide the dialog
                     this.DisableShowMoreIcon();
                     this.HideDialogBox();
@@ -158,18 +160,19 @@ public class DialogBox : MonoBehaviour
                     {
                         this.answersDialogBox.ShowAnswers(this.answers, this.doneCallback);
                     }
-                    else
+                    else if(this.doneCallback != null)
                     {
                         // Dialog ended, call the last cb
-                        if(this.doneCallback != null)
-                        {     
-                            this.doneCallback();
-                        }
+                       
+                        var cb = this.doneCallback;
+                        // Clear the saved callback before calling it instead of after
+                        // This will prevent a succesive dialog box from having its callback cleared 
+                        this.doneCallback = null;
+                        cb();
+                        
                         
                     }
-                    // Clear the callback
-
-                    this.doneCallback = null;
+                    
                 }
             }
         }

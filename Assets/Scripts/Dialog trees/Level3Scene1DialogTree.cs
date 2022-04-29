@@ -53,7 +53,7 @@ public class Level3Scene1DialogTree : AbstractDialogTree
             }
             case 7:
             {
-                return new DialogLineInfo("Si asa…am mai picat pe unu", "Eminescu", null);
+                return new DialogLineInfo("Si asa... am mai picat pe unu", "Eminescu", null);
             }
             default:
             {
