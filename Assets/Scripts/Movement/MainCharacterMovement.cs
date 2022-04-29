@@ -22,7 +22,7 @@ public class MainCharacterMovement : MonoBehaviour
 
     public void PauseMovement()
     {
-        this.preventMovement = false;
+        this.preventMovement = true;
         // Delete the current velocity
         // When resumed, the next call to update will set back the velocity
         rigidBody2D.velocity = new Vector2(0,0);
@@ -30,7 +30,7 @@ public class MainCharacterMovement : MonoBehaviour
 
     public void ResumeMovement()
     {
-         this.preventMovement = true;
+         this.preventMovement = false;
     }
 
     private void MoveTo(Vector2 destination)
@@ -80,7 +80,13 @@ public class MainCharacterMovement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (Input.GetMouseButtonUp(0) && this.allowTargetPositionOverride)
+
+        if(this.preventMovement)
+        {
+            return;
+        }
+
+        if (Input.GetMouseButtonDown(0) && this.allowTargetPositionOverride)
         {
             // Left clicked was pressed. Change the target position
             // The input is taken in screen space so convert in world space
@@ -93,13 +99,10 @@ public class MainCharacterMovement : MonoBehaviour
             // No need to move
             return;
         }
-        if(!this.preventMovement)
-        {
-            // We have a destination so we are moving
-            this.isMoving = true;
 
-            this.MoveTo((Vector2)this.currentTargetPosition);
-        }
+        // We have a destination so we are moving
+        this.isMoving = true;
+        this.MoveTo((Vector2)this.currentTargetPosition);
 
        
     }

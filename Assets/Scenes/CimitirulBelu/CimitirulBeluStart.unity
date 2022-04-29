@@ -3231,6 +3231,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3753624291183140726, guid: 055d2b2d872281745b5ba630ba829287, type: 3}
   m_PrefabInstance: {fileID: 6638425348718637319}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &762870340 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4700060269212837880, guid: 055d2b2d872281745b5ba630ba829287, type: 3}
+  m_PrefabInstance: {fileID: 6638425348718637319}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d6a2252251c53345bb62dc9441f2d6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1143255499
 GameObject:
   m_ObjectHideFlags: 0
@@ -3332,11 +3343,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7514403176821013548, guid: 776c7cd5fda8602478c60f1769056a1f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11.13
+      value: -11.5
       objectReference: {fileID: 0}
     - target: {fileID: 7514403176821013548, guid: 776c7cd5fda8602478c60f1769056a1f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.04
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 7514403176821013548, guid: 776c7cd5fda8602478c60f1769056a1f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3381,6 +3392,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1315071986}
+  - component: {fileID: 1315071987}
   m_Layer: 0
   m_Name: SceneCoordinator
   m_TagString: Untagged
@@ -3403,6 +3415,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1315071987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1315071985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9e5c9bfc69f85349be1105b82eb12d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogManager: {fileID: 762870340}
+  mainCharacterMovement: {fileID: 1473946217}
 --- !u!1 &1361911356
 GameObject:
   m_ObjectHideFlags: 0
@@ -3475,6 +3501,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 17.888714, y: 9.9885025}
   m_EdgeRadius: 0
+--- !u!114 &1473946217 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3182103843267476474, guid: 776c7cd5fda8602478c60f1769056a1f, type: 3}
+  m_PrefabInstance: {fileID: 1162347055}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cb8a4412da636f40a18e4fa14b35440, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2018486272
 GameObject:
   m_ObjectHideFlags: 0
@@ -3658,6 +3695,10 @@ PrefabInstance:
       propertyPath: dialogTree
       value: 
       objectReference: {fileID: 466031766}
+    - target: {fileID: 4700060269212837880, guid: 055d2b2d872281745b5ba630ba829287, type: 3}
+      propertyPath: mainCharacterMovement
+      value: 
+      objectReference: {fileID: 1473946217}
     m_RemovedComponents:
     - {fileID: 4620149055755162656, guid: 055d2b2d872281745b5ba630ba829287, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 055d2b2d872281745b5ba630ba829287, type: 3}
