@@ -3,11 +3,39 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
+#nullable enable
+
 public class DialogManager : MonoBehaviour
 {
+    private bool _isDialogBeingShown;
     public int currentDialogLineIndex;
     public DialogBox dialogBox;
     public AbstractDialogTree dialogTree;
+    public bool IsDialogBeingShown{
+        get
+        {
+            return this._isDialogBeingShown;
+        }
+    }
+    public MainCharacterMovement mainCharacterMovement;
+
+    private void OnBeginDialog()
+    {
+        this.mainCharacterMovement.PauseMovement();
+        this._isDialogBeingShown = true;
+    }
+
+    private void OnEndDialog(Action? onDone)
+    {
+        this.mainCharacterMovement.ResumeMovement();
+        Debug.Log("Hey");
+        this._isDialogBeingShown = false;
+        if(onDone != null)
+        {
+            onDone();
+        }
+      
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -17,12 +45,14 @@ public class DialogManager : MonoBehaviour
 
     public void ShowDialog()
     {
+        this.OnBeginDialog();
         DialogLineInfo dialogLineInfo = this.dialogTree.GetDialogLine(this.currentDialogLineIndex);
         StartCoroutine(
             this.dialogBox.ShowDialog(
                 dialogLineInfo.DialogLine,
                 dialogLineInfo.SpeakerName,
-                dialogLineInfo.Answers
+                dialogLineInfo.Answers,
+                ()=>this.OnEndDialog(null)
             )
         );
 
@@ -39,14 +69,14 @@ public class DialogManager : MonoBehaviour
 
     public void ShowDialog(Action onDone)
     {
-        Debug.Log(this.currentDialogLineIndex);
+        this.OnBeginDialog();
         DialogLineInfo dialogLineInfo = this.dialogTree.GetDialogLine(this.currentDialogLineIndex);
         StartCoroutine(
             this.dialogBox.ShowDialog(
                 dialogLineInfo.DialogLine,
                 dialogLineInfo.SpeakerName,
                 dialogLineInfo.Answers,
-                onDone
+                ()=>this.OnEndDialog(onDone)
             )
         );
 

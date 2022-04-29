@@ -8,6 +8,7 @@ public class MainCharacterMovement : MonoBehaviour
     Vector2? currentTargetPosition = null;
     // if false, mouse movment won't be able to change the target position
     bool allowTargetPositionOverride = true;
+    bool preventMovement = false;
 
     public float movementSpeed = 3.0f;
     public DialogManager dialogManager;
@@ -17,6 +18,19 @@ public class MainCharacterMovement : MonoBehaviour
     void Start()
     {
         this.rigidBody2D = GetComponent<Rigidbody2D>();
+    }
+
+    public void PauseMovement()
+    {
+        this.preventMovement = false;
+        // Delete the current velocity
+        // When resumed, the next call to update will set back the velocity
+        rigidBody2D.velocity = new Vector2(0,0);
+    }
+
+    public void ResumeMovement()
+    {
+         this.preventMovement = true;
     }
 
     private void MoveTo(Vector2 destination)
@@ -41,7 +55,6 @@ public class MainCharacterMovement : MonoBehaviour
 
         if(movement.x == 0 && movement.y == 0)
         {
-            Debug.Log("Hello");
             // Destination reached          
             this.isMoving = false;
             this.currentTargetPosition = null;
@@ -80,10 +93,13 @@ public class MainCharacterMovement : MonoBehaviour
             // No need to move
             return;
         }
-        // We have a destination so we are moving
-        this.isMoving = true;
+        if(!this.preventMovement)
+        {
+            // We have a destination so we are moving
+            this.isMoving = true;
 
-        this.MoveTo((Vector2)this.currentTargetPosition);
+            this.MoveTo((Vector2)this.currentTargetPosition);
+        }
 
        
     }

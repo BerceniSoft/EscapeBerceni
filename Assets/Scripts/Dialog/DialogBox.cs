@@ -150,7 +150,6 @@ public class DialogBox : MonoBehaviour
                 }
                 else
                 {
-                    Debug.Log(this.doneCallback);
                     // Finished the text so hide the dialog
                     this.DisableShowMoreIcon();
                     this.HideDialogBox();

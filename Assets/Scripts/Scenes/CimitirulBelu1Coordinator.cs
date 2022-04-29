@@ -7,7 +7,6 @@ public class CimitirulBelu1Coordinator : MonoBehaviour
     private const string IS_FIRST_LOAD_KEY = "IS_FIRST_LOAD";
     private const string HAS_PLAYER_ENTERED_KEY = "HAS_PLAYER_ENTERED";
 
-    private bool isShowingDialog = false;
     private SceneStorage sceneStorage;
 
     public DialogManager dialogManager;
@@ -22,7 +21,6 @@ public class CimitirulBelu1Coordinator : MonoBehaviour
         }
         else
         {
-            this.isShowingDialog = false;
             // Done with the intro
             this.sceneStorage.AddKey(ScenesIds.CIMITIRUL_BELU_1, IS_FIRST_LOAD_KEY, "false");
         }
@@ -51,9 +49,8 @@ public class CimitirulBelu1Coordinator : MonoBehaviour
             }
 
             // After the movment is done, show the dialog
-            if(!this.isShowingDialog && !this.mainCharacterMovement.isMoving)
+            if(!this.dialogManager.IsDialogBeingShown && !this.mainCharacterMovement.isMoving)
             { 
-                this.isShowingDialog = true;
                 this.ShowDialog();
             }   
         }
