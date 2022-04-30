@@ -19,6 +19,7 @@ namespace Dialog
         private List<string> _tokens;
         private int _displayedToken;
         private bool _showNextToken;
+        private bool _skipWriting;
 
         private TMP_Text _dialogText;
         private Image _dialogBoxImage;
@@ -34,7 +35,7 @@ namespace Dialog
         {
             var images = gameObject.GetComponentsInChildren<Image>();
             var texts = gameObject.GetComponentsInChildren<TMP_Text>();
-        
+
             _dialogText = texts[0];
             _speakerName = texts[1];
             _dialogBoxImage = images[0];
@@ -108,6 +109,8 @@ namespace Dialog
 
         private IEnumerator TypeToken(string token)
         {
+            _skipWriting = false;
+
             if (_dialogText is null)
             {
                 yield break;
@@ -118,7 +121,7 @@ namespace Dialog
             var timePassed = 0f;
             var charIndex = 0;
 
-            while (charIndex < token.Length)
+            while (charIndex < token.Length && !_skipWriting)
             {
                 timePassed += Time.deltaTime * typeSpeed;
                 charIndex = Mathf.FloorToInt(timePassed);
@@ -167,15 +170,19 @@ namespace Dialog
                         else if (_doneCallback != null)
                         {
                             // Dialog ended, call the last cb
-                       
+
                             var callback = _doneCallback;
                             // Clear the saved callback before calling it instead of after
-                            // This will prevent a succesive dialog box from having its callback cleared 
+                            // This will prevent a succesive dialog box from having its callback cleared
                             _doneCallback = null;
                             callback();
                         }
                     }
                 }
+            }
+            else if (Input.GetKeyUp("space"))
+            {
+                _skipWriting = true;
             }
         }
     }
