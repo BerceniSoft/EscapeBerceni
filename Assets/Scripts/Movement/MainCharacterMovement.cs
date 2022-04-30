@@ -34,7 +34,7 @@ namespace Movement
 
         private void Update()
         {
-            if (Input.GetMouseButtonDown(0) && _allowTargetPositionOverride)
+            if (Input.GetMouseButtonDown(0) && _allowTargetPositionOverride && !_preventMovement)
             {
                 // Left clicked was pressed. Change the target position
                 // The input is taken in screen space so convert in world space
