@@ -25,10 +25,7 @@ namespace Movement
             {
                 camera = Camera.main;
             }
-        }
 
-        private void Start()
-        {
             _rigidBody2D = GetComponent<Rigidbody2D>();
         }
 

@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using DialogTrees;
 using Movement;
 using UnityEngine;
@@ -28,28 +29,6 @@ namespace Dialog
             onDone?.Invoke();
         }
 
-        private void Start()
-        {
-            currentDialogLineIndex = 0;
-        }
-
-        public void ShowDialog()
-        {
-            OnBeginDialog();
-            var dialogLineInfo = dialogTree.GetDialogLine(currentDialogLineIndex);
-            StartCoroutine(
-                dialogBox.ShowDialog(
-                    dialogLineInfo.DialogLine,
-                        dialogLineInfo.SpeakerName,
-                        dialogLineInfo.Answers,
-                    () => OnEndDialog(null)
-                )
-            );
-
-            // Increment the dialog line index so we get the next line next time around
-            currentDialogLineIndex++;
-        }
-
         // Skip to a particular line
         public void ShowDialog(int lineIndex)
         {
@@ -57,21 +36,23 @@ namespace Dialog
             ShowDialog();
         }
 
-        public void ShowDialog(Action onDone)
+        public void ShowDialog(Action onDone = null)
         {
+            print($"Showing dialog: {currentDialogLineIndex}");
             OnBeginDialog();
             var dialogLineInfo = dialogTree.GetDialogLine(currentDialogLineIndex);
             StartCoroutine(
                 dialogBox.ShowDialog(
                     dialogLineInfo.DialogLine,
                     dialogLineInfo.SpeakerName,
-                    dialogLineInfo.Answers,
+                    dialogLineInfo.Answers?.Select(x => x.Item1).ToList(),
                     () => OnEndDialog(onDone)
                 )
             );
 
             // Increment the dialog line index so we get the next line next time around
             currentDialogLineIndex++;
+            print(currentDialogLineIndex);
         }
 
         public void ShowDialog(int lineIndex, Action onDone)
@@ -84,7 +65,7 @@ namespace Dialog
         {
             currentDialogLineIndex = dialogTree.OnDialogOptionPicked(
                 optionIndex,
-                currentDialogLineIndex
+                currentDialogLineIndex - 1 // ShowDialog skips to next line before picking option
             );
         }
 
