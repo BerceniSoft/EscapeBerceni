@@ -111,7 +111,7 @@ namespace Dialog
         {
             _skipWriting = false;
 
-            if (_dialogText is null)
+            if (_dialogText == null)
             {
                 yield break;
             }
