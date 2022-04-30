@@ -1,5 +1,3 @@
-#nullable enable
-
 using System;
 using DialogTrees;
 using Movement;
@@ -13,16 +11,16 @@ namespace Dialog
         public DialogBox dialogBox;
         public AbstractDialogTree dialogTree;
         public MainCharacterMovement mainCharacterMovement;
-        
+
         public bool IsDialogBeingShown { get; private set; }
-        
+
         private void OnBeginDialog()
         {
             mainCharacterMovement.PauseMovement();
             IsDialogBeingShown = true;
         }
 
-        private void OnEndDialog(Action? onDone)
+        private void OnEndDialog(Action onDone)
         {
             mainCharacterMovement.ResumeMovement();
             IsDialogBeingShown = false;
