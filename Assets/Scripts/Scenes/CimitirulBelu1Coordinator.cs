@@ -51,7 +51,7 @@ namespace Scenes
                 }
 
                 // After the movement is done, show the dialog
-                if (!dialogManager.IsDialogBeingShown && !mainCharacterMovement.isMoving)
+                if (!dialogManager.IsDialogBeingShown && !mainCharacterMovement.IsMoving)
                 { 
                     ShowDialog();
                 }   
