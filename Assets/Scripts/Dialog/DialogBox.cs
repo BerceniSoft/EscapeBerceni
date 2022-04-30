@@ -75,17 +75,22 @@ namespace Dialog
             _tokens = new List<string>();
             _displayedToken = 0;
 
-            for (var i = 0; i < dialog.Length; i += TokenLength)
+            var words = dialog.Split();
+            var token = string.Empty;
+            foreach (var word in words)
             {
-                if (i + TokenLength <= dialog.Length)
+                if (token.Length + word.Length + 1 > TokenLength)
                 {
-                    _tokens.Add(dialog.Substring(i, TokenLength));
+                    _tokens.Add(token);
+                    token = word;
                 }
                 else
                 {
-                    _tokens.Add(dialog[i..]);
+                    token += $" {word}";
                 }
             }
+
+            _tokens.Add(token);
 
             // Set the speaker name
             _speakerName.text = speakerName;
