@@ -1,177 +1,175 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using TMPro;
+using UnityEngine;
 using UnityEngine.UI;
-using System;
 
-public class DialogBox : MonoBehaviour
+namespace Dialog
 {
-    public string dialog = "";
-    public float typeSpeed = 50;
-    public AnswersDialogBox answersDialogBox;
-
-    // the actual text that is displayed now
-    private List<string> tokens;
-    private int TOKEN_LENGTH = 150;
-    private int displayedToken = 0;
-    private bool showNextToken = false;
-
-    private TMP_Text dialogText;
-    private Image dialogBoxImage;
-    private Image showMoreIcon;
-    private TMP_Text speakerName;
-    private Action doneCallback;
-
-    // If this is non empty, after the end we'll show an answer dialog box
-    private List<string> answers;
-
-    // Start is called before the first frame update
-    void Start()
+    public class DialogBox : MonoBehaviour
     {
-        Image[] images = this.gameObject.GetComponentsInChildren<Image>();
-        TMP_Text[] texts = this.gameObject.GetComponentsInChildren<TMP_Text>();
-        this.dialogText = texts[0];
-        this.speakerName = texts[1];
-        this.dialogBoxImage = images[0];
-        this.showMoreIcon = images[1];
-    }
+        private const int TokenLength = 150;
 
-    private void ShowDialogBox()
-    {
-        this.speakerName.enabled = true;
-        this.dialogText.enabled = true;
-        this.dialogBoxImage.enabled = true;
-    }
+        public string dialog = "";
+        public float typeSpeed = 50;
+        public AnswersDialogBox answersDialogBox;
 
-    public void HideDialogBox()
-    {
-        this.dialogText.enabled = false;
-        this.speakerName.enabled = false;
-        this.dialogBoxImage.enabled = false;
+        // The actual text that is displayed now
+        private List<string> _tokens;
+        private int _displayedToken;
+        private bool _showNextToken;
 
-        this.answersDialogBox.HideAnswersDialogBox();
-        this.DisableShowMoreIcon();
-    }
+        private TMP_Text _dialogText;
+        private Image _dialogBoxImage;
+        private Image _showMoreIcon;
+        private TMP_Text _speakerName;
+        private Action _doneCallback;
 
-    private void EnableShowMoreIcon()
-    {
-        this.showMoreIcon.enabled = true;
-    }
+        // If this is non empty, after the end we'll show an answer dialog box
+        private List<string> _answers;
 
-    private void DisableShowMoreIcon()
-    {
-        this.showMoreIcon.enabled = false;
-    }
-
-    public IEnumerator ShowDialog(string text, string speakerName, List<string> answers)
-    {
-        this.dialog = text;
-        this.answers = answers;
-        List<string> _tokens = new List<string>();
-        this.displayedToken = 0;
-
-        for (int i = 0; i < this.dialog.Length; i = i + this.TOKEN_LENGTH)
+        // Start is called before the first frame update
+        private void Start()
         {
-            if (i + this.TOKEN_LENGTH <= this.dialog.Length)
-            {
-                _tokens.Add(this.dialog.Substring(i, this.TOKEN_LENGTH));
-            }
-            else
-            {
-                _tokens.Add(this.dialog.Substring(i));
-            }
+            var images = gameObject.GetComponentsInChildren<Image>();
+            var texts = gameObject.GetComponentsInChildren<TMP_Text>();
+        
+            _dialogText = texts[0];
+            _speakerName = texts[1];
+            _dialogBoxImage = images[0];
+            _showMoreIcon = images[1];
         }
 
-        this.tokens = _tokens;
-
-        // Set the speaker name
-        this.speakerName.text = speakerName;
-
-        // Enable the dialog box and start the animation
-
-
-        this.ShowDialogBox();
-        yield return StartCoroutine(this.TypeToken(this.tokens[0]));
-    }
-
-    public IEnumerator ShowDialog(string text, string speakerName, List<string> answers, Action onDone)
-    {
-        this.doneCallback = onDone;
-        yield return this.ShowDialog(text, speakerName, answers);
-    }
-
-    private IEnumerator TypeToken(string token)
-    {
-        if (this.dialogText == null)
+        private void ShowDialogBox()
         {
-            yield break;
+            _speakerName.enabled = true;
+            _dialogText.enabled = true;
+            _dialogBoxImage.enabled = true;
         }
 
-        yield return new WaitForSeconds(0.2f);
-
-        float timePassed = 0;
-        int charIndex = 0;
-
-        while (charIndex < token.Length)
+        public void HideDialogBox()
         {
-            timePassed += Time.deltaTime * this.typeSpeed;
-            charIndex = Mathf.FloorToInt(timePassed);
-            charIndex = Mathf.Clamp(charIndex, 0, token.Length);
-            this.dialogText.text = token.Substring(0, charIndex);
-            yield return null;
+            _dialogText.enabled = false;
+            _speakerName.enabled = false;
+            _dialogBoxImage.enabled = false;
+
+            answersDialogBox.HideAnswersDialogBox();
+            DisableShowMoreIcon();
         }
 
-        this.dialogText.text = token;
-
-        // Increment this to signal that we should wait for the input to show the next token from the dialog or close the window
-        this.displayedToken++;
-        this.showNextToken = true;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (this.showNextToken)
+        private void EnableShowMoreIcon()
         {
-            if (this.displayedToken < this.tokens.Count)
-            {
-                // Show the arrow if there is more text
-                this.EnableShowMoreIcon();
-            }
+            _showMoreIcon.enabled = true;
+        }
 
-            if (Input.GetKeyUp("space"))
+        private void DisableShowMoreIcon()
+        {
+            _showMoreIcon.enabled = false;
+        }
+
+        public IEnumerator ShowDialog(string text, string speakerName, List<string> answers)
+        {
+            dialog = text;
+            _answers = answers;
+            _tokens = new List<string>();
+            _displayedToken = 0;
+
+            for (var i = 0; i < dialog.Length; i += TokenLength)
             {
-                this.showNextToken = false;
-                if (this.displayedToken < this.tokens.Count)
+                if (i + TokenLength <= dialog.Length)
                 {
-                    this.DisableShowMoreIcon();
-                    StartCoroutine(this.TypeToken(this.tokens[this.displayedToken]));
+                    _tokens.Add(dialog.Substring(i, TokenLength));
                 }
                 else
                 {
-                    // Finished the text so hide the dialog
-                    this.DisableShowMoreIcon();
-                    this.HideDialogBox();
-                    this.dialogText.text = "";
+                    _tokens.Add(dialog[i..]);
+                }
+            }
 
-                    if (this.answers != null && this.answers.Count != 0)
+            // Set the speaker name
+            _speakerName.text = speakerName;
+
+            // Enable the dialog box and start the animation
+            ShowDialogBox();
+            yield return StartCoroutine(TypeToken(_tokens[0]));
+        }
+
+        public IEnumerator ShowDialog(string text, string speakerName, List<string> answers, Action onDone)
+        {
+            _doneCallback = onDone;
+            yield return ShowDialog(text, speakerName, answers);
+        }
+
+        private IEnumerator TypeToken(string token)
+        {
+            if (_dialogText is null)
+            {
+                yield break;
+            }
+
+            yield return new WaitForSeconds(0.2f);
+
+            var timePassed = 0f;
+            var charIndex = 0;
+
+            while (charIndex < token.Length)
+            {
+                timePassed += Time.deltaTime * typeSpeed;
+                charIndex = Mathf.FloorToInt(timePassed);
+                charIndex = Mathf.Clamp(charIndex, 0, token.Length);
+                _dialogText.text = token[..charIndex];
+                yield return null;
+            }
+
+            _dialogText.text = token;
+
+            // Increment this to signal that we should wait for the input to show the next token from the dialog or close the window
+            _displayedToken++;
+            _showNextToken = true;
+        }
+
+        // Update is called once per frame
+        private void Update()
+        {
+            if (_showNextToken)
+            {
+                if (_displayedToken < _tokens.Count)
+                {
+                    // Show the arrow if there is more text
+                    EnableShowMoreIcon();
+                }
+
+                if (Input.GetKeyUp("space"))
+                {
+                    _showNextToken = false;
+                    if (_displayedToken < _tokens.Count)
                     {
-                        this.answersDialogBox.ShowAnswers(this.answers, this.doneCallback);
+                        DisableShowMoreIcon();
+                        StartCoroutine(TypeToken(_tokens[_displayedToken]));
                     }
-                    else if(this.doneCallback != null)
+                    else
                     {
-                        // Dialog ended, call the last cb
+                        // Finished the text so hide the dialog
+                        DisableShowMoreIcon();
+                        HideDialogBox();
+                        _dialogText.text = "";
+
+                        if (_answers != null && _answers.Count != 0)
+                        {
+                            answersDialogBox.ShowAnswers(_answers, _doneCallback);
+                        }
+                        else if (_doneCallback != null)
+                        {
+                            // Dialog ended, call the last cb
                        
-                        var cb = this.doneCallback;
-                        // Clear the saved callback before calling it instead of after
-                        // This will prevent a succesive dialog box from having its callback cleared 
-                        this.doneCallback = null;
-                        cb();
-                        
-                        
+                            var callback = _doneCallback;
+                            // Clear the saved callback before calling it instead of after
+                            // This will prevent a succesive dialog box from having its callback cleared 
+                            _doneCallback = null;
+                            callback();
+                        }
                     }
-                    
                 }
             }
         }

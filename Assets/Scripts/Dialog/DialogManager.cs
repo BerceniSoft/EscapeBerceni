@@ -1,105 +1,98 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using System;
-
 #nullable enable
 
-public class DialogManager : MonoBehaviour
+using System;
+using DialogTrees;
+using Movement;
+using UnityEngine;
+
+namespace Dialog
 {
-    private bool _isDialogBeingShown;
-    public int currentDialogLineIndex;
-    public DialogBox dialogBox;
-    public AbstractDialogTree dialogTree;
-    public bool IsDialogBeingShown{
-        get
+    public class DialogManager : MonoBehaviour
+    {
+        public int currentDialogLineIndex;
+        public DialogBox dialogBox;
+        public AbstractDialogTree dialogTree;
+        public MainCharacterMovement mainCharacterMovement;
+        
+        public bool IsDialogBeingShown { get; private set; }
+        
+        private void OnBeginDialog()
         {
-            return this._isDialogBeingShown;
+            mainCharacterMovement.PauseMovement();
+            IsDialogBeingShown = true;
         }
-    }
-    public MainCharacterMovement mainCharacterMovement;
 
-    private void OnBeginDialog()
-    {
-        this.mainCharacterMovement.PauseMovement();
-        this._isDialogBeingShown = true;
-    }
-
-    private void OnEndDialog(Action? onDone)
-    {
-        this.mainCharacterMovement.ResumeMovement();
-        Debug.Log("Hey");
-        this._isDialogBeingShown = false;
-        if(onDone != null)
+        private void OnEndDialog(Action? onDone)
         {
-            onDone();
+            mainCharacterMovement.ResumeMovement();
+            IsDialogBeingShown = false;
+
+            onDone?.Invoke();
         }
-      
-    }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        this.currentDialogLineIndex = 0;
-    }
+        private void Start()
+        {
+            currentDialogLineIndex = 0;
+        }
 
-    public void ShowDialog()
-    {
-        this.OnBeginDialog();
-        DialogLineInfo dialogLineInfo = this.dialogTree.GetDialogLine(this.currentDialogLineIndex);
-        StartCoroutine(
-            this.dialogBox.ShowDialog(
-                dialogLineInfo.DialogLine,
-                dialogLineInfo.SpeakerName,
-                dialogLineInfo.Answers,
-                ()=>this.OnEndDialog(null)
-            )
-        );
+        public void ShowDialog()
+        {
+            OnBeginDialog();
+            var dialogLineInfo = dialogTree.GetDialogLine(currentDialogLineIndex);
+            StartCoroutine(
+                dialogBox.ShowDialog(
+                    dialogLineInfo.DialogLine,
+                        dialogLineInfo.SpeakerName,
+                        dialogLineInfo.Answers,
+                    () => OnEndDialog(null)
+                )
+            );
 
-        // Increment the dialog line index so we get the next line next time around
-        this.currentDialogLineIndex++;
-    }
+            // Increment the dialog line index so we get the next line next time around
+            currentDialogLineIndex++;
+        }
 
-    // Skip to a particular line
-    public void ShowDialog(int lineIndex)
-    {
-        this.currentDialogLineIndex = lineIndex;
-        this.ShowDialog();
-    }
+        // Skip to a particular line
+        public void ShowDialog(int lineIndex)
+        {
+            currentDialogLineIndex = lineIndex;
+            ShowDialog();
+        }
 
-    public void ShowDialog(Action onDone)
-    {
-        this.OnBeginDialog();
-        DialogLineInfo dialogLineInfo = this.dialogTree.GetDialogLine(this.currentDialogLineIndex);
-        StartCoroutine(
-            this.dialogBox.ShowDialog(
-                dialogLineInfo.DialogLine,
-                dialogLineInfo.SpeakerName,
-                dialogLineInfo.Answers,
-                ()=>this.OnEndDialog(onDone)
-            )
-        );
+        public void ShowDialog(Action onDone)
+        {
+            OnBeginDialog();
+            var dialogLineInfo = dialogTree.GetDialogLine(currentDialogLineIndex);
+            StartCoroutine(
+                dialogBox.ShowDialog(
+                    dialogLineInfo.DialogLine,
+                    dialogLineInfo.SpeakerName,
+                    dialogLineInfo.Answers,
+                    () => OnEndDialog(onDone)
+                )
+            );
 
-        // Increment the dialog line index so we get the next line next time around
-        this.currentDialogLineIndex++;
-    }
+            // Increment the dialog line index so we get the next line next time around
+            currentDialogLineIndex++;
+        }
 
-    public void ShowDialog(int lineIndex, Action onDone)
-    {
-        this.currentDialogLineIndex = lineIndex;
-        this.ShowDialog(onDone);
-    }
+        public void ShowDialog(int lineIndex, Action onDone)
+        {
+            currentDialogLineIndex = lineIndex;
+            ShowDialog(onDone);
+        }
 
-    public void OnDialogOptionPicked(int optionIndex)
-    {
-        this.currentDialogLineIndex = this.dialogTree.OnDialogOptionPicked(
-            optionIndex,
-            this.currentDialogLineIndex
-        );
-    }
+        public void OnDialogOptionPicked(int optionIndex)
+        {
+            currentDialogLineIndex = dialogTree.OnDialogOptionPicked(
+                optionIndex,
+                currentDialogLineIndex
+            );
+        }
 
-    public void HideDialogBox()
-    {
-        this.dialogBox.HideDialogBox();
+        public void HideDialogBox()
+        {
+            dialogBox.HideDialogBox();
+        }
     }
 }

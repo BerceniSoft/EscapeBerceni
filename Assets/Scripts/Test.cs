@@ -2,20 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using Dialog;
 
 public class Test : MonoBehaviour
 {
     public DialogManager dialogManager;
 
-    // Start is called before the first frame update
-    void Start() { }
-
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
         if (Input.GetKeyDown("a"))
         {
-            this.dialogManager.ShowDialog();
+            dialogManager.ShowDialog();
         }
     }
 }

@@ -1,68 +1,60 @@
-using System.Collections;
-using System.Collections.Generic;
-using System;
-
 #nullable enable
-public class SceneStorage
+using System;
+using System.Collections.Generic;
+
+namespace Scenes
 {
-    private Dictionary<int, Dictionary<string, string>> storage;
-
-    private SceneStorage()
+    public class SceneStorage
     {
-        this.storage = new Dictionary<int, Dictionary<string,string>>();
-    }
+        private static SceneStorage? _instance;
 
-    private static SceneStorage? instance = null;
+        private readonly Dictionary<int, Dictionary<string, string>> _storage;
 
-    public static SceneStorage getInstance()
-    {
-        if(SceneStorage.instance == null)
+        private SceneStorage()
         {
-            SceneStorage.instance = new SceneStorage();
+            _storage = new Dictionary<int, Dictionary<string,string>>();
         }
 
-        return SceneStorage.instance;
-    }
+        public static SceneStorage GetInstance() => _instance ??= new SceneStorage();
 
-    public void AddKey(int sceneId, string key, string value)
-    {
-        Dictionary<string,string> sceneStorage;
-        try{
-            sceneStorage = this.storage[sceneId];
-            sceneStorage.Add(key, value);
-        } 
-        catch(Exception)
+        public void AddKey(int sceneId, string key, string value)
         {
-            // First inserted key for this scene
-            sceneStorage = new Dictionary<string, string>();
-            sceneStorage.Add(key, value);
-            this.storage.Add(sceneId, sceneStorage);
-        }
-    }
-
-    public string? GetKey(int sceneId, string key)
-    {
-        try
-        {
-            return this.storage[sceneId][key];
-        }
-        catch(Exception)
-        {
-            return null;
+            Dictionary<string,string> sceneStorage;
+            try 
+            {
+                sceneStorage = _storage[sceneId];
+                sceneStorage.Add(key, value);
+            } 
+            catch (Exception)
+            {
+                // First inserted key for this scene
+                sceneStorage = new Dictionary<string, string> { { key, value } };
+                _storage.Add(sceneId, sceneStorage);
+            }
         }
 
-    }
-
-    public Dictionary<string, string>? GetAllKeysForScene(int sceneId)
-    {
-        try
+        public string? GetKey(int sceneId, string key)
         {
-            return this.storage[sceneId];
+            try
+            {
+                return _storage[sceneId][key];
+            }
+            catch (Exception)
+            {
+                return null;
+            }
         }
-        catch(Exception)
+
+        public Dictionary<string, string>? GetAllKeysForScene(int sceneId)
         {
-            return null;
+            try
+            {
+                return _storage[sceneId];
+            }
+            catch (Exception)
+            {
+                return null;
+            }
         }
     }
-
 }
