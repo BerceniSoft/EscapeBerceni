@@ -1,38 +1,35 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
-using System;
 
-public class Answer
+namespace Dialog
 {
-    private TMP_Text text;
-    private Image background;
-    private Button button;
-
-    public Answer(TMP_Text text, Image image, Button button){
-        this.text = text;
-        this.background = image;
-        this.button = button;
-
-    }
-
-    public void ShowAnswer(string option)
+    public class Answer
     {
-        this.text.text = option;
-        this.text.enabled = true;
-        this.background.enabled = true;
-        this.button.enabled = true;
+        private readonly TMP_Text _text;
+        private readonly Image _background;
+        private readonly Button _button;
+
+        public Answer(TMP_Text text, Image image, Button button) 
+        {
+            _text = text;
+            _background = image;
+            _button = button;
+        }
+
+        public void ShowAnswer(string option)
+        {
+            _text.text = option;
+            _text.enabled = true;
+            _background.enabled = true;
+            _button.enabled = true;
+        }
+
+        public void HideAnswer()
+        {
+            _text.text = "";
+            _text.enabled = false;
+            _background.enabled = false;
+            _button.enabled = false;
+        }
     }
-
-    public void HideAnswer()
-    {
-        this.text.text = "";
-        this.text.enabled = false;
-        this.background.enabled = false;
-        this.button.enabled = false;
-
-    }
-
 }

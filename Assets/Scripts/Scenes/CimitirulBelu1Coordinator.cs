@@ -1,58 +1,61 @@
-using System.Collections;
-using System.Collections.Generic;
+using Constants;
+using Dialog;
+using Movement;
 using UnityEngine;
 
-public class CimitirulBelu1Coordinator : MonoBehaviour
+namespace Scenes
 {
-    private const string IS_FIRST_LOAD_KEY = "IS_FIRST_LOAD";
-    private const string HAS_PLAYER_ENTERED_KEY = "HAS_PLAYER_ENTERED";
-
-    private SceneStorage sceneStorage;
-
-    public DialogManager dialogManager;
-    public MainCharacterMovement mainCharacterMovement;
-
-    void ShowDialog()
+    public class CimitirulBelu1Coordinator : MonoBehaviour
     {
-        //  We'll show all 8 dialog lines one after the other
-        if(this.dialogManager.currentDialogLineIndex < 8)
-        {
-            this.dialogManager.ShowDialog(this.ShowDialog);
-        }
-        else
-        {
-            // Done with the intro
-            this.sceneStorage.AddKey(ScenesIds.CIMITIRUL_BELU_1, IS_FIRST_LOAD_KEY, "false");
-        }
+        private const string IsFirstLoadKey = "IS_FIRST_LOAD";
+        private const string HasPlayerEnteredKey = "HAS_PLAYER_ENTERED";
+
+        [SerializeField]
+        private DialogManager dialogManager;
         
-    }
+        [SerializeField]
+        private MainCharacterMovement mainCharacterMovement;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        this.sceneStorage = SceneStorage.getInstance();
-      
-    }   
+        private SceneStorage _sceneStorage;
 
-    // Update is called once per frame
-    void Update()
-    {
-        var isFirstLoad = this.sceneStorage.GetKey(ScenesIds.CIMITIRUL_BELU_1, IS_FIRST_LOAD_KEY) == null;
-        if(isFirstLoad)
+        private void ShowDialog()
         {
-            var hasPlayerEntered = this.sceneStorage.GetKey(ScenesIds.CIMITIRUL_BELU_1, HAS_PLAYER_ENTERED_KEY) != null;
-            if(!hasPlayerEntered)
-            { 
-               // Move the character in scene
-                this.mainCharacterMovement.SetDestination(new Vector2(-6, -2), false);
-                this.sceneStorage.AddKey(ScenesIds.CIMITIRUL_BELU_1, HAS_PLAYER_ENTERED_KEY, "true");
+            //  We'll show all 8 dialog lines one after the other
+            if (dialogManager.currentDialogLineIndex < 8)
+            {
+                dialogManager.ShowDialog(ShowDialog);
             }
+            else
+            {
+                // Done with the intro
+                _sceneStorage.AddKey(ScenesIds.CimitirulBelu1, IsFirstLoadKey, "false");
+            }
+        }
 
-            // After the movment is done, show the dialog
-            if(!this.dialogManager.IsDialogBeingShown && !this.mainCharacterMovement.isMoving)
-            { 
-                this.ShowDialog();
-            }   
+        private void Start()
+        {
+            _sceneStorage = SceneStorage.GetInstance();
+        }   
+
+        private void Update()
+        {
+            var isFirstLoad = _sceneStorage.GetKey(ScenesIds.CimitirulBelu1, IsFirstLoadKey) == null;
+            if (isFirstLoad)
+            {
+                var hasPlayerEntered = _sceneStorage.GetKey(ScenesIds.CimitirulBelu1, HasPlayerEnteredKey) != null;
+                if (!hasPlayerEntered)
+                { 
+                    // Move the character in scene
+                    mainCharacterMovement.SetDestination(new Vector2(-6, -2), false);
+                    _sceneStorage.AddKey(ScenesIds.CimitirulBelu1, HasPlayerEnteredKey, "true");
+                }
+
+                // After the movement is done, show the dialog
+                if (!dialogManager.IsDialogBeingShown && !mainCharacterMovement.isMoving)
+                { 
+                    ShowDialog();
+                }   
+            }
         }
     }
 }

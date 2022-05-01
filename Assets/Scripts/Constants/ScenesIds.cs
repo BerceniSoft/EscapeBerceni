@@ -1,8 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class ScenesIds
+namespace Constants
 {
-    public const int CIMITIRUL_BELU_1 = 0;
+    public static class ScenesIds
+    {
+        public const int CimitirulBelu1 = 0;
+    }
 }
