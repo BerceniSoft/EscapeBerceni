@@ -25,6 +25,17 @@ namespace Scenes
 
         private IEnumerator OnDialogLineEnded()
         {
+            //  We'll show all 8 dialog lines one after the other
+            if (dialogManager.currentDialogLineIndex < 8)
+            {
+                dialogManager.ShowDialog(() => StartCoroutine(OnDialogLineEnded()));
+            }
+            else
+            {
+                // Done with the intro
+                _sceneStorage.SetKey(ScenesIds.CimitirulBelu1, IsFirstLoadKey, "false");
+            }
+
             if (this.dialogManager.currentDialogLineIndex == 8)
             {
                 // Show the ThugLife animation
@@ -33,22 +44,11 @@ namespace Scenes
                 yield return new WaitForSeconds(ThugLifeAnimationDurationAndDelay);
                 eminescuAnimator.SetBool(ThugLifeAnimParamId, false);
             }
-
-            //  We'll show all 8 dialog lines one after the other
-            if (dialogManager.currentDialogLineIndex < 8)
-            {
-                dialogManager.ShowDialog(()=>StartCoroutine(OnDialogLineEnded()));
-            }
-            else
-            {
-                // Done with the intro
-                _sceneStorage.SetKey(ScenesIds.CimitirulBelu1, IsFirstLoadKey, "false");
-            }
         }
 
         void ShowDialog()
         {
-            this.dialogManager.ShowDialog(()=>StartCoroutine(OnDialogLineEnded()));
+            this.dialogManager.ShowDialog(() => StartCoroutine(OnDialogLineEnded()));
         }
 
         private void Start()
