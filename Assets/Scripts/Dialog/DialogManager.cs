@@ -13,9 +13,9 @@ namespace Dialog
         public DialogBox dialogBox;
         public AbstractDialogTree dialogTree;
         public MainCharacterMovement mainCharacterMovement;
-        
+
         public bool IsDialogBeingShown { get; private set; }
-        
+
         private void OnBeginDialog()
         {
             mainCharacterMovement.PauseMovement();
@@ -32,7 +32,7 @@ namespace Dialog
 
         private void Start()
         {
-            currentDialogLineIndex = 0;
+            currentDialogLineIndex = 6;
         }
 
         public void ShowDialog()
@@ -42,8 +42,8 @@ namespace Dialog
             StartCoroutine(
                 dialogBox.ShowDialog(
                     dialogLineInfo.DialogLine,
-                        dialogLineInfo.SpeakerName,
-                        dialogLineInfo.Answers,
+                    dialogLineInfo.SpeakerName,
+                    dialogLineInfo.Answers,
                     () => OnEndDialog(null)
                 )
             );
