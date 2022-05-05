@@ -6,19 +6,18 @@ namespace Movement
     public class MainCharacterMovement : MonoBehaviour
     {
         public DialogManager dialogManager;
-        public bool isMoving;
+        public bool isMoving = false;
         public Animator anim;
-        
-        [SerializeField]
-        private float movementSpeed = 3.0f;
+
+        [SerializeField] private float movementSpeed = 3.0f;
 
         private Rigidbody2D _rigidBody2D;
         private Vector2? _currentTargetPosition;
-        
+
         // If false, mouse movement won't be able to change the target position
         private bool _allowTargetPositionOverride = true;
         private bool _preventMovement;
-        
+
         private void SetWalkingAnimation(bool isWalking)
         {
             anim.SetBool("IsWalking", isWalking);
@@ -34,18 +33,27 @@ namespace Movement
             _preventMovement = true;
             // Delete the current velocity
             // When resumed, the next call to update will set back the velocity
-            _rigidBody2D.velocity = new Vector2(0,0);
+            _rigidBody2D.velocity = new Vector2(0, 0);
             SetWalkingAnimation(false);
         }
 
         public void ResumeMovement()
         {
             _preventMovement = false;
-            SetWalkingAnimation(true);
+            if (_currentTargetPosition != null)
+            {
+                SetWalkingAnimation(true);
+            }
         }
 
         private void MoveTo(Vector2 destination)
         {
+            if (isMoving == false)
+            {
+                SetWalkingAnimation(true);
+                isMoving = true;
+            }
+
             Vector2 currentPos = transform.position;
             var distance = destination - currentPos;
             // Get the movement velocity vector based on the distance
@@ -80,11 +88,9 @@ namespace Movement
 
         public void SetDestination(Vector2 destination, bool allowOverride)
         {
-            // We have a destination so we are moving
-            isMoving = true;
-            SetWalkingAnimation(true);
             _currentTargetPosition = destination;
             _allowTargetPositionOverride = allowOverride;
+            MoveTo(destination);
         }
 
         private void FixedUpdate()
@@ -108,9 +114,7 @@ namespace Movement
             }
 
             // We have a destination so we are moving
-            isMoving = true;
-            MoveTo((Vector2)_currentTargetPosition);
+            MoveTo((Vector2) _currentTargetPosition);
         }
     }
 }
-

@@ -42,7 +42,7 @@ namespace Scenes
             else
             {
                 // Done with the intro
-                _sceneStorage.AddKey(ScenesIds.CimitirulBelu1, IsFirstLoadKey, "false");
+                _sceneStorage.SetKey(ScenesIds.CimitirulBelu1, IsFirstLoadKey, "false");
             }
         }
 
@@ -66,7 +66,7 @@ namespace Scenes
                 {
                     // Move the character in scene
                     mainCharacterMovement.SetDestination(new Vector2(-6, -2), false);
-                    _sceneStorage.AddKey(ScenesIds.CimitirulBelu1, HasPlayerEnteredKey, "true");
+                    _sceneStorage.SetKey(ScenesIds.CimitirulBelu1, HasPlayerEnteredKey, "true");
                 }
 
                 // After the movement is done, show the dialog

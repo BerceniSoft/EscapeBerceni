@@ -32,7 +32,7 @@ namespace Dialog
 
         private void Start()
         {
-            currentDialogLineIndex = 6;
+            currentDialogLineIndex = 0;
         }
 
         public void ShowDialog()
