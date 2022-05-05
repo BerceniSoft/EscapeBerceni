@@ -5,7 +5,6 @@ using System;
 
 public class AnswerController : MonoBehaviour
 {
-
     public DialogManager dialogManager;
 
 
@@ -22,19 +21,18 @@ public class AnswerController : MonoBehaviour
         this.dialogManager.HideDialogBox();
         this.dialogManager.dialogBox.answersDialogBox.OnDone();
     }
+
     public void OnOptionCPicked()
     {
         this.dialogManager.OnDialogOptionPicked(2);
         this.dialogManager.HideDialogBox();
         this.dialogManager.dialogBox.answersDialogBox.OnDone();
-        
     }
+
     public void OnOptionDPicked()
     {
         this.dialogManager.OnDialogOptionPicked(3);
         this.dialogManager.HideDialogBox();
-        this.dialogManager.dialogBox.answersDialogBox.OnDone();   
+        this.dialogManager.dialogBox.answersDialogBox.OnDone();
     }
-
-
 }

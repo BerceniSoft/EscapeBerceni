@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Level3Scene1DialogTree : AbstractDialogTree
 {
+
     public override int OnDialogOptionPicked(int optionIndex, int dialogLineIndex)
     {
         // Regardless the poem, let the dialog continue

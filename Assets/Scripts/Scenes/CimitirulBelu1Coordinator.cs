@@ -11,20 +11,32 @@ public class CimitirulBelu1Coordinator : MonoBehaviour
 
     public DialogManager dialogManager;
     public MainCharacterMovement mainCharacterMovement;
+    public Animator EminescuAnimator;
 
-    void ShowDialog()
+
+    void OnDialogLineEnded()
     {
+         if(this.dialogManager.currentDialogLineIndex == 8)
+         {
+             // Show the ThugLife animation
+             this.EminescuAnimator.SetBool("ThugLife",true);
+         }
+
         //  We'll show all 8 dialog lines one after the other
         if(this.dialogManager.currentDialogLineIndex < 8)
         {
-            this.dialogManager.ShowDialog(this.ShowDialog);
+            this.dialogManager.ShowDialog(this.OnDialogLineEnded);
         }
         else
         {
             // Done with the intro
             this.sceneStorage.AddKey(ScenesIds.CIMITIRUL_BELU_1, IS_FIRST_LOAD_KEY, "false");
         }
-        
+    }
+
+    void ShowDialog()
+    {
+        this.dialogManager.ShowDialog(this.OnDialogLineEnded);
     }
 
     // Start is called before the first frame update

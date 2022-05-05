@@ -7892,6 +7892,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3182103843267476474, guid: 776c7cd5fda8602478c60f1769056a1f, type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 1473946220}
     - target: {fileID: 7514403176821013547, guid: 776c7cd5fda8602478c60f1769056a1f, type: 3}
       propertyPath: m_Name
       value: Main Character
@@ -7988,6 +7992,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogManager: {fileID: 762870340}
   mainCharacterMovement: {fileID: 1473946217}
+  EminescuAnimator: {fileID: 1143255502}
 --- !u!1 &1317093868
 GameObject:
   m_ObjectHideFlags: 0
@@ -8239,6 +8244,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cb8a4412da636f40a18e4fa14b35440, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &1473946220 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 3212978157841037922, guid: 776c7cd5fda8602478c60f1769056a1f, type: 3}
+  m_PrefabInstance: {fileID: 1162347055}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1559278527
 GameObject:
   m_ObjectHideFlags: 0

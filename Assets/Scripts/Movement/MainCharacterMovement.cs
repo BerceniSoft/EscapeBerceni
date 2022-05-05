@@ -13,6 +13,12 @@ public class MainCharacterMovement : MonoBehaviour
     public float movementSpeed = 3.0f;
     public DialogManager dialogManager;
     public bool isMoving = false;
+    public Animator anim;
+
+    void SetWalkingAniamtion(bool isWalking)
+    {
+        anim.SetBool("IsWalking", isWalking);
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -26,11 +32,13 @@ public class MainCharacterMovement : MonoBehaviour
         // Delete the current velocity
         // When resumed, the next call to update will set back the velocity
         rigidBody2D.velocity = new Vector2(0,0);
+        this.SetWalkingAniamtion(false);
     }
 
     public void ResumeMovement()
     {
          this.preventMovement = false;
+         this.SetWalkingAniamtion(true);
     }
 
     private void MoveTo(Vector2 destination)
@@ -57,6 +65,8 @@ public class MainCharacterMovement : MonoBehaviour
         {
             // Destination reached          
             this.isMoving = false;
+            this.SetWalkingAniamtion(false);
+
             this.currentTargetPosition = null;
 
             // Allow mouse movment if it was disabled before
@@ -72,6 +82,7 @@ public class MainCharacterMovement : MonoBehaviour
     {
          // We have a destination so we are moving
         this.isMoving = true;
+        this.SetWalkingAniamtion(true);
         this.currentTargetPosition = destination;
         this.allowTargetPositionOverride = allowOverride;
     }
