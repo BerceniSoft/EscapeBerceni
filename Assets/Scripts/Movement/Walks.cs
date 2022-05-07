@@ -29,6 +29,7 @@ namespace Movement
         virtual protected void Start()
         {
             _rigidBody2D = GetComponent<Rigidbody2D>();
+            _currentSpriteOrientation = initialSpriteOrientation;
             foreach (Transform child in transform)
             {
                 if (child.CompareTag(Tags.SpriteContainerTag))
@@ -48,5 +49,9 @@ namespace Movement
             return _rigidBody2D.velocity;
         }
 
+        protected Vector2 GetPosition()
+        {
+            return _rigidBody2D.position;
+        }
     }
 }
