@@ -67,7 +67,16 @@ namespace Movement
             var movement = distance;
 
             // Get the direction to see if we need to flip the asset
-            var dir = currentPos.x < destination.x ? SpriteOrientation.Right : SpriteOrientation.Left;
+            var dir = _currentSpriteOrientation;
+            if (currentPos.x < destination.x)
+            {
+                dir = SpriteOrientation.Right;
+            }
+            else if (currentPos.x > destination.x)
+            {
+                dir = SpriteOrientation.Left;
+            }
+
             if (dir != _currentSpriteOrientation)
             {
                 SetSpriteOrientation(dir);
@@ -129,6 +138,5 @@ namespace Movement
             // We have a destination so we are moving
             MoveTo((Vector2) _currentTargetPosition);
         }
-        
     }
 }
