@@ -1,3 +1,4 @@
+using Constants;
 using Dialog;
 using Enums;
 using UnityEngine;
@@ -11,14 +12,16 @@ namespace Movement
         public bool isMoving = false;
         public SpriteOrientation initialSpriteOrientation;
         public SpriteOrientation currentSpriteOrientation;
-        public Transform t;
 
         [SerializeField] private float movementSpeed = 3.0f;
 
         private Rigidbody2D _rigidBody2D;
         private Vector2? _currentTargetPosition;
+
         private Animator _anim;
-        private SpriteRenderer[] _spriteRenderers;
+
+        // The GameObject that holds all the sprite renderer components
+        private Transform _spriteContainer;
 
         // If false, mouse movement won't be able to change the target position
         private bool _allowTargetPositionOverride = true;
@@ -31,17 +34,13 @@ namespace Movement
 
         private void SetSpriteOrientation(SpriteOrientation spriteOrientation)
         {
+            currentSpriteOrientation = spriteOrientation;
+            
             var shouldBeFlipped = spriteOrientation != initialSpriteOrientation;
-            if (_spriteRenderers == null)
+            if (_spriteContainer != null)
             {
-                return;
-            }
-            
-            
-
-            foreach (var spriteRenderer in _spriteRenderers)
-            {
-                spriteRenderer.flipX = shouldBeFlipped;
+                // Scale on the x axis in the appropriate direction
+                _spriteContainer.localScale = new Vector3(shouldBeFlipped ? -1 : 1, 1, 1);
             }
         }
 
@@ -49,7 +48,13 @@ namespace Movement
         {
             _rigidBody2D = GetComponent<Rigidbody2D>();
             _anim = GetComponent<Animator>();
-            _spriteRenderers = GetComponentsInChildren<SpriteRenderer>();
+            foreach (Transform child in transform)
+            {
+                if (child.CompareTag(Tags.SpriteContainerTag))
+                {
+                    _spriteContainer = child;
+                }
+            }
         }
 
         public void PauseMovement()
@@ -84,7 +89,7 @@ namespace Movement
             // Get the movement velocity vector based on the distance
             // The velocity will gradually decrease this way
             var movement = distance;
-            
+
             // Get the direction to see if we need to flip the asset
             var dir = currentPos.x < destination.x ? SpriteOrientation.Right : SpriteOrientation.Left;
             if (dir != currentSpriteOrientation)

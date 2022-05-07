@@ -3,25 +3,28 @@ using System.Collections.Generic;
 using Enums;
 using UnityEngine;
 
-public class Follow : MonoBehaviour
+namespace Movement
 {
-    private Rigidbody2D _self;
-    private SpriteOrientation _currentSpriteOrientation;
-    private SpriteRenderer[] _spriteRenderers;
+    public class Follow : MonoBehaviour
+    {
+        private Rigidbody2D _self;
+        private SpriteOrientation _currentSpriteOrientation;
+        private SpriteRenderer[] _spriteRenderers;
 
-    public Rigidbody2D target;
-    public SpriteOrientation initialSpriteOrientation;
+        public Rigidbody2D target;
+        public SpriteOrientation initialSpriteOrientation;
   
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        _self = GetComponent<Rigidbody2D>();
-    }
+        // Start is called before the first frame update
+        void Start()
+        {
+            _self = GetComponent<Rigidbody2D>();
+        }
 
-    // Update is called once per frame
-    void Update()
-    {
-        _self.velocity = target.velocity;
+        // Update is called once per frame
+        void Update()
+        {
+            _self.velocity = target.velocity;
+        }
     }
 }

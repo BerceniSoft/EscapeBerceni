@@ -6,51 +6,54 @@ using Movement;
 using Scenes;
 using UnityEngine;
 
-public class CimitirulBeluTombsCoordinator : MonoBehaviour
+namespace Scenes
 {
-    private const string IsFirstLoadKey = "IS_FIRST_LOAD";
-    private const string HasPlayerEnteredKey = "HAS_PLAYER_ENTERED";
-
-    [SerializeField] private DialogManager dialogManager;
-
-    [SerializeField] private MainCharacterMovement mainCharacterMovement;
-    private SceneStorage _sceneStorage;
-
-
-    private void ShowInitialDialog()
+    public class CimitirulBeluTombsCoordinator : MonoBehaviour
     {
-        dialogManager.ShowDialog(OnInitialDialogDone);
-    }
+        private const string IsFirstLoadKey = "IS_FIRST_LOAD";
+        private const string HasPlayerEnteredKey = "HAS_PLAYER_ENTERED";
 
-    private void OnInitialDialogDone()
-    {
-        _sceneStorage.SetKey(ScenesIds.CimitirulBeluTombs, IsFirstLoadKey, "false");
-    }
+        [SerializeField] private DialogManager dialogManager;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        _sceneStorage = SceneStorage.GetInstance();
-    }
+        [SerializeField] private MainCharacterMovement mainCharacterMovement;
+        private SceneStorage _sceneStorage;
 
-    // Update is called once per frame
-    void Update()
-    {
-        var isFirstLoad = _sceneStorage.GetKey(ScenesIds.CimitirulBeluTombs, IsFirstLoadKey) == null;
-        if (isFirstLoad)
+
+        private void ShowInitialDialog()
         {
-            var hasPlayerEntered = _sceneStorage.GetKey(ScenesIds.CimitirulBeluStart, HasPlayerEnteredKey) != null;
-            if (!hasPlayerEntered)
-            {
-                // Move the character in scene
-                mainCharacterMovement.SetDestination(new Vector2(-3.5f, -2), false);
-                _sceneStorage.SetKey(ScenesIds.CimitirulBeluStart, HasPlayerEnteredKey, "true");
-            }
+            dialogManager.ShowDialog(OnInitialDialogDone);
+        }
 
-            // After the movement is done, show the dialog
-            if (!dialogManager.IsDialogBeingShown && !mainCharacterMovement.isMoving)
+        private void OnInitialDialogDone()
+        {
+            _sceneStorage.SetKey(ScenesIds.CimitirulBeluTombs, IsFirstLoadKey, "false");
+        }
+
+        // Start is called before the first frame update
+        void Start()
+        {
+            _sceneStorage = SceneStorage.GetInstance();
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
+            var isFirstLoad = _sceneStorage.GetKey(ScenesIds.CimitirulBeluTombs, IsFirstLoadKey) == null;
+            if (isFirstLoad)
             {
-                ShowInitialDialog();
+                var hasPlayerEntered = _sceneStorage.GetKey(ScenesIds.CimitirulBeluStart, HasPlayerEnteredKey) != null;
+                if (!hasPlayerEntered)
+                {
+                    // Move the character in scene
+                    mainCharacterMovement.SetDestination(new Vector2(-3.5f, -2), false);
+                    _sceneStorage.SetKey(ScenesIds.CimitirulBeluStart, HasPlayerEnteredKey, "true");
+                }
+
+                // After the movement is done, show the dialog
+                if (!dialogManager.IsDialogBeingShown && !mainCharacterMovement.isMoving)
+                {
+                    ShowInitialDialog();
+                }
             }
         }
     }
