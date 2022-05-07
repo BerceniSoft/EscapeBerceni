@@ -5,26 +5,21 @@ using UnityEngine;
 
 namespace Movement
 {
-    public class Follow : MonoBehaviour
+    public class Follow : Walks
     {
-        private Rigidbody2D _self;
-        private SpriteOrientation _currentSpriteOrientation;
-        private SpriteRenderer[] _spriteRenderers;
 
-        public Rigidbody2D target;
-        public SpriteOrientation initialSpriteOrientation;
-  
-
-        // Start is called before the first frame update
-        void Start()
-        {
-            _self = GetComponent<Rigidbody2D>();
-        }
-
+        public Followable target;
+        
         // Update is called once per frame
         void Update()
         {
-            _self.velocity = target.velocity;
+            SetVelocity(target.GetVelocity());
+            var targetSpriteOrientation = target.GetSpriteOrientation();
+
+            if (targetSpriteOrientation != _currentSpriteOrientation)
+            {
+                SetSpriteOrientation(targetSpriteOrientation);
+            }
         }
     }
 }

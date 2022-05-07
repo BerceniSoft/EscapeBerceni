@@ -6,22 +6,16 @@ using UnityEngine.Serialization;
 
 namespace Movement
 {
-    public class MainCharacterMovement : MonoBehaviour
+    public class MainCharacterMovement : Followable
+
     {
-        public DialogManager dialogManager;
         public bool isMoving = false;
-        public SpriteOrientation initialSpriteOrientation;
-        public SpriteOrientation currentSpriteOrientation;
 
         [SerializeField] private float movementSpeed = 3.0f;
 
-        private Rigidbody2D _rigidBody2D;
         private Vector2? _currentTargetPosition;
 
         private Animator _anim;
-
-        // The GameObject that holds all the sprite renderer components
-        private Transform _spriteContainer;
 
         // If false, mouse movement won't be able to change the target position
         private bool _allowTargetPositionOverride = true;
@@ -32,29 +26,11 @@ namespace Movement
             _anim.SetBool("IsWalking", isWalking);
         }
 
-        private void SetSpriteOrientation(SpriteOrientation spriteOrientation)
-        {
-            currentSpriteOrientation = spriteOrientation;
-            
-            var shouldBeFlipped = spriteOrientation != initialSpriteOrientation;
-            if (_spriteContainer != null)
-            {
-                // Scale on the x axis in the appropriate direction
-                _spriteContainer.localScale = new Vector3(shouldBeFlipped ? -1 : 1, 1, 1);
-            }
-        }
 
-        private void Start()
+        override protected void Start()
         {
-            _rigidBody2D = GetComponent<Rigidbody2D>();
+            base.Start();
             _anim = GetComponent<Animator>();
-            foreach (Transform child in transform)
-            {
-                if (child.CompareTag(Tags.SpriteContainerTag))
-                {
-                    _spriteContainer = child;
-                }
-            }
         }
 
         public void PauseMovement()
@@ -62,7 +38,7 @@ namespace Movement
             _preventMovement = true;
             // Delete the current velocity
             // When resumed, the next call to update will set back the velocity
-            _rigidBody2D.velocity = new Vector2(0, 0);
+            SetVelocity(new Vector2(0, 0));
             SetWalkingAnimation(false);
         }
 
@@ -92,7 +68,7 @@ namespace Movement
 
             // Get the direction to see if we need to flip the asset
             var dir = currentPos.x < destination.x ? SpriteOrientation.Right : SpriteOrientation.Left;
-            if (dir != currentSpriteOrientation)
+            if (dir != _currentSpriteOrientation)
             {
                 SetSpriteOrientation(dir);
             }
@@ -120,7 +96,7 @@ namespace Movement
             }
 
             movement.Normalize();
-            _rigidBody2D.velocity = movement * movementSpeed;
+            SetVelocity(movement * movementSpeed);
         }
 
         public void SetDestination(Vector2 destination, bool allowOverride)
@@ -153,5 +129,6 @@ namespace Movement
             // We have a destination so we are moving
             MoveTo((Vector2) _currentTargetPosition);
         }
+        
     }
 }
