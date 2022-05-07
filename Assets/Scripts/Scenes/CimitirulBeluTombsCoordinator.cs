@@ -1,9 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using Constants;
 using Dialog;
 using Movement;
-using Scenes;
 using UnityEngine;
 
 namespace Scenes
