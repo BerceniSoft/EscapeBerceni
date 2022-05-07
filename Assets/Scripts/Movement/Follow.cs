@@ -1,11 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
+using Enums;
 using UnityEngine;
 
 public class Follow : MonoBehaviour
 {
     private Rigidbody2D _self;
+    private SpriteOrientation _currentSpriteOrientation;
+    private SpriteRenderer[] _spriteRenderers;
+
     public Rigidbody2D target;
+    public SpriteOrientation initialSpriteOrientation;
+  
 
     // Start is called before the first frame update
     void Start()

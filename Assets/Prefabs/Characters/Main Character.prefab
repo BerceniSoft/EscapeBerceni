@@ -624,4 +624,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cb8a4412da636f40a18e4fa14b35440, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogManager: {fileID: 0}
+  isMoving: 0
+  initialSpriteOrientation: 1
+  currentSpriteOrientation: 1
   movementSpeed: 3

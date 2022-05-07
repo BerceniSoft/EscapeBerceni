@@ -1,5 +1,7 @@
 using Dialog;
+using Enums;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Movement
 {
@@ -7,12 +9,16 @@ namespace Movement
     {
         public DialogManager dialogManager;
         public bool isMoving = false;
-        public Animator anim;
+        public SpriteOrientation initialSpriteOrientation;
+        public SpriteOrientation currentSpriteOrientation;
+        public Transform t;
 
         [SerializeField] private float movementSpeed = 3.0f;
 
         private Rigidbody2D _rigidBody2D;
         private Vector2? _currentTargetPosition;
+        private Animator _anim;
+        private SpriteRenderer[] _spriteRenderers;
 
         // If false, mouse movement won't be able to change the target position
         private bool _allowTargetPositionOverride = true;
@@ -20,12 +26,30 @@ namespace Movement
 
         private void SetWalkingAnimation(bool isWalking)
         {
-            anim.SetBool("IsWalking", isWalking);
+            _anim.SetBool("IsWalking", isWalking);
+        }
+
+        private void SetSpriteOrientation(SpriteOrientation spriteOrientation)
+        {
+            var shouldBeFlipped = spriteOrientation != initialSpriteOrientation;
+            if (_spriteRenderers == null)
+            {
+                return;
+            }
+            
+            
+
+            foreach (var spriteRenderer in _spriteRenderers)
+            {
+                spriteRenderer.flipX = shouldBeFlipped;
+            }
         }
 
         private void Start()
         {
             _rigidBody2D = GetComponent<Rigidbody2D>();
+            _anim = GetComponent<Animator>();
+            _spriteRenderers = GetComponentsInChildren<SpriteRenderer>();
         }
 
         public void PauseMovement()
@@ -54,11 +78,19 @@ namespace Movement
                 isMoving = true;
             }
 
+
             Vector2 currentPos = transform.position;
             var distance = destination - currentPos;
             // Get the movement velocity vector based on the distance
             // The velocity will gradually decrease this way
             var movement = distance;
+            
+            // Get the direction to see if we need to flip the asset
+            var dir = currentPos.x < destination.x ? SpriteOrientation.Right : SpriteOrientation.Left;
+            if (dir != currentSpriteOrientation)
+            {
+                SetSpriteOrientation(dir);
+            }
 
             // Consider a distance smaller than an epsilon = 0
             if (Mathf.Abs(movement.x) < 0.05)
