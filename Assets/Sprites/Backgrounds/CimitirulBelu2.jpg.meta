@@ -1,0 +1,4874 @@
+fileFormatVersion: 2
+guid: 37c02397c6c636c49828c67bc3241fbc
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CimitirulBelu2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 706
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5d7c98fc7f92e64a921acbedf629659
+      internalID: 1443369343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 706
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9234da2ce4a0b6459cc8595a5535d42
+      internalID: 508038353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 706
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a456fb0f22de4c540abcdadd19612ded
+      internalID: -146588335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 706
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a429312cb511934e81e1f5b2254615f
+      internalID: 1320236716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 706
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17d3c78d3455c704189ab1904258fbd4
+      internalID: -1963494881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 706
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 247338dcc42e9f4459ee1fff20c4f1d0
+      internalID: -623284595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 706
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5063bf627ff695a48ae984d80ccea429
+      internalID: 753335774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 706
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fa9a764ce200954a8dcdec773486666
+      internalID: 2073210199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 706
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d6833eafb34ab64784198428458aa76
+      internalID: 1850541625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_9
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 706
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39cdc05e81e80854da0c2c38b5a9b305
+      internalID: -671165715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_10
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 706
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 823fa0fe08328bf45b45c9273ea09a4f
+      internalID: 1719832282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_11
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 706
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f98ecb5a37256224d8f98b1d86ccf75d
+      internalID: 1151032289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_12
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 706
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fabfdbe92bf92764993ba3ab49a8cf7c
+      internalID: 72809504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_13
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 706
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12772a0b1b9a8aa4eafec5c691c77e7d
+      internalID: 2020852035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_14
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 706
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e050846385a07340923ce97cb0f66d8
+      internalID: -1350268598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_15
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 706
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dfd42f214e9ede4e9b63410aebffc57
+      internalID: -801782682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_16
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 706
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b7e9f7dd048e5548a67a75055893bbf
+      internalID: -2136385663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_17
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 706
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af30fdc65ed67394d894d1e191ca5b21
+      internalID: -954676681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 642
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36c73538face7cd45ba93b0a518fa44f
+      internalID: -1589984756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_19
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 642
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3991efc2a9f6a0a49808f9fbe5ac24a0
+      internalID: 61960414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_20
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 642
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58fcce0f72f28db47a1f51f76a9b7277
+      internalID: 1702624467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_21
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 642
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ab55e2cc533fe243b0c73f25b6c79d7
+      internalID: -881112278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_22
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 642
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 370f974adcb913649ab8883b53eb6ba5
+      internalID: 314001546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_23
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 642
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 461bf4e69cf38334b99b0de59dae2d07
+      internalID: 769300067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_24
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 642
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73a03fb441cae0d44aece56bedf96655
+      internalID: 673117397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_25
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 642
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3e64b669cfe0ea429d9e1bf54a619f5
+      internalID: 1915734521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_26
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 642
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae4054e7cf773b74e8d9c2d8ae0eb40b
+      internalID: -169250174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_27
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 642
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeaed5628675c074bb0300499155bda7
+      internalID: -1747999584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_28
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 642
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9973bb0c7eb72d140a3dd181d8996ab3
+      internalID: -483102113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_29
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 642
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fff936c717e8184db0cc56792c270ba
+      internalID: -521674037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_30
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 642
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8661bb1f808ae7e43a1e22091f5c2545
+      internalID: -1323841802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_31
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 642
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b5690bd2eab196459b55c788b9f3d6a
+      internalID: -1133566024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_32
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 642
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5b3530a999bf0040a7437ce9e626111
+      internalID: -1081502582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_33
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 642
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3afbf6450dad5ec42b1d4209ce0c9f44
+      internalID: 1293641513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_34
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 642
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed6a4e9a5d3805d4695a07c18e81b9e2
+      internalID: 1572961157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_35
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 642
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6edc56a7bad47794e92e22231e12979f
+      internalID: -400452174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 578
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ff50b6d7277949418ee666c7b19b674
+      internalID: -690898486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_37
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 578
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87afc05e1ff8b03479ffb49a972f85e5
+      internalID: -1566237277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_38
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 578
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f6fe14a79a19a84590752e042465e7a
+      internalID: 104888498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_39
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 578
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe24c987e667b364d81cfa7ef445a6d8
+      internalID: -170695333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_40
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 578
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45655e5c63987bb42bf7a71f6f697b54
+      internalID: -1006503186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_41
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 578
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddffff149a9e49b40932f6a4fbedb080
+      internalID: -2055725825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_42
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 578
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cb6a6f378e3ac34ea39eef64b22f66e
+      internalID: 1585767892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_43
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 578
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fc2b9e6de7158f4a9c854f793e62f56
+      internalID: 889969238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_44
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 578
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb5694baee1477a429813821242f5e40
+      internalID: 2106307649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_45
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 578
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61081dceb34bf4c4e8b2021c241d5b53
+      internalID: 1880256481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_46
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 578
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d9ee7ca9665b3a4993eb572a22faf3d
+      internalID: -1269453620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_47
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 578
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cd7fb1f23dcba947b739d06a610ddd7
+      internalID: -1183846349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_48
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 578
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dcb2a73562c419408fdee4239dc1ed7
+      internalID: -1980818770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_49
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 578
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0a557129e6154b44a717cba50a979c7
+      internalID: -2010595314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_50
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 578
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f8228e5664f76e4ba63fb676ba76567
+      internalID: 135950696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_51
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 578
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a2eb72acbb03be4e8d5c4583b9e8542
+      internalID: -1150778492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_52
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 578
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e9a85dd7199ffc4199a6f18f80e3df6
+      internalID: 1638137451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_53
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 578
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98d5052e7768c18428f882666d101f1e
+      internalID: 2043995502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 514
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d4f51d5d898d8c4f84a57a75c5a3cba
+      internalID: -284378185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_55
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 514
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8916358faa9599844a76e1bb5745b0a4
+      internalID: 83898243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_56
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 514
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2698facd7155454391fcf2bd265768b
+      internalID: 334510408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_57
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 514
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d4e2c0f819e4d64d8b99306c8c052b2
+      internalID: -751528748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_58
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 514
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a01bef86634a95541a9c8d1d1593ad62
+      internalID: 1680512272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_59
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 514
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba7bd685ae2f3cf4facb2013dad07d32
+      internalID: 923927547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_60
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 514
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08396405b7c08de46b5dbb0a3d60e708
+      internalID: -938919514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_61
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 514
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 290a626be03181f4f88349951d05b80e
+      internalID: 392487054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_62
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 514
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dcbb77910069c1418948ff6dbd3ef1b
+      internalID: 206191633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_63
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 514
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c19e388e0b5862d4595f8e6fc54e8cd6
+      internalID: -2012429895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_64
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 514
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce182ab2f6649454aba8db6b70d6c284
+      internalID: -419728018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_65
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 514
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb01f96c9d599d04e9748df234ac365b
+      internalID: -1129223949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_66
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 514
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d0e15035f98bab429b894952dce9a48
+      internalID: 750768982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_67
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 514
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41abb3c6668201149818e9a37f2b8d51
+      internalID: -1827817056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_68
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 514
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d0b0eb343ecfbd45abdaf5cbe4c2845
+      internalID: 1322682865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_69
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 514
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79624ae0a2bf47c4bb72a9d7bc69d48f
+      internalID: -1425874827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_70
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 514
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67041378286c20a4db28b97d4e9baf4d
+      internalID: 60933721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_71
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 514
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97811c6567faff74b9dde8b4e60613e9
+      internalID: -222887726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 450
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be7a5195983468e4a954fc092f3f277d
+      internalID: 1640487510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_73
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 450
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af03cb611cbf48641ab2e6ec0c3e5b91
+      internalID: 22714814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_74
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 450
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f42776f6d6359d4ca56d39b4d318861
+      internalID: 1201350074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_75
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 450
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08998e418f6e335428ea1922170cd305
+      internalID: -1859274845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_76
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 450
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad7d2ca30e26d6b47b0ef080cd5f913d
+      internalID: -338043003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_77
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 450
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ea4208c74d668343b3bc091f34aa336
+      internalID: -837429359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_78
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 450
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a812929a116cbb346b47fb2b459fa022
+      internalID: -1561660391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_79
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 450
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eb9fea1d191895498264a0c953bf83b
+      internalID: -1553005370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_80
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 450
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb48b94c07aac5e428bdaba0c101d101
+      internalID: -1281409814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_81
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 450
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfc2c44a92f9f1d4492c466601961c1d
+      internalID: -683572028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_82
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 450
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eab73dc269f3b340ad98bab65b9f083
+      internalID: 1689618724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_83
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 450
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 465a8e7f61c97994d80e62437cceb3b7
+      internalID: -1500512788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_84
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 450
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc0fb1877f6d2834ab42965a88a2f9e1
+      internalID: 865263566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_85
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 450
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9629541b238799c4393383a54578ebb6
+      internalID: -1656475940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_86
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 450
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59930571fc5f39c4da6d6d3868067d82
+      internalID: 527875049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_87
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 450
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58a863fccfb89664eb9cc94a8967fa54
+      internalID: -919216797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_88
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 450
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c98708e9eafb6b4489f22643444f9461
+      internalID: 416042910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_89
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 450
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 446c2363d3cba1046b53a5007f8ae137
+      internalID: 2066519248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_90
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 386
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 164621f4d2c126246b5be7760ccef0d9
+      internalID: -1061130818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_91
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 386
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5059dd4940596e640a5f92b230c99cf8
+      internalID: -1019180498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_92
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 386
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b90c1b29a5e0c34a800720a28a9058a
+      internalID: 426659785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_93
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 386
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c20f7a8826da3bb4aaebef691aad3882
+      internalID: 1336931805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_94
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 386
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8484dc07acd20134884fbde7c557e1ff
+      internalID: -2011628394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_95
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 386
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb6652a176b3ad94d9e51c762a016824
+      internalID: -1594117849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_96
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 386
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf810ee2819016c46a06a7de67b1619b
+      internalID: 1199240588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_97
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 386
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2a651dbe474c104d8321db4123151bf
+      internalID: 1526840988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_98
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 386
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 737c91acda7b9f2429ca016e3cce7f5d
+      internalID: 785217743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_99
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 386
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 680b702f15b18ac48af6a71305a724bf
+      internalID: 1869399599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_100
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 386
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed7ffd9b8f3a3594e86fb9fcb1abe0bb
+      internalID: -862407661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_101
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 386
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb3c2f5f22cf9114db2454b6eb552853
+      internalID: -188200054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_102
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 386
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e80467436e389ef48b7fb1e27551426f
+      internalID: -880153249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_103
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 386
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5d4aea7292315e4ab87461173f62731
+      internalID: 1314484549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_104
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 386
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce1827963a8d3734badbca53fdd0400b
+      internalID: -138527417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_105
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 386
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f7348c5e29dc7c4f88d829dc35c3ce8
+      internalID: -1707932471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_106
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 386
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b39d51a32c864e4bb23d26795aef8dd
+      internalID: 922021646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_107
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 386
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fdff35093a471f48b75f2d52575ffe9
+      internalID: 1733794050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_108
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 322
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52cf8066a9fab9f4c87e49faf341ace7
+      internalID: 2030420392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_109
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 322
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b7175e6177cbed4c9d2725163e32fa7
+      internalID: 1560095525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_110
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 322
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2858f7c75163a82459e435d25c673291
+      internalID: 289601179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_111
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 322
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a33d7563806fc48478900b79efb0dedd
+      internalID: 2133041615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_112
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 322
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08f5bafaed17cbe469aa0f2a384f0617
+      internalID: 631646099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_113
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 322
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5273ef75de8046b45b1c242a9f5f2052
+      internalID: -941269012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_114
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 322
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c3e976fa820fc54c96d0e912a9e1377
+      internalID: -1176511147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_115
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 322
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a5003afc8816e34f9cc09cbac22d9ee
+      internalID: -1601027355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_116
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 322
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51f378058f2fc384dab6473d84fa89f7
+      internalID: -503144112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_117
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 322
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8667b8e4a8323c498aff8269342fa06
+      internalID: 891966722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_118
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 322
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d97f35dbf00b78b46a809d3978a2bd11
+      internalID: 1463482111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_119
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 322
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3325aac94a925a9418b31d5d09808f81
+      internalID: 1786159246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_120
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 322
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a359119ab99c5b2408739b1177004617
+      internalID: -748861018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_121
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 322
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 041376dbb66f36742b5507f81ade0f60
+      internalID: -1765527464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_122
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 322
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17cd216f77910f84ba47ff8abda7cc30
+      internalID: 1570111502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_123
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 322
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8536cc45591192f43bcc0be21b1006b6
+      internalID: 180035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_124
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 322
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b9c28f0963afcc4394a212af8a18fcb
+      internalID: -204250031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_125
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 322
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 406d75dad13d9814ebf765f8b7f46457
+      internalID: 293895380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_126
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 258
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b62e6dc700df8f645a84ae4f460c87a5
+      internalID: -1745314518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_127
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 258
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1967dec40025dbb4a9dfc57aecfb31bd
+      internalID: -820820343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_128
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 258
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59fd093e22850a9408ec8f96c4c141ad
+      internalID: 844618087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_129
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 258
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51777f669e2f67b4a933c29bd533c69e
+      internalID: 1676203719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_130
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 258
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eafc6fcbc9ba3164ea79b4dd87ea6c24
+      internalID: 9042692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_131
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 258
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac8e12aae7b448a45b35cead048a7308
+      internalID: 1019499173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_132
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 258
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d41c97232c5d05e49b230326ba252704
+      internalID: -1514111435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_133
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 258
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1886f03bf5e2e064c872934e4fd9623b
+      internalID: -1116862822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_134
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 258
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d99e580deab306149b65f2accf9feb59
+      internalID: -1988135338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_135
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 258
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f00bb0ab63782c041bdf15eea7028c93
+      internalID: 181367226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_136
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 258
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60d6f2420390a7b4bbb14ffaf1de70a9
+      internalID: -372517210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_137
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 258
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f88f31fc630536e4296f5297f7c79a92
+      internalID: -1402681352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_138
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 258
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40273780b8a0940478ce6b5aca14a6d4
+      internalID: -707414904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_139
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 258
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d47a8200792abb74da24e1e58ad5c8d6
+      internalID: 1210306279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_140
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 258
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d5bc852c10263142875cb37752f00bb
+      internalID: 1501678392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_141
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 258
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e67aac695cd34547bf2edbb660d1cb7
+      internalID: 55113105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_142
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 258
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c090b252a2fa22446a9e7eb0543c67a8
+      internalID: -1608582659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_143
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 258
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1de9f23dfc8733e448b18ac23299e2e4
+      internalID: -1741712779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_144
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 194
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 070e118cbbfb82a4ebb1bab9bbb31c58
+      internalID: 1901210054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_145
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 194
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5aded83260a4564da6f9da8a4f6d389
+      internalID: -1625662157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_146
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 194
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1416ce622d8dda419b2a47520ce4348
+      internalID: 1754558339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_147
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 194
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f5c14f488d756543a71cefa8af1a073
+      internalID: -1428852585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_148
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 194
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72c983b400349034ba249e6e510cfeb8
+      internalID: 719913489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_149
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 194
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24543a0559a80b746a83982ef0b42ec0
+      internalID: -478346514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_150
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 194
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 426d6da0c5b411342afd2f6eaf7e3dae
+      internalID: -1935250888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_151
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 194
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 085f3c44828fb6f4da1dcdff1bcda25b
+      internalID: 764562384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_152
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 194
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 214442bcf6085c348a74614d0cfee75e
+      internalID: 1149905045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_153
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 194
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f881402bf5bfac46b6319b818ef5f9c
+      internalID: -1474348662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_154
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 194
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd3281187103e0f42a2db961e00c11b5
+      internalID: 570101328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_155
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 194
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 265298bd7fad4c643a4bdb5a34bc6ad8
+      internalID: 2127283009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_156
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 194
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fa7e32d01f6fc84bb8705d230342be1
+      internalID: 487152035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_157
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 194
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9097ef209c2b1834fa295b20bcac0303
+      internalID: -2015218420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_158
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 194
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65403e0020be71443b22d7f95932457c
+      internalID: 1442783622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_159
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 194
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eefa0a5e0baffe940a984331ab08a079
+      internalID: -214563380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_160
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 194
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60ab2b1664e1e914da33ba4703a67db4
+      internalID: 1664245169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_161
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 194
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13f919d871a60f143a4ef8d292c06f79
+      internalID: 1707264740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_162
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 130
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f79d63b41e97d74c8b241a975bec462
+      internalID: 1266240833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_163
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 130
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 429e27aabfea7f64fb400a726861fadd
+      internalID: -1328428502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_164
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 130
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ac44d15b58c6ec4e966cc573b8a2e61
+      internalID: 2007890128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_165
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 130
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbcb32034fef4c34db3bd2c6448e0c34
+      internalID: -882191446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_166
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 130
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c990eae63bfe3c44d87a63e5b6016667
+      internalID: -887411923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_167
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 130
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cfb3c025f92add468263a4eea398a0f
+      internalID: 1436158440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_168
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 130
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec69f411e5cec4444890170a9c3720ef
+      internalID: -221966123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_169
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 130
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f018e9ac8be7184e9a34e5d45a6ca5d
+      internalID: -729729959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_170
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 130
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a8ef0519ecff2f438f5213460c52315
+      internalID: -2077873648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_171
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 130
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d34f96eadc0b01445857725263a57c21
+      internalID: -613954949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_172
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 130
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbab1782016f08140a4080bdc3007884
+      internalID: -1698978809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_173
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 130
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04148eb5ccbe2bb4b8b0cf8f47e587da
+      internalID: -185983137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_174
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 130
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e143c4aa07cd0844caa6daed6a43a918
+      internalID: -1972666868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_175
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 130
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd0a4c57a84da754da813b4b61dd9715
+      internalID: -373247631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_176
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 130
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9ea350d7345bbb43a85013b3cfba900
+      internalID: -1424122708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_177
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 130
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0a53431e9efc9041989173a2e652d07
+      internalID: 485870704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_178
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 130
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7791d4d3226d7d3408905192746ce4b5
+      internalID: -696044202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_179
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 130
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae1f0f261d16d10468f9b5350cb394fb
+      internalID: 1642135837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_180
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 66
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3520f1f890e0f5241ad32616118cda35
+      internalID: -1591542326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_181
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 66
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5141f3f531171e847b1ac0b61c9ddb98
+      internalID: 322641160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_182
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 66
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a95efdf50ce08b448ac6b731e3f2a24b
+      internalID: 1363768676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_183
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 66
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ac5d624667e84e49b413e30cfea9c6a
+      internalID: 1665542123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_184
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 66
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c405a6b6a1b150f4bb1bdd2821357750
+      internalID: -1895083101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_185
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 66
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fd5782493d8cca4ca7d2a022f373f9a
+      internalID: -179148086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_186
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 66
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d33266d59617f242af118a83e51c47b
+      internalID: -311144297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_187
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 66
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4868c8197a655c148b88e8e6e5c332ed
+      internalID: 736805469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_188
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 66
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16ec8e10a114f724c8c16ace6b8a8f6d
+      internalID: 734464877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_189
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 66
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1287eaab6e3eaf3439fb52fd8ae770eb
+      internalID: 538646788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_190
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 66
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49e5ef756834f214d9ef2472e711b43c
+      internalID: -345500891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_191
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 66
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7da95daa5ab9aa3479dd6a8e1c688834
+      internalID: 1569862700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_192
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 66
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71efdee742999d74b8a819fc9633e010
+      internalID: 378821057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_193
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 66
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7d61dfea2efca44f8c898990e7d1a8c
+      internalID: 1650609485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_194
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 66
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70435bf077b33254c8849aeded8a4e8f
+      internalID: 494184878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_195
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 66
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7958e5abe242b54daca5acf35b422ff
+      internalID: -238879994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_196
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 66
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bde762e9e556f9449a06f3644c516c5a
+      internalID: -2110736048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_197
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 66
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f9a069b4e1df20499d2823562aa30d1
+      internalID: -1371205686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_198
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf6087a4daa51934481e8945c46a70c3
+      internalID: -642673639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_199
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 2
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1097efc76921cd41b8bebaa85c220fb
+      internalID: 819146228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_200
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 2
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09c747f875f21bb46b7518a8a17ca275
+      internalID: -770131693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_201
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 2
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73b44dfc29d56f743a53203af6f3bd2e
+      internalID: 1668892033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_202
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 2
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43a87e9810fc4e3469ca1c1dcd9c46e7
+      internalID: 24753495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_203
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 2
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8b04f6bca5b57f43886985fd7d2633d
+      internalID: 670195081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_204
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 2
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46e9752ec362b65498d7e191ff649fc9
+      internalID: 154213106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_205
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 2
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c850577da0ff4142a405c3e18a83b68
+      internalID: -523084524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_206
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d049dd2bb15c0747ba87f3c3eb271b3
+      internalID: 670497688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_207
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 2
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22290f6347f9fea40ab09fce38855ddc
+      internalID: -2068136355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_208
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 2
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe15b9a8865aac54a879a957f96eacb9
+      internalID: 1960336542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_209
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 2
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 002867c03b7e34e4493f4d3d85ae6d6f
+      internalID: 2058360831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_210
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 2
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93184435d2789e649bfb38cd4b9e7cbf
+      internalID: -1392078359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_211
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 2
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a133da8730928a04c861bc0bc884a3fe
+      internalID: 1340443601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_212
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 2
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a791278ec9d45ac46a72e6c9618f95b1
+      internalID: 2084831398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_213
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 2
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 130e6001d8fc8a24db8ec396dcf0eb95
+      internalID: 268281572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_214
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 2
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfaf849fedda59a48b26b6c5ac5e1b24
+      internalID: -502492960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CimitirulBelu2_215
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 2
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b9750858336b174f861351264803a87
+      internalID: -338019336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      CimitirulBelu2_3: 1320236716
+      CimitirulBelu2_50: 135950696
+      CimitirulBelu2_135: 181367226
+      CimitirulBelu2_92: 426659785
+      CimitirulBelu2_210: -1392078359
+      CimitirulBelu2_22: 314001546
+      CimitirulBelu2_56: 334510408
+      CimitirulBelu2_91: -1019180498
+      CimitirulBelu2_161: 1707264740
+      CimitirulBelu2_114: -1176511147
+      CimitirulBelu2_116: -503144112
+      CimitirulBelu2_186: -311144297
+      CimitirulBelu2_37: -1566237277
+      CimitirulBelu2_90: -1061130818
+      CimitirulBelu2_77: -837429359
+      CimitirulBelu2_127: -820820343
+      CimitirulBelu2_128: 844618087
+      CimitirulBelu2_212: 2084831398
+      CimitirulBelu2_132: -1514111435
+      CimitirulBelu2_33: 1293641513
+      CimitirulBelu2_28: -483102113
+      CimitirulBelu2_94: -2011628394
+      CimitirulBelu2_34: 1572961157
+      CimitirulBelu2_146: 1754558339
+      CimitirulBelu2_160: 1664245169
+      CimitirulBelu2_87: -919216797
+      CimitirulBelu2_5: -623284595
+      CimitirulBelu2_147: -1428852585
+      CimitirulBelu2_211: 1340443601
+      CimitirulBelu2_20: 1702624467
+      CimitirulBelu2_16: -2136385663
+      CimitirulBelu2_183: 1665542123
+      CimitirulBelu2_73: 22714814
+      CimitirulBelu2_9: -671165715
+      CimitirulBelu2_12: 72809504
+      CimitirulBelu2_109: 1560095525
+      CimitirulBelu2_55: 83898243
+      CimitirulBelu2_30: -1323841802
+      CimitirulBelu2_187: 736805469
+      CimitirulBelu2_137: -1402681352
+      CimitirulBelu2_41: -2055725825
+      CimitirulBelu2_150: -1935250888
+      CimitirulBelu2_70: 60933721
+      CimitirulBelu2_170: -2077873648
+      CimitirulBelu2_23: 769300067
+      CimitirulBelu2_57: -751528748
+      CimitirulBelu2_102: -880153249
+      CimitirulBelu2_15: -801782682
+      CimitirulBelu2_180: -1591542326
+      CimitirulBelu2_61: 392487054
+      CimitirulBelu2_52: 1638137451
+      CimitirulBelu2_121: -1765527464
+      CimitirulBelu2_32: -1081502582
+      CimitirulBelu2_83: -1500512788
+      CimitirulBelu2_203: 670195081
+      CimitirulBelu2_168: -221966123
+      CimitirulBelu2_21: -881112278
+      CimitirulBelu2_111: 2133041615
+      CimitirulBelu2_35: -400452174
+      CimitirulBelu2_164: 2007890128
+      CimitirulBelu2_106: 922021646
+      CimitirulBelu2_145: -1625662157
+      CimitirulBelu2_185: -179148086
+      CimitirulBelu2_25: 1915734521
+      CimitirulBelu2_29: -521674037
+      CimitirulBelu2_200: -770131693
+      CimitirulBelu2_215: -338019336
+      CimitirulBelu2_78: -1561660391
+      CimitirulBelu2_10: 1719832282
+      CimitirulBelu2_108: 2030420392
+      CimitirulBelu2_213: 268281572
+      CimitirulBelu2_74: 1201350074
+      CimitirulBelu2_148: 719913489
+      CimitirulBelu2_131: 1019499173
+      CimitirulBelu2_192: 378821057
+      CimitirulBelu2_179: 1642135837
+      CimitirulBelu2_207: -2068136355
+      CimitirulBelu2_209: 2058360831
+      CimitirulBelu2_84: 865263566
+      CimitirulBelu2_198: -642673639
+      CimitirulBelu2_38: 104888498
+      CimitirulBelu2_184: -1895083101
+      CimitirulBelu2_96: 1199240588
+      CimitirulBelu2_130: 9042692
+      CimitirulBelu2_88: 416042910
+      CimitirulBelu2_81: -683572028
+      CimitirulBelu2_133: -1116862822
+      CimitirulBelu2_159: -214563380
+      CimitirulBelu2_85: -1656475940
+      CimitirulBelu2_208: 1960336542
+      CimitirulBelu2_190: -345500891
+      CimitirulBelu2_39: -170695333
+      CimitirulBelu2_165: -882191446
+      CimitirulBelu2_139: 1210306279
+      CimitirulBelu2_140: 1501678392
+      CimitirulBelu2_18: -1589984756
+      CimitirulBelu2_123: 180035
+      CimitirulBelu2_54: -284378185
+      CimitirulBelu2_204: 154213106
+      CimitirulBelu2_63: -2012429895
+      CimitirulBelu2_119: 1786159246
+      CimitirulBelu2_40: -1006503186
+      CimitirulBelu2_43: 889969238
+      CimitirulBelu2_188: 734464877
+      CimitirulBelu2_64: -419728018
+      CimitirulBelu2_153: -1474348662
+      CimitirulBelu2_65: -1129223949
+      CimitirulBelu2_163: -1328428502
+      CimitirulBelu2_197: -1371205686
+      CimitirulBelu2_126: -1745314518
+      CimitirulBelu2_46: -1269453620
+      CimitirulBelu2_68: 1322682865
+      CimitirulBelu2_167: 1436158440
+      CimitirulBelu2_45: 1880256481
+      CimitirulBelu2_98: 785217743
+      CimitirulBelu2_47: -1183846349
+      CimitirulBelu2_59: 923927547
+      CimitirulBelu2_169: -729729959
+      CimitirulBelu2_8: 1850541625
+      CimitirulBelu2_51: -1150778492
+      CimitirulBelu2_177: 485870704
+      CimitirulBelu2_171: -613954949
+      CimitirulBelu2_75: -1859274845
+      CimitirulBelu2_181: 322641160
+      CimitirulBelu2_104: -138527417
+      CimitirulBelu2_97: 1526840988
+      CimitirulBelu2_158: 1442783622
+      CimitirulBelu2_174: -1972666868
+      CimitirulBelu2_93: 1336931805
+      CimitirulBelu2_14: -1350268598
+      CimitirulBelu2_36: -690898486
+      CimitirulBelu2_86: 527875049
+      CimitirulBelu2_95: -1594117849
+      CimitirulBelu2_42: 1585767892
+      CimitirulBelu2_62: 206191633
+      CimitirulBelu2_194: 494184878
+      CimitirulBelu2_60: -938919514
+      CimitirulBelu2_67: -1827817056
+      CimitirulBelu2_143: -1741712779
+      CimitirulBelu2_152: 1149905045
+      CimitirulBelu2_53: 2043995502
+      CimitirulBelu2_71: -222887726
+      CimitirulBelu2_162: 1266240833
+      CimitirulBelu2_1: 508038353
+      CimitirulBelu2_4: -1963494881
+      CimitirulBelu2_13: 2020852035
+      CimitirulBelu2_103: 1314484549
+      CimitirulBelu2_122: 1570111502
+      CimitirulBelu2_100: -862407661
+      CimitirulBelu2_44: 2106307649
+      CimitirulBelu2_205: -523084524
+      CimitirulBelu2_0: 1443369343
+      CimitirulBelu2_49: -2010595314
+      CimitirulBelu2_202: 24753495
+      CimitirulBelu2_144: 1901210054
+      CimitirulBelu2_27: -1747999584
+      CimitirulBelu2_138: -707414904
+      CimitirulBelu2_154: 570101328
+      CimitirulBelu2_199: 819146228
+      CimitirulBelu2_125: 293895380
+      CimitirulBelu2_2: -146588335
+      CimitirulBelu2_149: -478346514
+      CimitirulBelu2_189: 538646788
+      CimitirulBelu2_99: 1869399599
+      CimitirulBelu2_11: 1151032289
+      CimitirulBelu2_124: -204250031
+      CimitirulBelu2_175: -373247631
+      CimitirulBelu2_201: 1668892033
+      CimitirulBelu2_156: 487152035
+      CimitirulBelu2_107: 1733794050
+      CimitirulBelu2_166: -887411923
+      CimitirulBelu2_214: -502492960
+      CimitirulBelu2_178: -696044202
+      CimitirulBelu2_129: 1676203719
+      CimitirulBelu2_151: 764562384
+      CimitirulBelu2_191: 1569862700
+      CimitirulBelu2_48: -1980818770
+      CimitirulBelu2_76: -338043003
+      CimitirulBelu2_136: -372517210
+      CimitirulBelu2_7: 2073210199
+      CimitirulBelu2_112: 631646099
+      CimitirulBelu2_26: -169250174
+      CimitirulBelu2_157: -2015218420
+      CimitirulBelu2_193: 1650609485
+      CimitirulBelu2_101: -188200054
+      CimitirulBelu2_206: 670497688
+      CimitirulBelu2_72: 1640487510
+      CimitirulBelu2_66: 750768982
+      CimitirulBelu2_113: -941269012
+      CimitirulBelu2_79: -1553005370
+      CimitirulBelu2_120: -748861018
+      CimitirulBelu2_134: -1988135338
+      CimitirulBelu2_142: -1608582659
+      CimitirulBelu2_19: 61960414
+      CimitirulBelu2_110: 289601179
+      CimitirulBelu2_141: 55113105
+      CimitirulBelu2_69: -1425874827
+      CimitirulBelu2_82: 1689618724
+      CimitirulBelu2_117: 891966722
+      CimitirulBelu2_24: 673117397
+      CimitirulBelu2_6: 753335774
+      CimitirulBelu2_31: -1133566024
+      CimitirulBelu2_155: 2127283009
+      CimitirulBelu2_118: 1463482111
+      CimitirulBelu2_195: -238879994
+      CimitirulBelu2_196: -2110736048
+      CimitirulBelu2_182: 1363768676
+      CimitirulBelu2_58: 1680512272
+      CimitirulBelu2_105: -1707932471
+      CimitirulBelu2_173: -185983137
+      CimitirulBelu2_17: -954676681
+      CimitirulBelu2_80: -1281409814
+      CimitirulBelu2_172: -1698978809
+      CimitirulBelu2_176: -1424122708
+      CimitirulBelu2_115: -1601027355
+      CimitirulBelu2_89: 2066519248
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
