@@ -7992,7 +7992,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogManager: {fileID: 762870340}
   mainCharacterMovement: {fileID: 1473946217}
-  EminescuAnimator: {fileID: 1143255502}
+  eminescuAnimator: {fileID: 1143255502}
 --- !u!1 &1317093868
 GameObject:
   m_ObjectHideFlags: 0
