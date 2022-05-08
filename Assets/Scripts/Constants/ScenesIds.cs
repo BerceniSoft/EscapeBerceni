@@ -2,6 +2,9 @@ namespace Constants
 {
     public static class ScenesIds
     {
-        public const int CimitirulBelu1 = 0;
+        public const int CimitirulBeluStart = 0;
+
+        public const int CimitirulBeluTombs = 1;
+        
     }
 }

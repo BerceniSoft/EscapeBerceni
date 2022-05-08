@@ -17,13 +17,13 @@ namespace Scenes
 
         public static SceneStorage GetInstance() => _instance ??= new SceneStorage();
 
-        public void AddKey(int sceneId, string key, string value)
+        public void SetKey(int sceneId, string key, string value)
         {
             Dictionary<string,string> sceneStorage;
             try 
             {
                 sceneStorage = _storage[sceneId];
-                sceneStorage.Add(key, value);
+                sceneStorage[key] = value;
             } 
             catch (Exception)
             {

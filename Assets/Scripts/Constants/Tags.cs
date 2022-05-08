@@ -4,5 +4,6 @@ namespace Constants
    {
       public const string DialogBoxTag = "DialogBox";
       public const string DialogBoxAnswersGroupTag = "DialogBoxAnswersGroup";
+      public const string SpriteContainerTag = "SpriteContainer";
    }
 }

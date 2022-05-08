@@ -29,6 +29,28 @@ namespace Dialog
             onDone?.Invoke();
         }
 
+        private void Start()
+        {
+            currentDialogLineIndex = 0;
+        }
+
+        public void ShowDialog()
+        {
+            OnBeginDialog();
+            var dialogLineInfo = dialogTree.GetDialogLine(currentDialogLineIndex);
+            StartCoroutine(
+                dialogBox.ShowDialog(
+                    dialogLineInfo.DialogLine,
+                    dialogLineInfo.SpeakerName,
+                    dialogLineInfo.Answers,
+                    () => OnEndDialog(null)
+                )
+            );
+
+            // Increment the dialog line index so we get the next line next time around
+            currentDialogLineIndex++;
+        }
+
         // Skip to a particular line
         public void ShowDialog(int lineIndex)
         {
