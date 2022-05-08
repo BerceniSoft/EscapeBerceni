@@ -1,3 +1,4 @@
+using System;
 using Constants;
 using Dialog;
 using Enums;
@@ -40,6 +41,14 @@ namespace Movement
             // When resumed, the next call to update will set back the velocity
             SetVelocity(new Vector2(0, 0));
             SetWalkingAnimation(false);
+        }
+
+        public void StopMovement()
+        {
+            SetVelocity(new Vector2(0, 0));
+            SetWalkingAnimation(false);
+            _currentTargetPosition = transform.position;
+            isMoving = false;
         }
 
         public void ResumeMovement()
@@ -137,6 +146,16 @@ namespace Movement
 
             // We have a destination so we are moving
             MoveTo((Vector2) _currentTargetPosition);
+        }
+
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            if (other.gameObject.layer == LayerMask.NameToLayer(Layers.ObstacleLayer))
+            {
+                // Hit an obstacle
+                // Stop the movement
+                StopMovement();
+            }
         }
     }
 }
