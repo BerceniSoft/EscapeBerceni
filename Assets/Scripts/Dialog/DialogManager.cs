@@ -36,7 +36,6 @@ namespace Dialog
 
         public void ShowDialog(Action onDone = null)
         {
-            print($"Showing dialog: {currentDialogLineIndex}");
             OnBeginDialog();
             var dialogLineInfo = dialogTree.GetDialogLine(currentDialogLineIndex);
             StartCoroutine(
@@ -44,13 +43,13 @@ namespace Dialog
                     dialogLineInfo.DialogLine,
                     dialogLineInfo.SpeakerName,
                     dialogLineInfo.Answers?.Select(x => x.Item1).ToList(),
-                    () => OnEndDialog(onDone)
+                    () => OnEndDialog(() =>
+                    {
+                        currentDialogLineIndex++;
+                        onDone?.Invoke();
+                    })
                 )
             );
-
-            // Increment the dialog line index so we get the next line next time around
-            currentDialogLineIndex++;
-            print(currentDialogLineIndex);
         }
 
         public void ShowDialog(int lineIndex, Action onDone = null)

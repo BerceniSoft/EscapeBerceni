@@ -1,13 +1,10 @@
-using System;
 using System.Collections;
-using System.Threading.Tasks;
 using Constants;
 using Dialog;
 using Movement;
 using UnityEngine;
-using UnityEngine.Serialization;
 
-namespace Scenes
+namespace Scenes.Level2
 {
     public class CimitirulBeluStartCoordinator : MonoBehaviour
     {
@@ -44,7 +41,7 @@ namespace Scenes
             }
         }
 
-        void ShowDialog()
+        private void ShowDialog()
         {
             dialogManager.ShowDialog(() => StartCoroutine(OnDialogLineEnded()));
         }

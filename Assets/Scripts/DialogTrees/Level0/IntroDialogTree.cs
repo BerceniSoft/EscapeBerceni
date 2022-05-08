@@ -1,9 +1,6 @@
-using System;
-using System.Collections.Generic;
-using Constants;
 using Dialog;
 
-namespace DialogTrees
+namespace DialogTrees.Level0
 {
     public class IntroDialogTree : AbstractDialogTree
     {
@@ -27,17 +24,7 @@ namespace DialogTrees
                 new DialogLineInfo
                 {
                     DialogLine = "Acest test nu ar trebui să fie problemă pentru tine, căci ești un tânăr student care pornește spre facultate…",
-                },
-                new DialogLineInfo
-                {
-                    DialogLine = "Indiciile zilei sunt: Carol, Bellu, Tineretului, Copii și Brâncoveanu.",
-                    SpeakerName = Speakers.Megaphone
-                },
-                new DialogLineInfo
-                {
-                    DialogLine = "Hmm… Cred că se referă la Mausoleul din Parcul Carol, Cimitirul Bellu, Lacul Tineretului, Orășelul Copiilor și la stația de metrou Constantin Brâncoveanu.",
-                    SpeakerName = Speakers.Player
-                },
+                }
             };
         }
     }

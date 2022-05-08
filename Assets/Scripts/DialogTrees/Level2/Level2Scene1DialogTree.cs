@@ -5,7 +5,7 @@ using Dialog;
 
 namespace DialogTrees
 {
-    public class Level3Scene1DialogTree : AbstractDialogTree
+    public class Level2Scene1DialogTree : AbstractDialogTree
     {
         private void Awake()
         {

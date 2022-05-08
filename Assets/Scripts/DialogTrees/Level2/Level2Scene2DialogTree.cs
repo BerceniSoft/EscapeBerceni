@@ -1,11 +1,11 @@
 using Constants;
 using Dialog;
 
-namespace DialogTrees
+namespace DialogTrees.Level2
 {
-    public class Level3Scene2DialogTree : AbstractDialogTree
+    public class Level2Scene2DialogTree : AbstractDialogTree
     {
-        public Level3Scene2DialogTree()
+        public Level2Scene2DialogTree()
         {
             dialogLineInfos = new[]
             {

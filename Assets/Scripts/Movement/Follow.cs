@@ -11,9 +11,8 @@ namespace Movement
         public Followable target;
         public float distanceToTarget;
 
-        protected override void Start()
+        private void Start()
         {
-            base.Start();
             // Align the orientation of this game object to the target
             var targetSpriteOrientation = target.GetSpriteOrientation();
             SetSpriteOrientation(targetSpriteOrientation);

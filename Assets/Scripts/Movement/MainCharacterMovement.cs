@@ -20,17 +20,15 @@ namespace Movement
         private bool _allowTargetPositionOverride = true;
         private bool _preventMovement;
 
-        private void Awake()
+        protected override void Awake()
         {
+            base.Awake();
+
             if (camera == null)
             {
                 camera = Camera.main;
             }
-        }
 
-        protected override void Start()
-        {
-            base.Start();
             _anim = GetComponent<Animator>();
         }
 

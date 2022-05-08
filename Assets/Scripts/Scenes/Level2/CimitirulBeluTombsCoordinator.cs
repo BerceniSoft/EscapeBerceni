@@ -3,7 +3,7 @@ using Dialog;
 using Movement;
 using UnityEngine;
 
-namespace Scenes
+namespace Scenes.Level2
 {
     public class CimitirulBeluTombsCoordinator : MonoBehaviour
     {

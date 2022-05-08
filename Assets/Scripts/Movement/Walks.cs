@@ -1,4 +1,5 @@
-﻿using Constants;
+﻿using System;
+using Constants;
 using Enums;
 using UnityEngine;
 
@@ -26,7 +27,7 @@ namespace Movement
             }
         }
 
-        protected virtual void Start()
+        protected virtual void Awake()
         {
             _rigidBody2D = GetComponent<Rigidbody2D>();
             currentSpriteOrientation = initialSpriteOrientation;
