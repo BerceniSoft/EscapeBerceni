@@ -14,19 +14,21 @@ namespace Scenes
         private const string IsFirstLoadKey = "IS_FIRST_LOAD";
         private const string HasPlayerEnteredKey = "HAS_PLAYER_ENTERED";
 
-        [SerializeField] private DialogManager dialogManager;
+        [SerializeField]
+        private DialogManager dialogManager;
 
-        [SerializeField] private MainCharacterMovement mainCharacterMovement;
+        [SerializeField]
+        private MainCharacterMovement mainCharacterMovement;
 
         private static readonly int ThugLifeAnimParamId = Animator.StringToHash("ThugLife");
-        private static readonly float ThugLifeAnimationDurationAndDelay = 1.6f;
+        private const float ThugLifeAnimationDurationAndDelay = 1.6f;
         private SceneStorage _sceneStorage;
         public Animator eminescuAnimator;
 
         private IEnumerator OnDialogLineEnded()
         {
             //  We'll show all 8 dialog lines one after the other
-            if (dialogManager.currentDialogLineIndex < 8)
+            if (dialogManager.currentDialogLineIndex < dialogManager.dialogTree.DialogLineInfos.Length)
             {
                 dialogManager.ShowDialog(() => StartCoroutine(OnDialogLineEnded()));
             }
@@ -34,11 +36,7 @@ namespace Scenes
             {
                 // Done with the intro
                 _sceneStorage.SetKey(ScenesIds.CimitirulBeluStart, IsFirstLoadKey, "false");
-            }
 
-            if (this.dialogManager.currentDialogLineIndex == 8)
-            {
-                // Show the ThugLife animation
                 eminescuAnimator.SetBool(ThugLifeAnimParamId, true);
                 // After the transition is done, revert to the floating animation
                 yield return new WaitForSeconds(ThugLifeAnimationDurationAndDelay);
@@ -48,7 +46,7 @@ namespace Scenes
 
         void ShowDialog()
         {
-            this.dialogManager.ShowDialog(() => StartCoroutine(OnDialogLineEnded()));
+            dialogManager.ShowDialog(() => StartCoroutine(OnDialogLineEnded()));
         }
 
         private void Start()
@@ -70,7 +68,7 @@ namespace Scenes
                 }
 
                 // After the movement is done, show the dialog
-                if (!dialogManager.IsDialogBeingShown && !mainCharacterMovement.isMoving)
+                if (!dialogManager.IsDialogBeingShown && !mainCharacterMovement.IsMoving)
                 {
                     ShowDialog();
                 }

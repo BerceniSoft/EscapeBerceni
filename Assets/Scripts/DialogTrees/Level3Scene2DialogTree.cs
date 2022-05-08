@@ -1,29 +1,20 @@
-using System.Collections;
-using System.Collections.Generic;
+using Constants;
 using Dialog;
-using DialogTrees;
-using UnityEngine;
 
-public class Level3Scene2DialogTree : AbstractDialogTree
+namespace DialogTrees
 {
-    public override int OnDialogOptionPicked(int optionIndex, int dialogLineIndex)
+    public class Level3Scene2DialogTree : AbstractDialogTree
     {
-        // No option dialog in this scene
-        return -1;
-    }
-
-    public override DialogLineInfo GetDialogLine(int dialogLineIndex)
-    {
-        switch (dialogLineIndex)
+        public Level3Scene2DialogTree()
         {
-            case 0:
+            dialogLineInfos = new[]
             {
-                return new DialogLineInfo("Nu poti fugi de mine tinere!", "Eminescu", null);
-            }
-            default:
-            {
-                return new DialogLineInfo("", "", null);
-            }
+                new DialogLineInfo
+                {
+                    DialogLine = "Nu poți fugi de mine, tinere!",
+                    SpeakerName = Speakers.Eminescu
+                }
+            };
         }
     }
 }

@@ -1,33 +1,34 @@
-using Constants;
-using Dialog;
 using Enums;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace Movement
 {
     public class MainCharacterMovement : Followable
-
     {
-        public bool isMoving = false;
+        public bool IsMoving { get; private set; } = false;
 
-        [SerializeField] private float movementSpeed = 3.0f;
+        [SerializeField]
+        private float movementSpeed = 3.0f;
+
+        [SerializeField]
+        private new Camera camera;
 
         private Vector2? _currentTargetPosition;
-
         private Animator _anim;
 
         // If false, mouse movement won't be able to change the target position
         private bool _allowTargetPositionOverride = true;
         private bool _preventMovement;
 
-        private void SetWalkingAnimation(bool isWalking)
+        private void Awake()
         {
-            _anim.SetBool("IsWalking", isWalking);
+            if (camera == null)
+            {
+                camera = Camera.main;
+            }
         }
 
-
-        override protected void Start()
+        protected override void Start()
         {
             base.Start();
             _anim = GetComponent<Animator>();
@@ -50,6 +51,13 @@ namespace Movement
                 return;
             }
 
+            if (Input.GetMouseButtonDown(0) && _allowTargetPositionOverride)
+            {
+                // Left clicked was pressed. Change the target position
+                // The input is taken in screen space so convert in world space
+                _currentTargetPosition = camera.ScreenToWorldPoint(Input.mousePosition);
+            }
+
             if (_currentTargetPosition == null)
             {
                 // No need to move
@@ -57,8 +65,12 @@ namespace Movement
             }
 
             // We have a destination so we are moving
-            IsMoving = true;
-            MoveTo((Vector2)_currentTargetPosition);
+            MoveTo((Vector2) _currentTargetPosition);
+        }
+
+        private void SetWalkingAnimation(bool isWalking)
+        {
+            _anim.SetBool("IsWalking", isWalking);
         }
 
         public void PauseMovement()
@@ -81,12 +93,11 @@ namespace Movement
 
         private void MoveTo(Vector2 destination)
         {
-            if (isMoving == false)
+            if (IsMoving == false)
             {
                 SetWalkingAnimation(true);
-                isMoving = true;
+                IsMoving = true;
             }
-
 
             Vector2 currentPos = transform.position;
             var distance = destination - currentPos;
@@ -95,7 +106,7 @@ namespace Movement
             var movement = distance;
 
             // Get the direction to see if we need to flip the asset
-            var dir = _currentSpriteOrientation;
+            var dir = currentSpriteOrientation;
             if (currentPos.x < destination.x)
             {
                 dir = SpriteOrientation.Right;
@@ -105,7 +116,7 @@ namespace Movement
                 dir = SpriteOrientation.Left;
             }
 
-            if (dir != _currentSpriteOrientation)
+            if (dir != currentSpriteOrientation)
             {
                 SetSpriteOrientation(dir);
             }
@@ -123,8 +134,8 @@ namespace Movement
 
             if (movement.x == 0 && movement.y == 0)
             {
-                // Destination reached          
-                isMoving = false;
+                // Destination reached
+                IsMoving = false;
                 SetWalkingAnimation(false);
                 _currentTargetPosition = null;
 
@@ -141,30 +152,6 @@ namespace Movement
             _currentTargetPosition = destination;
             _allowTargetPositionOverride = allowOverride;
             MoveTo(destination);
-        }
-
-        private void FixedUpdate()
-        {
-            if (_preventMovement)
-            {
-                return;
-            }
-
-            if (Input.GetMouseButtonDown(0) && _allowTargetPositionOverride)
-            {
-                // Left clicked was pressed. Change the target position
-                // The input is taken in screen space so convert in world space
-                _currentTargetPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            }
-
-            if (_currentTargetPosition == null)
-            {
-                // No need to move
-                return;
-            }
-
-            // We have a destination so we are moving
-            MoveTo((Vector2) _currentTargetPosition);
         }
     }
 }

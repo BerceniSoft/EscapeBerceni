@@ -4,20 +4,20 @@ using UnityEngine;
 
 namespace Movement
 {
-    public class Walks:MonoBehaviour
+    public class Walks : MonoBehaviour
     {
-        protected SpriteOrientation _currentSpriteOrientation;
         // The GameObject that holds all the sprite renderer components
         private Transform _spriteContainer;
         private Rigidbody2D _rigidBody2D;
 
+        protected SpriteOrientation currentSpriteOrientation;
 
         public SpriteOrientation initialSpriteOrientation;
 
         protected void SetSpriteOrientation(SpriteOrientation spriteOrientation)
         {
-            _currentSpriteOrientation = spriteOrientation;
-            
+            currentSpriteOrientation = spriteOrientation;
+
             var shouldBeFlipped = spriteOrientation != initialSpriteOrientation;
             if (_spriteContainer != null)
             {
@@ -25,11 +25,11 @@ namespace Movement
                 _spriteContainer.localScale = new Vector3(shouldBeFlipped ? -1 : 1, 1, 1);
             }
         }
-        
-        virtual protected void Start()
+
+        protected virtual void Start()
         {
             _rigidBody2D = GetComponent<Rigidbody2D>();
-            _currentSpriteOrientation = initialSpriteOrientation;
+            currentSpriteOrientation = initialSpriteOrientation;
             foreach (Transform child in transform)
             {
                 if (child.CompareTag(Tags.SpriteContainerTag))
