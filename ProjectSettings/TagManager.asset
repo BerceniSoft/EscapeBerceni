@@ -44,11 +44,11 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Characters
-    uniqueID: 3191708033
-    locked: 0
   - name: Interactable
     uniqueID: 971164331
+    locked: 0
+  - name: Characters
+    uniqueID: 3191708033
     locked: 0
   - name: Main Character
     uniqueID: 190782413

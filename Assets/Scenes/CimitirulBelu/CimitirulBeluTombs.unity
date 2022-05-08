@@ -239,6 +239,10 @@ PrefabInstance:
       propertyPath: dialogManager
       value: 
       objectReference: {fileID: 474697204}
+    - target: {fileID: 4826646188117395276, guid: 826a722d8d37cef489168845937518a3, type: 3}
+      propertyPath: mainCharacterMovement
+      value: 
+      objectReference: {fileID: 1056078720}
     - target: {fileID: 6022592289528475111, guid: 826a722d8d37cef489168845937518a3, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -630,6 +634,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Character
       objectReference: {fileID: 0}
+    - target: {fileID: 7514403176821013547, guid: 776c7cd5fda8602478c60f1769056a1f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7514403176821013548, guid: 776c7cd5fda8602478c60f1769056a1f, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -817,6 +825,10 @@ PrefabInstance:
       propertyPath: dialogManager
       value: 
       objectReference: {fileID: 474697204}
+    - target: {fileID: 4826646188117395276, guid: 826a722d8d37cef489168845937518a3, type: 3}
+      propertyPath: mainCharacterMovement
+      value: 
+      objectReference: {fileID: 1056078720}
     - target: {fileID: 6022592289528475111, guid: 826a722d8d37cef489168845937518a3, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -3736,6 +3748,10 @@ PrefabInstance:
       propertyPath: dialogManager
       value: 
       objectReference: {fileID: 474697204}
+    - target: {fileID: 4826646188117395276, guid: 826a722d8d37cef489168845937518a3, type: 3}
+      propertyPath: mainCharacterMovement
+      value: 
+      objectReference: {fileID: 1056078720}
     - target: {fileID: 6022592289528475111, guid: 826a722d8d37cef489168845937518a3, type: 3}
       propertyPath: m_RootOrder
       value: 5

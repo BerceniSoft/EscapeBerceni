@@ -10,7 +10,7 @@ namespace Interactable
 
         protected override void OnInteract()
         {
-            dialogManager.ShowDialog(dialogLine);
+            dialogManager.ShowDialog(dialogLine,StopInteraction);
         }
     }
 }

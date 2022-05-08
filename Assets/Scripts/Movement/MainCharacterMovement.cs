@@ -51,6 +51,13 @@ namespace Movement
             isMoving = false;
         }
 
+        public bool CanMoveOnClick()
+        {
+            // If the character doesn't have its movement paused and target position override is allowed,
+            // then clicking on a point will result in movement
+            return !_preventMovement && _allowTargetPositionOverride;
+        }
+
         public void ResumeMovement()
         {
             _preventMovement = false;
