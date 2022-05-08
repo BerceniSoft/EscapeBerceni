@@ -1,20 +1,18 @@
 using System;
+using Interactable;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 namespace Scenes
 {
-    public class Teleporter : MonoBehaviour
+    public class Teleporter : AbstractInteractableHandler
     {
         [SerializeField]
         private string nextSceneName;
 
-        private void OnTriggerEnter2D(Collider2D collision)
+        protected override void OnInteract()
         {
-            if (collision.gameObject.CompareTag("Player"))
-            {
-                SceneManager.LoadScene(nextSceneName);
-            }
+            SceneManager.LoadScene(nextSceneName);
         }
     }
 }

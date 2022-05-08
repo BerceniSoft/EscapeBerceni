@@ -684,6 +684,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed610b00552247adb6a0f36af3aced9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainCharacterMovement: {fileID: 1120879858}
   nextSceneName: Mausoleu
 --- !u!61 &324307454
 BoxCollider2D:
