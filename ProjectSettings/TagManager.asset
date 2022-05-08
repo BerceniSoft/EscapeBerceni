@@ -6,6 +6,7 @@ TagManager:
   tags:
   - DialogBox
   - DialogBoxAnswersGroup
+  - SpriteContainer
   layers:
   - Default
   - TransparentFX
@@ -14,9 +15,9 @@ TagManager:
   - Water
   - UI
   - Background
-  - 
+  - Obstacle
   - Characters
-  - 
+  - Main Character
   - 
   - 
   - 
@@ -42,6 +43,9 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Interactable
+    uniqueID: 971164331
     locked: 0
   - name: Characters
     uniqueID: 3191708033

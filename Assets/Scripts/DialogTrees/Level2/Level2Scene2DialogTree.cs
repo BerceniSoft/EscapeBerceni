@@ -13,6 +13,21 @@ namespace DialogTrees.Level2
                 {
                     DialogLine = "Nu poți fugi de mine, tinere!",
                     SpeakerName = Speakers.Eminescu
+                },
+                new DialogLineInfo
+                {
+                    DialogLine = "Informații despre mormânt",
+                    SpeakerName = Speakers.Grave1
+                },
+                new DialogLineInfo
+                {
+                    DialogLine = "Informații despre mormânt",
+                    SpeakerName = Speakers.Grave1
+                },
+                new DialogLineInfo
+                {
+                    DialogLine = "Informații despre mormânt",
+                    SpeakerName = Speakers.Grave1
                 }
             };
         }

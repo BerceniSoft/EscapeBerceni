@@ -62,8 +62,8 @@ namespace Dialog
         {
             currentDialogLineIndex = dialogTree.OnDialogOptionPicked(
                 optionIndex,
-                currentDialogLineIndex - 1 // ShowDialog skips to next line before picking option
-            );
+                currentDialogLineIndex
+            ) - 1; // Subtracting 1 is needed because onDone increments after this.
         }
 
         public void HideDialogBox()

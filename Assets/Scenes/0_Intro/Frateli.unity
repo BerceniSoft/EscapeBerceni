@@ -1333,6 +1333,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: IntroDialogTree
       objectReference: {fileID: 0}
+    - target: {fileID: 6638425347767452589, guid: 055d2b2d872281745b5ba630ba829287, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6638425347767452591, guid: 055d2b2d872281745b5ba630ba829287, type: 3}
       propertyPath: m_IsActive
       value: 1

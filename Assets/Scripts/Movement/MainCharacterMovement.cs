@@ -1,3 +1,6 @@
+using System;
+using Constants;
+using Dialog;
 using Enums;
 using UnityEngine;
 
@@ -42,30 +45,6 @@ namespace Movement
             }
         }
 
-        private void FixedUpdate()
-        {
-            if (_preventMovement)
-            {
-                return;
-            }
-
-            if (Input.GetMouseButtonDown(0) && _allowTargetPositionOverride)
-            {
-                // Left clicked was pressed. Change the target position
-                // The input is taken in screen space so convert in world space
-                _currentTargetPosition = camera.ScreenToWorldPoint(Input.mousePosition);
-            }
-
-            if (_currentTargetPosition == null)
-            {
-                // No need to move
-                return;
-            }
-
-            // We have a destination so we are moving
-            MoveTo((Vector2) _currentTargetPosition);
-        }
-
         private void SetWalkingAnimation(bool isWalking)
         {
             _anim.SetBool("IsWalking", isWalking);
@@ -78,6 +57,21 @@ namespace Movement
             // When resumed, the next call to update will set back the velocity
             SetVelocity(new Vector2(0, 0));
             SetWalkingAnimation(false);
+        }
+
+        public void StopMovement()
+        {
+            SetVelocity(new Vector2(0, 0));
+            SetWalkingAnimation(false);
+            _currentTargetPosition = transform.position;
+            IsMoving = false;
+        }
+
+        public bool CanMoveOnClick()
+        {
+            // If the character doesn't have its movement paused and target position override is allowed,
+            // then clicking on a point will result in movement
+            return !_preventMovement && _allowTargetPositionOverride;
         }
 
         public void ResumeMovement()
@@ -150,6 +144,40 @@ namespace Movement
             _currentTargetPosition = destination;
             _allowTargetPositionOverride = allowOverride;
             MoveTo(destination);
+        }
+
+        private void FixedUpdate()
+        {
+            if (_preventMovement)
+            {
+                return;
+            }
+
+            if (Input.GetMouseButtonDown(0) && _allowTargetPositionOverride)
+            {
+                // Left clicked was pressed. Change the target position
+                // The input is taken in screen space so convert in world space
+                _currentTargetPosition = camera.ScreenToWorldPoint(Input.mousePosition);
+            }
+
+            if (_currentTargetPosition == null)
+            {
+                // No need to move
+                return;
+            }
+
+            // We have a destination so we are moving
+            MoveTo((Vector2) _currentTargetPosition);
+        }
+
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            if (other.gameObject.layer == LayerMask.NameToLayer(Layers.ObstacleLayer))
+            {
+                // Hit an obstacle
+                // Stop the movement
+                StopMovement();
+            }
         }
     }
 }
