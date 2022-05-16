@@ -65,7 +65,7 @@ namespace Scenes
                 if (!hasPlayerEntered)
                 {
                     // Move the character in scene
-                    mainCharacterMovement.SetDestination(new Vector2(-6, -2), false);
+                    mainCharacterMovement.WalkTo(new Vector2(-6, -2), false);
                     _sceneStorage.SetKey(ScenesIds.CimitirulBeluStart, HasPlayerEnteredKey, "true");
                 }
 
