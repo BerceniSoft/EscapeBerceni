@@ -2,6 +2,7 @@
 using Constants;
 using Enums;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Movement
 {
@@ -19,7 +20,7 @@ namespace Movement
 
 
         public bool isMoving = false;
-        public String walkingAnimationToggleParamName = "IsWalking";
+       public String walkingAnimParamName = "IsWalking";
 
 
         public SpriteOrientation initialSpriteOrientation;
@@ -73,7 +74,7 @@ namespace Movement
 
         private void SetWalkingAnimation(bool isWalking)
         {
-            _anim.SetBool(walkingAnimationToggleParamName, isWalking);
+            _anim.SetBool(walkingAnimParamName, isWalking);
         }
 
         /**
