@@ -1,0 +1,173 @@
+fileFormatVersion: 2
+guid: dbe529235db0f3e458e79a9edc6c565e
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 9
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 1368, y: 102, z: 0, w: 142}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: 0
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: EminescuExorcised_0
+      rect:
+        serializedVersion: 2
+        x: 1425
+        y: 218
+        width: 489
+        height: 1039
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32944f7a0d0d5f947af9414935daed55
+      internalID: -1152681393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline:
+    - - {x: 509.61914, y: 509.05673}
+      - {x: 373.2422, y: 333.73206}
+      - {x: 373.2422, y: -115.345184}
+      - {x: 538.3301, y: -526.4867}
+      - {x: 591.6504, y: -533.6637}
+      - {x: 866.4551, y: -533.6637}
+      - {x: 866.4551, y: 294.77103}
+      - {x: 779.2969, y: 509.05673}
+    - - {x: 737.25586, y: 213.77307}
+      - {x: 731.1035, y: 216.84894}
+      - {x: 725.97656, y: 216.84894}
+      - {x: 724.9512, y: 217.87424}
+      - {x: 727.00195, y: 218.89952}
+      - {x: 729.05273, y: 216.84894}
+      - {x: 732.1289, y: 216.84894}
+      - {x: 735.2051, y: 214.79836}
+      - {x: 740.33203, y: 213.77307}
+      - {x: 743.4082, y: 210.6972}
+      - {x: 744.4336, y: 211.72249}
+      - {x: 740.33203, y: 212.74777}
+      - {x: 739.30664, y: 213.77307}
+    - - {x: 471.6797, y: 391.14832}
+      - {x: 467.57812, y: 391.14832}
+      - {x: 465.52734, y: 389.09775}
+      - {x: 465.52734, y: 356.28845}
+      - {x: 467.57812, y: 355.26315}
+      - {x: 471.6797, y: 355.26315}
+      - {x: 472.70508, y: 356.28845}
+      - {x: 472.70508, y: 390.12305}
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 1537655665
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      EminescuExorcised_0: -1152681393
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
