@@ -7,7 +7,7 @@ namespace Movement
     {
         public SpriteOrientation GetSpriteOrientation()
         {
-            return currentSpriteOrientation;
+            return _currentSpriteOrientation;
         }
 
         public float GetDistanceTo(Vector2 point)

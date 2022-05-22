@@ -40,12 +40,12 @@ namespace Scenes.Level2
                 if (!hasPlayerEntered)
                 {
                     // Move the character in scene
-                    mainCharacterMovement.SetDestination(new Vector2(-3.5f, -2), false);
+                    mainCharacterMovement.WalkTo(new Vector2(-3.5f, -2), false);
                     _sceneStorage.SetKey(ScenesIds.CimitirulBeluStart, HasPlayerEnteredKey, "true");
                 }
 
                 // After the movement is done, show the dialog
-                if (!dialogManager.IsDialogBeingShown && !mainCharacterMovement.IsMoving)
+                if (!dialogManager.IsDialogBeingShown && !mainCharacterMovement.isMoving)
                 {
                     ShowInitialDialog();
                 }

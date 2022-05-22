@@ -47,8 +47,8 @@ namespace Scenes.Level0
                 case State.IntroDialog:
                     break;
                 case State.StartDialog:
-                    mainCharacterMovement.SetDestination(startPoint.position, false);
-                    if (!dialogManager.IsDialogBeingShown && !mainCharacterMovement.IsMoving)
+                    mainCharacterMovement.WalkTo(startPoint.position, false);
+                    if (!dialogManager.IsDialogBeingShown && !mainCharacterMovement.isMoving)
                     {
                         ShowAfterEntranceDialog();
                     }

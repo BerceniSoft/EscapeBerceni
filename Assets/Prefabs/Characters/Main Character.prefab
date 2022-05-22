@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5030942579804168955}
   m_Layer: 9
   m_Name: Sprite Container
-  m_TagString: Untagged
+  m_TagString: SpriteContainer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -656,6 +656,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cb8a4412da636f40a18e4fa14b35440, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialSpriteOrientation: 1
-  isMoving: 0
   movementSpeed: 3
+  isMoving: 0
+  walkingAnimParamName: IsWalking
+  initialSpriteOrientation: 1

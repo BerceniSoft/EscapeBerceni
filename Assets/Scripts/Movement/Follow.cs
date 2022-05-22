@@ -11,8 +11,9 @@ namespace Movement
         public Followable target;
         public float distanceToTarget;
 
-        private void Start()
+        protected override void Awake()
         {
+            base.Awake();
             // Align the orientation of this game object to the target
             var targetSpriteOrientation = target.GetSpriteOrientation();
             SetSpriteOrientation(targetSpriteOrientation);
@@ -33,7 +34,7 @@ namespace Movement
                 }
             }
 
-            if (targetSpriteOrientation != currentSpriteOrientation)
+            if (targetSpriteOrientation != _currentSpriteOrientation)
             {
                 // The orientation of the target changed
                 // Wait until the target established `distanceToTarget` in the other direction from the GameObject that follows the target
