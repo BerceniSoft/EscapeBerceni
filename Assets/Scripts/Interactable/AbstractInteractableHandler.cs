@@ -57,5 +57,15 @@ namespace Interactable
                 }
             }
         }
+
+        private void OnMouseEnter()
+        {
+            CursorManager.Instance.SetStyle(CursorManager.CursorStyle.Pointer);
+        }
+
+        private void OnMouseExit()
+        {
+            CursorManager.Instance.SetStyle(CursorManager.CursorStyle.Default);
+        }
     }
 }
