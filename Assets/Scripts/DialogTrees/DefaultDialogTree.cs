@@ -1,30 +1,23 @@
-using System.Collections.Generic;
+using System;
 using Dialog;
 
 namespace DialogTrees
 {
     public class DefaultDialogTree : AbstractDialogTree
     {
-        public override int OnDialogOptionPicked(int optionIndex, int dialogLineIndex)
+        private void Awake()
         {
-            // Return the next dialog line regardless the answer
-            return dialogLineIndex + 1;
-        }
-
-        public override DialogLineInfo GetDialogLine(int dialogLineIndex)
-        {
-            if (dialogLineIndex == 0)
+            dialogLineInfos = new[]
             {
-                return new DialogLineInfo("Hello there!", "Eminescu", new List<string>());
-            }
-
-            var answers = new List<string>
-            {
-                "Answer A",
-                "Answer B"
+                new DialogLineInfo
+                {
+                    DialogLine = "THIS IS FOR DEVELOPMENT PURPOSES ONLY."
+                },
+                new DialogLineInfo
+                {
+                    DialogLine = "Ce cauți aici?"
+                }
             };
-
-            return new DialogLineInfo("What should I answer", "You", answers);
         }
     }
 }

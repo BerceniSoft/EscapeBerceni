@@ -11,16 +11,15 @@ namespace Movement
         public Followable target;
         public float distanceToTarget;
 
-        override protected void Start()
+        protected override void Awake()
         {
-            base.Start();
+            base.Awake();
             // Align the orientation of this game object to the target
             var targetSpriteOrientation = target.GetSpriteOrientation();
             SetSpriteOrientation(targetSpriteOrientation);
         }
 
-        // Update is called once per frame
-        void Update()
+        private void Update()
         {
             var targetSpriteOrientation = target.GetSpriteOrientation();
 

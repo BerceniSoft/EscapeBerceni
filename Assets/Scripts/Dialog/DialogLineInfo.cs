@@ -1,18 +1,12 @@
 using System.Collections.Generic;
+using Constants;
 
 namespace Dialog
 {
     public class DialogLineInfo
     {
-        public string DialogLine { get; }
-        public List<string> Answers { get; }
-        public string SpeakerName { get; }
-
-        public DialogLineInfo(string dialogLine, string speakerName, List<string> answers)
-        {
-            DialogLine = dialogLine;
-            SpeakerName = speakerName;
-            Answers = answers;
-        }
+        public string DialogLine { get; set; }
+        public List<(string, int)> Answers { get; set; }
+        public string SpeakerName { get; set; } = Speakers.Narrator;
     }
 }

@@ -3,7 +3,7 @@ using Dialog;
 using Movement;
 using UnityEngine;
 
-namespace Scenes
+namespace Scenes.Level2
 {
     public class CimitirulBeluTombsCoordinator : MonoBehaviour
     {
@@ -15,7 +15,6 @@ namespace Scenes
         [SerializeField] private MainCharacterMovement mainCharacterMovement;
         private SceneStorage _sceneStorage;
 
-
         private void ShowInitialDialog()
         {
             dialogManager.ShowDialog(OnInitialDialogDone);
@@ -26,14 +25,13 @@ namespace Scenes
             _sceneStorage.SetKey(ScenesIds.CimitirulBeluTombs, IsFirstLoadKey, "false");
         }
 
-        // Start is called before the first frame update
-        void Start()
+        private void Start()
         {
             _sceneStorage = SceneStorage.GetInstance();
         }
 
         // Update is called once per frame
-        void Update()
+        private void Update()
         {
             var isFirstLoad = _sceneStorage.GetKey(ScenesIds.CimitirulBeluTombs, IsFirstLoadKey) == null;
             if (isFirstLoad)

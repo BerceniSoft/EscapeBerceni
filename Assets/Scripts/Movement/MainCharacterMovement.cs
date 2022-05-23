@@ -1,22 +1,18 @@
 using System;
 using Constants;
-using Dialog;
-using Enums;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace Movement
 {
     public class MainCharacterMovement : Followable
-
     {
         // If false, mouse movement won't be able to change the target position
         private bool _allowTargetPositionOverride = true;
         private Camera _mainCamera;
 
-        protected override void Start()
+        protected override void Awake()
         {
-            base.Start();
+            base.Awake();
             _mainCamera = Camera.main;
         }
 
@@ -35,13 +31,8 @@ namespace Movement
             _allowTargetPositionOverride = _allowTargetPositionOverride || hasReachedDestination;
         }
 
-        private void FixedUpdate()
+        private void Update()
         {
-            if (IsMovementPrevented())
-            {
-                return;
-            }
-
             // Left clicked was pressed. Change the target position
             // The input is taken in screen space so convert in world space
             Vector2? newTargetPosition = Input.GetMouseButtonDown(0) && _allowTargetPositionOverride
@@ -53,6 +44,15 @@ namespace Movement
                 // We have a new destination
                 SetDestination((Vector2) newTargetPosition);
             }
+        }
+
+        private void FixedUpdate()
+        {
+            if (IsMovementPrevented())
+            {
+                return;
+            }
+
             // Move to the current destination
             var hasReachedDest = MoveToDestination();
             // If we reached the destination set allow mouse destination override
