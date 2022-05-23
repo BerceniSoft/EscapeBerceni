@@ -2,7 +2,6 @@
 using Constants;
 using Enums;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace Movement
 {
@@ -20,7 +19,7 @@ namespace Movement
 
 
         public bool isMoving = false;
-       public String walkingAnimParamName = "IsWalking";
+        public string walkingAnimationToggleParamName = "IsWalking";
 
 
         public SpriteOrientation initialSpriteOrientation;
@@ -37,7 +36,7 @@ namespace Movement
             }
         }
 
-        virtual protected void Start()
+        protected virtual void Awake()
         {
             _rigidBody2D = GetComponent<Rigidbody2D>();
             _currentSpriteOrientation = initialSpriteOrientation;
@@ -74,7 +73,7 @@ namespace Movement
 
         private void SetWalkingAnimation(bool isWalking)
         {
-            _anim.SetBool(walkingAnimParamName, isWalking);
+            _anim.SetBool(walkingAnimationToggleParamName, isWalking);
         }
 
         /**

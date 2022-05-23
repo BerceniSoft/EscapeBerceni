@@ -1,6 +1,5 @@
-#nullable enable
-
 using System;
+using System.Linq;
 using DialogTrees;
 using Movement;
 using UnityEngine;
@@ -22,7 +21,7 @@ namespace Dialog
             IsDialogBeingShown = true;
         }
 
-        private void OnEndDialog(Action? onDone)
+        private void OnEndDialog(Action onDone)
         {
             mainCharacterMovement.ResumeMovement();
             IsDialogBeingShown = false;
@@ -35,7 +34,7 @@ namespace Dialog
             currentDialogLineIndex = 0;
         }
 
-        public void ShowDialog()
+        public void ShowDialog(Action onDone = null)
         {
             OnBeginDialog();
             var dialogLineInfo = dialogTree.GetDialogLine(currentDialogLineIndex);
@@ -43,40 +42,17 @@ namespace Dialog
                 dialogBox.ShowDialog(
                     dialogLineInfo.DialogLine,
                     dialogLineInfo.SpeakerName,
-                    dialogLineInfo.Answers,
-                    () => OnEndDialog(null)
+                    dialogLineInfo.Answers?.Select(x => x.Item1).ToList(),
+                    () => OnEndDialog(() =>
+                    {
+                        currentDialogLineIndex++;
+                        onDone?.Invoke();
+                    })
                 )
             );
-
-            // Increment the dialog line index so we get the next line next time around
-            currentDialogLineIndex++;
         }
 
-        // Skip to a particular line
-        public void ShowDialog(int lineIndex)
-        {
-            currentDialogLineIndex = lineIndex;
-            ShowDialog();
-        }
-
-        public void ShowDialog(Action onDone)
-        {
-            OnBeginDialog();
-            var dialogLineInfo = dialogTree.GetDialogLine(currentDialogLineIndex);
-            StartCoroutine(
-                dialogBox.ShowDialog(
-                    dialogLineInfo.DialogLine,
-                    dialogLineInfo.SpeakerName,
-                    dialogLineInfo.Answers,
-                    () => OnEndDialog(onDone)
-                )
-            );
-
-            // Increment the dialog line index so we get the next line next time around
-            currentDialogLineIndex++;
-        }
-
-        public void ShowDialog(int lineIndex, Action onDone)
+        public void ShowDialog(int lineIndex, Action onDone = null)
         {
             currentDialogLineIndex = lineIndex;
             ShowDialog(onDone);
@@ -87,7 +63,7 @@ namespace Dialog
             currentDialogLineIndex = dialogTree.OnDialogOptionPicked(
                 optionIndex,
                 currentDialogLineIndex
-            );
+            ) - 1; // Subtracting 1 is needed because onDone increments after this.
         }
 
         public void HideDialogBox()

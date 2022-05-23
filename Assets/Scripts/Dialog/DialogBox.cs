@@ -30,8 +30,7 @@ namespace Dialog
         // If this is non empty, after the end we'll show an answer dialog box
         private List<string> _answers;
 
-        // Start is called before the first frame update
-        private void Start()
+        private void Awake()
         {
             var images = gameObject.GetComponentsInChildren<Image>();
             var texts = gameObject.GetComponentsInChildren<TMP_Text>();

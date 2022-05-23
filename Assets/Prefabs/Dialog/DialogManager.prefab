@@ -52,8 +52,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d6a2252251c53345bb62dc9441f2d6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentDialogLineIndex: 0
   dialogBox: {fileID: 6638425347767452587}
-  dialogTree: {fileID: 4620149055755162656}
+  dialogTree: {fileID: 0}
+  mainCharacterMovement: {fileID: 0}
 --- !u!1 &6048508905605829294
 GameObject:
   m_ObjectHideFlags: 0
@@ -63,7 +65,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3141488412404490555}
-  - component: {fileID: 4620149055755162656}
+  - component: {fileID: 6175660219500384335}
   m_Layer: 5
   m_Name: DialogTree
   m_TagString: Untagged
@@ -91,7 +93,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &4620149055755162656
+--- !u!114 &6175660219500384335
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -100,7 +102,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6048508905605829294}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b45532a53b0118341866d7424d4f2b73, type: 3}
+  m_Script: {fileID: 11500000, guid: 6d9d0fdf461f4b06a41ffe418d63ff21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1780624237117931197
@@ -243,6 +245,22 @@ PrefabInstance:
       propertyPath: m_Interactable
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 762354957591025727, guid: a4a5fc69f74e1904d84e2415d2b67f50, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 762354957591025727, guid: a4a5fc69f74e1904d84e2415d2b67f50, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnOptionPicked
+      objectReference: {fileID: 0}
+    - target: {fileID: 762354957591025727, guid: a4a5fc69f74e1904d84e2415d2b67f50, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Dialog.AnswerController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 762354957591025727, guid: a4a5fc69f74e1904d84e2415d2b67f50, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 783221448981768039, guid: a4a5fc69f74e1904d84e2415d2b67f50, type: 3}
       propertyPath: m_fontSize
       value: 20
@@ -270,6 +288,18 @@ PrefabInstance:
     - target: {fileID: 1466401842773788366, guid: a4a5fc69f74e1904d84e2415d2b67f50, type: 3}
       propertyPath: m_Interactable
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1466401842773788366, guid: a4a5fc69f74e1904d84e2415d2b67f50, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1466401842773788366, guid: a4a5fc69f74e1904d84e2415d2b67f50, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnOptionPicked
+      objectReference: {fileID: 0}
+    - target: {fileID: 1466401842773788366, guid: a4a5fc69f74e1904d84e2415d2b67f50, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Dialog.AnswerController, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2087428357317746827, guid: a4a5fc69f74e1904d84e2415d2b67f50, type: 3}
       propertyPath: m_text
@@ -357,6 +387,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4172566773368004330, guid: a4a5fc69f74e1904d84e2415d2b67f50, type: 3}
       propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4172566773368004330, guid: a4a5fc69f74e1904d84e2415d2b67f50, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4172566773368004330, guid: a4a5fc69f74e1904d84e2415d2b67f50, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnOptionPicked
+      objectReference: {fileID: 0}
+    - target: {fileID: 4172566773368004330, guid: a4a5fc69f74e1904d84e2415d2b67f50, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Dialog.AnswerController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4172566773368004330, guid: a4a5fc69f74e1904d84e2415d2b67f50, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4801381314289024755, guid: a4a5fc69f74e1904d84e2415d2b67f50, type: 3}
@@ -498,6 +544,22 @@ PrefabInstance:
     - target: {fileID: 6273988535807643401, guid: a4a5fc69f74e1904d84e2415d2b67f50, type: 3}
       propertyPath: m_Interactable
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6273988535807643401, guid: a4a5fc69f74e1904d84e2415d2b67f50, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6273988535807643401, guid: a4a5fc69f74e1904d84e2415d2b67f50, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnOptionPicked
+      objectReference: {fileID: 0}
+    - target: {fileID: 6273988535807643401, guid: a4a5fc69f74e1904d84e2415d2b67f50, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Dialog.AnswerController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6273988535807643401, guid: a4a5fc69f74e1904d84e2415d2b67f50, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6313716429145637477, guid: a4a5fc69f74e1904d84e2415d2b67f50, type: 3}
       propertyPath: dialogManager
