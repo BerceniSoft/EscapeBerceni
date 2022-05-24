@@ -54,7 +54,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentDialogLineIndex: 0
   dialogBox: {fileID: 6638425347767452587}
-  dialogTree: {fileID: 0}
+  dialogTree: {fileID: 6175660219500384335}
   mainCharacterMovement: {fileID: 0}
 --- !u!1 &6048508905605829294
 GameObject:

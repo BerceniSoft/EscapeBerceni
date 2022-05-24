@@ -20,7 +20,7 @@ namespace Interactable
 
         public MainCharacterMovement mainCharacterMovement;
 
-        protected void StopInteraction()
+        virtual protected void StopInteraction()
         {
             _interactOnCollision = false;
         }

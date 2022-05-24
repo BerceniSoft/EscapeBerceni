@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/2_CimitirulBelu/CimitirulBeluTombs.unity
     guid: 038850f5980ab8d42918d187293c495a
+  - enabled: 1
+    path: Assets/Scenes/2_CimitirulBelu/CimitirulBeluFinal.unity
+    guid: f97fab3250bcf404d86a75648a241b39
   m_configObjects: {}
