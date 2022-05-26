@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Dialog;
 using Interactable;
+using Inventory;
 using UnityEngine;
 
 public class PriestInteractableHandler : AbstractInteractableHandler
@@ -10,12 +11,14 @@ public class PriestInteractableHandler : AbstractInteractableHandler
 
     public DialogManager dialogManager;
     public Animator eminescuAnimator;
+    public LetterInventoryController letterInventoryController;
 
     protected override void StopInteraction()
     {
         base.StopInteraction();
 
         // Give the letter
+        letterInventoryController.GiveLetter(1);
         // Then unlock the next level
     }
 

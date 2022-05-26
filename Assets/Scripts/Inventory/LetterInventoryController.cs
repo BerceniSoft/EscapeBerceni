@@ -11,7 +11,7 @@ namespace Inventory
 
         // Update is called once per frame
         void Update()
-        {
+        {   
             for (int i = 0; i < Math.Min(letters.Length, imageRenderers.Length); i++)
             {
                 if (letters[i].has)
