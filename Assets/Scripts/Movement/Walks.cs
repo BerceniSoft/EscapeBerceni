@@ -100,21 +100,6 @@ namespace Movement
             // The velocity will gradually decrease this way
             var movement = distance;
 
-            // Get the direction to see if we need to flip the asset
-            var dir = _currentSpriteOrientation;
-            if (currentPos.x < destination.x)
-            {
-                dir = SpriteOrientation.Right;
-            }
-            else if (currentPos.x > destination.x)
-            {
-                dir = SpriteOrientation.Left;
-            }
-
-            if (dir != _currentSpriteOrientation)
-            {
-                SetSpriteOrientation(dir);
-            }
 
             // Consider a distance smaller than an epsilon = 0
             if (Mathf.Abs(movement.x) < 0.05)
@@ -137,6 +122,23 @@ namespace Movement
                 SetVelocity(movement * movementSpeed);
 
                 return true;
+            }
+            
+            
+            // Get the direction to see if we need to flip the asset
+            var dir = _currentSpriteOrientation;
+            if (currentPos.x < destination.x)
+            {
+                dir = SpriteOrientation.Right;
+            }
+            else if (currentPos.x > destination.x)
+            {
+                dir = SpriteOrientation.Left;
+            }
+
+            if (dir != _currentSpriteOrientation)
+            {
+                SetSpriteOrientation(dir);
             }
 
             movement.Normalize();
