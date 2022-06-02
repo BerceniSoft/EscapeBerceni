@@ -16,18 +16,18 @@ namespace DialogTrees.Level2
                 },
                 new DialogLineInfo
                 {
-                    DialogLine = "Informații despre mormânt",
+                    DialogLine = "(1882-1913) - Inginer, inventator și aviator, membru al Academiei Române",
                     SpeakerName = Speakers.Grave1
                 },
                 new DialogLineInfo
                 {
-                    DialogLine = "Informații despre mormânt",
-                    SpeakerName = Speakers.Grave1
+                    DialogLine = "(1838-1907) - Enciclopedist, scriitor, filolog, lingvist, jurist, folclorist, publicist, istoric, politician și membru al Academiei Române",
+                    SpeakerName = Speakers.Grave2
                 },
                 new DialogLineInfo
                 {
-                    DialogLine = "Informații despre mormânt",
-                    SpeakerName = Speakers.Grave1
+                    DialogLine = "(1894-1957) - Poet, prozator și dramaturg, membru al Academiei Române",
+                    SpeakerName = Speakers.Grave3
                 }
             };
         }
