@@ -12,7 +12,7 @@ We handle the backlog here on GitHub, through [issues](https://github.com/Bercen
 
 1. As Andreea, I want to play this game in order to practice my knowledge of my neighbourhood.
 2. As a great adventurer, I want to have fun playing this game, so I can feel like I am going on an adventure during the pandemic.
-3. As a hungry student, I'd like to find inside jokes like shawarma from "La Graşi".
+3. As a curious student, I'd like to find familiar places in this game.
 4. As a mom of two, I want to play a game in order to escape the stress.
 5. As Alex, I would like to see a cool graphic interface.
 6. As a boy living in Berceni, I want to play a game that resembles my neighbourhood in an exciting way.
@@ -22,3 +22,14 @@ We handle the backlog here on GitHub, through [issues](https://github.com/Bercen
 10. As a teacher, I would like to see dialogue between characters.
 11. As a lonely gamer, I would like to see at least 3 characters.
 12. As a citizen of a war-torn country, I'd like to feel better by experiencing a story where someone suffers more than I do.
+13. As Felix, I would like to see 2D characters which are drawn by hand.
+14. As a foreigner, I would like to see a game that is design to make fun of a city.
+15. As Raluca, I would like to be able to replay this game after I finished it.
+
+## Characters
+
+Our game characters are drawn by hand, most of them taking inspiration from cartoons that we used to watch when we were kids. For example, our main character (a college student) is a combination of Ferb from Phineas and Ferb and our teammate, Edi. 
+The characters are similar to the originals (from cartoons like Phineas and Ferb, Courage the cowardly dog etc.), but they are redesigned in order to fit our aesthetic.
+
+![Design fără titlu](https://user-images.githubusercontent.com/72194114/173060287-86b6790c-8ed0-408c-8b66-c08d87e0aab6.png)
+
