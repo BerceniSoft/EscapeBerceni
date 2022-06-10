@@ -6,7 +6,7 @@ TODO
 
 ## Backlog
 
-We handle the backlog here on GitHub, through [issues](https://github.com/BerceniSoft/EscapeBerceni/issues) on this repository and through the [Escape Berceni](https://github.com/orgs/BerceniSoft/projects/1) GitHub Project.
+We handle the backlog on [trello](https://trello.com/invite/b/45cBsNcS/8a0ffe9cc4ccedbfbce511ed3953734a/escape-berceni).
 
 ## User stories
 
