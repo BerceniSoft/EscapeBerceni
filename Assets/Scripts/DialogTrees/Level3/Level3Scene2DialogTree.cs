@@ -71,10 +71,10 @@ namespace DialogTrees
                     SpeakerName = Speakers.Pescar,
                     Answers = new List<(string, int)>
                     {
-                        ("Poet", 9),
-                        ("Actor", 9),
-                        ("Aviator", 10),
-                        ("Brutar", 9)
+                        ("Poet", 10),
+                        ("Actor", 10),
+                        ("Aviator", 11),
+                        ("Brutar", 10)
                     }
                 },
                 new DialogLineInfo 
@@ -84,10 +84,10 @@ namespace DialogTrees
                     SpeakerName = Speakers.Pescar,
                     Answers = new List<(string, int)>
                     {
-                        ("1608", 10),
-                        ("1807", 10),
-                        ("1850", 10),
-                        ("1907", 11)
+                        ("1608", 11),
+                        ("1807", 11),
+                        ("1850", 11),
+                        ("1907", 12)
                     }
                 },
                 new DialogLineInfo
@@ -97,10 +97,10 @@ namespace DialogTrees
                     SpeakerName = Speakers.Pescar,
                     Answers = new List<(string, int)>
                     {
-                        ("Camin Petrescu", 12),
-                        ("Mihai Eminescu", 11),
-                        ("Ion-Luca Caragiale", 11),
-                        ("Tudor Arghezi", 11)
+                        ("Camin Petrescu", 13),
+                        ("Mihai Eminescu", 12),
+                        ("Ion-Luca Caragiale", 12),
+                        ("Tudor Arghezi", 12)
                     }
                 },
                 new DialogLineInfo
@@ -120,6 +120,12 @@ namespace DialogTrees
                     DialogLine =
                         "Poftim raţa, spor la facultate!",
                     SpeakerName = Speakers.Pescar
+                },
+                new DialogLineInfo
+                {
+                    DialogLine =
+                        "Mac,mac!",
+                    SpeakerName = Speakers.Rata
                 },
             };
         }
