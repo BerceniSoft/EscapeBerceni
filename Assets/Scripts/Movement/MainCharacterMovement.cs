@@ -16,6 +16,7 @@ namespace Movement
             _mainCamera = Camera.main;
         }
 
+
         public bool CanMoveOnClick()
         {
             // If the character doesn't have its movement paused and target position override is allowed,
