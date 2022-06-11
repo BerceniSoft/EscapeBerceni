@@ -26,5 +26,6 @@ namespace Constants
         public const string Mom3 = "Mama Oana";
         public const string Boschetar = "Om al parcului";
         public const string BumperCar = "Bumper Cars";
+        public const string Keypad = "Keypad-ul Magic";
     }
 }
