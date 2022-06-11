@@ -238,7 +238,7 @@ PrefabInstance:
     - target: {fileID: 4700060269212837880, guid: 055d2b2d872281745b5ba630ba829287, type: 3}
       propertyPath: dialogTree
       value: 
-      objectReference: {fileID: 7701138798593586959}
+      objectReference: {fileID: 0}
     - target: {fileID: 4700060269212837880, guid: 055d2b2d872281745b5ba630ba829287, type: 3}
       propertyPath: mainCharacterMovement
       value: 
@@ -259,7 +259,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6048508905605829294, guid: 055d2b2d872281745b5ba630ba829287, type: 3}
   m_PrefabInstance: {fileID: 7701138798593586962}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &7701138798593586959
+--- !u!114 &8922532870586534183
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -268,7 +268,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4120633280591177148}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1477d733c458c264aa742c41187ef881, type: 3}
+  m_Script: {fileID: 11500000, guid: e006c55ab20048f292b9c1b7facb5b83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!224 &6829846860528199780 stripped
