@@ -10,7 +10,7 @@ public class FishermanInteractableHandler : AbstractInteractableHandler
     public DialogManager dialogManager;
     
     public DuckInventoryController duckInventoryController;
-    
+
     protected override void StopInteraction()
     {
         base.StopInteraction();
@@ -23,7 +23,7 @@ public class FishermanInteractableHandler : AbstractInteractableHandler
     private void OnDialogLineEnded()
     {
         // Show the next dialog line
-        if (dialogManager.currentDialogLineIndex == 16)
+        if (dialogManager.currentDialogLineIndex == 15)
         {
             // Show the last dialog line
             dialogManager.ShowDialog(StopInteraction);
@@ -37,7 +37,7 @@ public class FishermanInteractableHandler : AbstractInteractableHandler
 
     protected override void OnInteract()
     {
-        dialogManager.ShowDialog(1, OnDialogLineEnded);
+        dialogManager.ShowDialog(0, OnDialogLineEnded);
     }
 }
     

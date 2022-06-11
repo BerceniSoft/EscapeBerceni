@@ -20,17 +20,16 @@ namespace Interactable
 
         public MainCharacterMovement mainCharacterMovement;
 
-        virtual protected void StopInteraction()
+        protected virtual void StopInteraction()
         {
             _interactOnCollision = false;
         }
 
-        void Start()
+        protected virtual void Start()
         {
             _mainCamera = Camera.main;
         }
-
-
+        
         private void OnMouseDown()
         {
             _interactOnCollision = true;

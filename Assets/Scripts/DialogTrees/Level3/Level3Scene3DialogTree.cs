@@ -14,7 +14,7 @@ namespace DialogTrees
                 new DialogLineInfo
                 {
                     DialogLine =
-                        "Salut, şefule, văd că ai văzut raţă.",
+                        "Salut, şefule, văd că ai prins raţa.",
                     SpeakerName = Speakers.Boschetar1
                 },
                 new DialogLineInfo

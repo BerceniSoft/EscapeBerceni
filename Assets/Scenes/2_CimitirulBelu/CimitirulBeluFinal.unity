@@ -3290,6 +3290,23 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!1 &887093430 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4120633280591177148, guid: dfec208f2b7a3736394df7c1529f297b, type: 3}
+  m_PrefabInstance: {fileID: 7701138797845454431}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &887093432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 887093430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1477d733c458c264aa742c41187ef881, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &940562340
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3856,6 +3873,10 @@ PrefabInstance:
       value: GUI
       objectReference: {fileID: 0}
     - target: {fileID: 3163223514542870762, guid: dfec208f2b7a3736394df7c1529f297b, type: 3}
+      propertyPath: dialogTree
+      value: 
+      objectReference: {fileID: 887093432}
+    - target: {fileID: 3163223514542870762, guid: dfec208f2b7a3736394df7c1529f297b, type: 3}
       propertyPath: mainCharacterMovement
       value: 
       objectReference: {fileID: 1222899050}
@@ -3959,7 +3980,8 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 17
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8922532870586534183, guid: dfec208f2b7a3736394df7c1529f297b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: dfec208f2b7a3736394df7c1529f297b, type: 3}
 --- !u!224 &7701138797845454432 stripped
 RectTransform:

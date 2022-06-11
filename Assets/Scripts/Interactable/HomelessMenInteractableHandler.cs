@@ -17,7 +17,7 @@ public class HomelessMenInteractableHandler : AbstractInteractableHandler
         base.StopInteraction();
 
         // Give the letter
-        letterInventoryController.GiveLetter(2);
+        // letterInventoryController.GiveLetter(2);
         // Then unlock the next level
     }
     
@@ -25,7 +25,7 @@ public class HomelessMenInteractableHandler : AbstractInteractableHandler
     {
         if (duckInvectoryController.duck.has)
         {
-            if (dialogManager.currentDialogLineIndex == 5)
+            if (dialogManager.currentDialogLineIndex == 4)
             {
                 // Remove duck from inventory
                 duckInvectoryController.RemoveDuck();
@@ -40,7 +40,7 @@ public class HomelessMenInteractableHandler : AbstractInteractableHandler
         }
         else
         {
-            if (dialogManager.currentDialogLineIndex == 11)
+            if (dialogManager.currentDialogLineIndex == 10)
             {
                 // Show the last dialog line
                 dialogManager.ShowDialog(StopInteraction);
@@ -56,6 +56,6 @@ public class HomelessMenInteractableHandler : AbstractInteractableHandler
     
     protected override void OnInteract()
     {
-        dialogManager.ShowDialog(1, OnDialogLineEnded);
+        dialogManager.ShowDialog(0, OnDialogLineEnded);
     }
 }

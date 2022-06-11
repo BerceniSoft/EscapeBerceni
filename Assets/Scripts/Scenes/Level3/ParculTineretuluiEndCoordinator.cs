@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace Scenes.Level3
 {
-    public class ParculTineretuluiEndCoordinator
+    public class ParculTineretuluiEndCoordinator : MonoBehaviour
     {
         private bool _hasStartedMovement = false;
         [SerializeField] private MainCharacterMovement mainCharacterMovement;
