@@ -71,7 +71,7 @@ namespace Movement
             return this._preventMovement;
         }
 
-        private void SetWalkingAnimation(bool isWalking)
+        protected void SetWalkingAnimation(bool isWalking)
         {
             _anim.SetBool(walkingAnimationToggleParamName, isWalking);
         }

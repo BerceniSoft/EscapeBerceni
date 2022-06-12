@@ -18,5 +18,11 @@ namespace Constants
         public const string Pescar = "Pescar";
         public const string Rata = "Rata";
         public const string OldLady = "Baba";
+        public const string Isabela = "Isabela";
+        public const string OmRoata = "Vanzatorul";
+        public const string Calculator = "Calculator";
+        public const string Mom1 = "Mama Bela";
+        public const string Mom2 = "Mama Anca";
+        public const string Mom3 = "Mama Oana";
     }
 }

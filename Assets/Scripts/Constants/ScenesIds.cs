@@ -9,6 +9,6 @@ namespace Constants
         public const int ParculTineretuluiStart = 2;
         
         public const int ParculTineretuluiDuck = 3;
-
+        public const int OraselFinal = 4;
     }
 }
