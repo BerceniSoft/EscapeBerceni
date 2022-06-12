@@ -17,12 +17,12 @@ namespace Movement
             // Align the orientation of this game object to the target
             var targetSpriteOrientation = target.GetSpriteOrientation();
             SetSpriteOrientation(targetSpriteOrientation);
+            //SetSpriteOrientation(SpriteOrientation.Right);
         }
 
         private void Update()
         {
             var targetSpriteOrientation = target.GetSpriteOrientation();
-
             if (_isWaitingOrientationChange)
             {
                 // Check if the distance was achieved
@@ -31,6 +31,7 @@ namespace Movement
                     // Change the orientation and start moving again
                     _isWaitingOrientationChange = false;
                     SetSpriteOrientation(targetSpriteOrientation);
+                    //SetSpriteOrientation(SpriteOrientation.Left);
                 }
             }
 
@@ -44,6 +45,11 @@ namespace Movement
 
             if (!_isWaitingOrientationChange)
             {
+                
+                var targetVelocity = target.GetVelocity();
+                
+                SetWalkingAnimation(!(targetVelocity.x == 0 && targetVelocity.y == 0));
+                
                 SetVelocity(target.GetVelocity());
             }
         }

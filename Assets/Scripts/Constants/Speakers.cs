@@ -13,5 +13,11 @@ namespace Constants
         public const string Grave3 = "Camil Petrescu";
         public const string EminescuGrave = "Mihai Eminescu (15.01.1850 - 15.06.1889)";
         public const string Preot = "Preot";
+        public const string Isabela = "Isabela";
+        public const string OmRoata = "Vanzatorul";
+        public const string Calculator = "Calculator";
+        public const string Mom1 = "Mama Bela";
+        public const string Mom2 = "Mama Anca";
+        public const string Mom3 = "Mama Oana";
     }
 }
