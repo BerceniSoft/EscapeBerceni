@@ -990,6 +990,7 @@ GameObject:
   - component: {fileID: 706468885}
   - component: {fileID: 706468883}
   - component: {fileID: 706468889}
+  - component: {fileID: 706468890}
   m_Layer: 7
   m_Name: Boschetari
   m_TagString: Untagged
@@ -1104,7 +1105,21 @@ MonoBehaviour:
   mainCharacterMovement: {fileID: 267781424}
   dialogManager: {fileID: 394919671}
   letterInventoryController: {fileID: 841335117}
-  duckInvectoryController: {fileID: 1910095665}
+--- !u!114 &706468890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 706468882}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f14a63744fa48d7a31999f2bbd6b007, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCharacterMovement: {fileID: 267781424}
+  dialogManager: {fileID: 394919671}
+  letterInventoryController: {fileID: 841335117}
 --- !u!114 &841335117 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7701138797731010682, guid: dfec208f2b7a3736394df7c1529f297b, type: 3}

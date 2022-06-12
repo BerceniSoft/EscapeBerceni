@@ -180,6 +180,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 616ed649102fe42bb94e8df3c9dc3e4d, type: 3}
+--- !u!114 &152849346 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7701138797731010682, guid: dfec208f2b7a3736394df7c1529f297b, type: 3}
+  m_PrefabInstance: {fileID: 288599569}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc79bb73d12a8035881efc3d491f7684, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &253357450
 GameObject:
   m_ObjectHideFlags: 0
@@ -243,15 +254,19 @@ PrefabInstance:
     - target: {fileID: 3163223514542870762, guid: dfec208f2b7a3736394df7c1529f297b, type: 3}
       propertyPath: dialogTree
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1396572287}
     - target: {fileID: 3163223514542870762, guid: dfec208f2b7a3736394df7c1529f297b, type: 3}
       propertyPath: mainCharacterMovement
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1416152058}
     - target: {fileID: 3163223514542870762, guid: dfec208f2b7a3736394df7c1529f297b, type: 3}
       propertyPath: currentDialogLineIndex
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3963058003477198009, guid: dfec208f2b7a3736394df7c1529f297b, type: 3}
+      propertyPath: answersDialogBox
+      value: 
+      objectReference: {fileID: 888024002}
     - target: {fileID: 3963058003477198012, guid: dfec208f2b7a3736394df7c1529f297b, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0
@@ -904,6 +919,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &888024002 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6952279480078292181, guid: dfec208f2b7a3736394df7c1529f297b, type: 3}
+  m_PrefabInstance: {fileID: 288599569}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43290b7379b2c6746a75c313c0dc5a40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &927011564
 GameObject:
   m_ObjectHideFlags: 0
@@ -1137,10 +1163,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1372562429}
-  - component: {fileID: 1372562428}
   - component: {fileID: 1372562427}
   - component: {fileID: 1372562426}
-  - component: {fileID: 1372562425}
+  - component: {fileID: 1372562430}
   m_Layer: 7
   m_Name: 'Boschetari '
   m_TagString: Untagged
@@ -1148,19 +1173,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1372562425
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1372562424}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97e7d50952b94b48b8848d5efc96d86d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mainCharacterMovement: {fileID: 0}
 --- !u!61 &1372562426
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1208,22 +1220,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &1372562428
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1372562424}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27eee8823d7a9a1b5bc205b962b0fb41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mainCharacterMovement: {fileID: 1416152058}
-  dialogManager: {fileID: 288599572}
-  eminescuAnimator: {fileID: 0}
-  letterInventoryController: {fileID: 0}
 --- !u!4 &1372562429
 Transform:
   m_ObjectHideFlags: 0
@@ -1240,6 +1236,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1372562430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1372562424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 041a68a8dafb4ae484c30225b8ba39ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCharacterMovement: {fileID: 1416152058}
+  dialogManager: {fileID: 288599572}
+  letterInventoryController: {fileID: 152849346}
+  duckInvectoryController: {fileID: 447934912}
 --- !u!1 &1396572285 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4120633280591177148, guid: dfec208f2b7a3736394df7c1529f297b, type: 3}

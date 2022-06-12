@@ -6,7 +6,7 @@ using Inventory;
 using UnityEngine;
 
 
-public class HomelessMenInteractableHandler : AbstractInteractableHandler
+public class HomelessMen2InteractableHandler : AbstractInteractableHandler
 {
     public DialogManager dialogManager;
     public LetterInventoryController letterInventoryController;
@@ -22,17 +22,18 @@ public class HomelessMenInteractableHandler : AbstractInteractableHandler
     
     private void OnDialogLineEnded()
     {
-        if (dialogManager.currentDialogLineIndex == 10)
+        if (dialogManager.currentDialogLineIndex == 4)
         {
-                // Show the last dialog line
-                dialogManager.ShowDialog(StopInteraction);
+            // Show the last dialog line
+            dialogManager.ShowDialog(StopInteraction);
         }
         else
         {
-                // Show the next dialog line
-                dialogManager.ShowDialog(OnDialogLineEnded);
+            // Show the next dialog line
+            dialogManager.ShowDialog(OnDialogLineEnded);
         }
     }
+
     
     protected override void OnInteract()
     {
