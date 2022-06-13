@@ -25,6 +25,7 @@ namespace Dialog
         private Image _dialogBoxImage;
         private Image _showMoreIcon;
         private TMP_Text _speakerName;
+        private TMP_Text _showMoreText;
         private Action _doneCallback;
 
         // If this is non empty, after the end we'll show an answer dialog box
@@ -37,6 +38,7 @@ namespace Dialog
 
             _dialogText = texts[0];
             _speakerName = texts[1];
+            _showMoreText = texts[2];
             _dialogBoxImage = images[0];
             _showMoreIcon = images[1];
         }
@@ -46,6 +48,7 @@ namespace Dialog
             _speakerName.enabled = true;
             _dialogText.enabled = true;
             _dialogBoxImage.enabled = true;
+            _showMoreText.enabled = true;
         }
 
         public void HideDialogBox()
@@ -53,6 +56,7 @@ namespace Dialog
             _dialogText.enabled = false;
             _speakerName.enabled = false;
             _dialogBoxImage.enabled = false;
+            _showMoreText.enabled = false;
 
             answersDialogBox.HideAnswersDialogBox();
             DisableShowMoreIcon();
