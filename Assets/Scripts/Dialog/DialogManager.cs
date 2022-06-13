@@ -70,5 +70,7 @@ namespace Dialog
         {
             dialogBox.HideDialogBox();
         }
+
+        public bool HasFinished() => currentDialogLineIndex >= dialogTree.DialogLineInfos.Length;
     }
 }

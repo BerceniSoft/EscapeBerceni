@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4f3b791f47a2ac54d9020c592898d240
+guid: 316b356adcc51f64c811a3203a3d9961
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -104,13 +104,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Emojis_0
+      name: Muriel_0
       rect:
         serializedVersion: 2
-        x: 582
-        y: 729
-        width: 307
-        height: 258
+        x: 602
+        y: 56
+        width: 717
+        height: 1205
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,29 +118,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e6689c398b108f24c8c178a4dee64f25
-      internalID: 2031676671
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Emojis_1
-      rect:
-        serializedVersion: 2
-        x: 1016
-        y: 723
-        width: 288
-        height: 255
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 51ba857969fe3574bb47175853c3596b
-      internalID: 1230792405
+      spriteID: 0d774cbb4cce1c846afa840be682218f
+      internalID: -399608300
       vertices: []
       indices: 
       edges: []
@@ -156,8 +135,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Emojis_0: 2031676671
-      Emojis_1: 1230792405
+      Muriel_0: -399608300
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 1
