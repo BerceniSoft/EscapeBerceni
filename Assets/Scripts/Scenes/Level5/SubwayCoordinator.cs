@@ -2,8 +2,10 @@
 using System.Collections;
 using Dialog;
 using DialogTrees.Level5;
+using Inventory;
 using Movement;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Scenes.Level5
 {
@@ -36,6 +38,12 @@ namespace Scenes.Level5
         [SerializeField] 
         private ElectricPanel electricPanel;
 
+        [SerializeField] 
+        private GameObject teleporter;
+
+        [SerializeField] 
+        private LetterInventoryController letterInventoryController;
+
         private void Start()
         {
             electricPanel.OnClose += EndBlackout;
@@ -59,7 +67,11 @@ namespace Scenes.Level5
 
             dialogManager.currentDialogLineIndex = 0;
             dialogManager.dialogTree = afterBlackoutDialogTree;
-            dialogManager.ShowDialog();
+            dialogManager.ShowDialog(() =>
+            {
+                teleporter.SetActive(true);
+                letterInventoryController.GiveLetter(5);
+            });
         }
     }
 }
