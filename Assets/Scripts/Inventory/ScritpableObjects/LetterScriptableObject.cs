@@ -8,5 +8,4 @@ public class LetterScriptableObject : ScriptableObject
 {
     public Sprite icon;
     public bool has;
-    
 }

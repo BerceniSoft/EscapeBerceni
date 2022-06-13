@@ -18,7 +18,7 @@ TagManager:
   - Obstacle
   - Characters
   - Main Character
-  - 
+  - Front
   - 
   - 
   - 
@@ -52,4 +52,7 @@ TagManager:
     locked: 0
   - name: Main Character
     uniqueID: 190782413
+    locked: 0
+  - name: Front
+    uniqueID: 2297765003
     locked: 0

@@ -29,4 +29,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/3_Tineretului/3TineretuluiStart.unity
     guid: 19c6f3175f0cc9c479720cfdf7edad37
+  - enabled: 1
+    path: Assets/Scenes/5_Metrou/0_Metrou_Breakers.unity
+    guid: 9c66dde472afaf646a89eca32634a1b8
+  - enabled: 1
+    path: Assets/Scenes/5_Metrou/1_Metrou_Train.unity
+    guid: e29f57f5d71411246a6184b1dac98b03
   m_configObjects: {}
