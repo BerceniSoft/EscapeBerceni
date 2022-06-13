@@ -33,6 +33,11 @@ namespace Movement
 
         private void Update()
         {
+            if (IsMovementPrevented())
+            {
+                return;
+            }
+            
             // Left clicked was pressed. Change the target position
             // The input is taken in screen space so convert in world space
             Vector2? newTargetPosition = Input.GetMouseButtonDown(0) && _allowTargetPositionOverride
@@ -42,7 +47,7 @@ namespace Movement
             if (newTargetPosition != null)
             {
                 // We have a new destination
-                SetDestination((Vector2) newTargetPosition);
+                SetDestination((Vector2)newTargetPosition);
             }
         }
 
