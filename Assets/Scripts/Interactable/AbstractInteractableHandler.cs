@@ -25,7 +25,7 @@ namespace Interactable
             _interactOnCollision = false;
         }
 
-        void Start()
+        virtual protected void Start()
         {
             _mainCamera = Camera.main;
         }

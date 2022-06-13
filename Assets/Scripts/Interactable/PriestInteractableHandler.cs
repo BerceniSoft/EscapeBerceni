@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Dialog;
 using Interactable;
 using Inventory;
+using Scenes;
 using UnityEngine;
 
 public class PriestInteractableHandler : AbstractInteractableHandler
@@ -12,6 +13,7 @@ public class PriestInteractableHandler : AbstractInteractableHandler
     public DialogManager dialogManager;
     public Animator eminescuAnimator;
     public LetterInventoryController letterInventoryController;
+    public Teleporter teleporterArrow;
 
     protected override void StopInteraction()
     {
@@ -19,7 +21,9 @@ public class PriestInteractableHandler : AbstractInteractableHandler
 
         // Give the letter
         letterInventoryController.GiveLetter(1);
+        
         // Then unlock the next level
+        teleporterArrow.ToggleActvie();
     }
 
     private void OnDialogLineEnded()
