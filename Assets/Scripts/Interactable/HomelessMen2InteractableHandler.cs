@@ -9,6 +9,11 @@ using UnityEngine;
 public class HomelessMen2InteractableHandler : AbstractInteractableHandler
 {
     public DialogManager dialogManager;
+    public GameObject gameObjectPlayer;
+    public GameObject gameObjectBBQ;
+    public Sprite head;
+    public Sprite bbq;
+    public Sprite duckWing;
     public LetterInventoryController letterInventoryController;
 
     protected override void StopInteraction()
@@ -22,7 +27,27 @@ public class HomelessMen2InteractableHandler : AbstractInteractableHandler
     
     private void OnDialogLineEnded()
     {
-        if (dialogManager.currentDialogLineIndex == 4)
+        if (dialogManager.currentDialogLineIndex == 2)
+        {
+            SpriteRenderer spriteRendererPlayer = gameObjectPlayer.GetComponent<SpriteRenderer>();
+            spriteRendererPlayer.sprite = head;
+            spriteRendererPlayer.transform.position = new Vector3(spriteRendererPlayer.transform.position.x + 0.2f, spriteRendererPlayer.transform.position.y - 1);
+
+            SpriteRenderer spriteRendererBBQ = gameObjectBBQ.GetComponent<SpriteRenderer>();
+            spriteRendererBBQ.sprite = bbq;
+            spriteRendererBBQ.transform.position = new Vector3(spriteRendererBBQ.transform.position.x -0.2f, spriteRendererBBQ.transform.position.y);
+            
+            dialogManager.ShowDialog(OnDialogLineEnded);
+        }
+        else if (dialogManager.currentDialogLineIndex == 3)
+        {
+            SpriteRenderer spriteRendererBBQ = gameObjectBBQ.GetComponent<SpriteRenderer>();
+            spriteRendererBBQ.sprite = duckWing;
+            spriteRendererBBQ.transform.position = new Vector3(spriteRendererBBQ.transform.position.x -0.2f, spriteRendererBBQ.transform.position.y);
+            
+            dialogManager.ShowDialog(OnDialogLineEnded);
+        }
+        else if (dialogManager.currentDialogLineIndex == 4)
         {
             // Show the last dialog line
             dialogManager.ShowDialog(StopInteraction);
