@@ -14,7 +14,7 @@ public class Keypad : MonoBehaviour {
     public bool keypadScreen;
     public Transform doorHinge;
     public MainCharacterMovement mainCharacterMovement;
-    private KeypadInteractableHandler _keypadInteractableHandler;
+    private GatekeeperInteractableHandler _gatekeeperInteractableHandler;
 
     void OnTriggerEnter(Collider other)
     {
@@ -28,28 +28,38 @@ public class Keypad : MonoBehaviour {
         input = "";
     }
 
-    public void OpenKeypad(KeypadInteractableHandler keypadInteractableHandler)
+    public void OpenKeypad(GatekeeperInteractableHandler keypadInteractableHandler)
     {
         keypadScreen = true;
-        _keypadInteractableHandler = keypadInteractableHandler;
+        _gatekeeperInteractableHandler = keypadInteractableHandler;
         mainCharacterMovement.PauseMovement();
     }
 
-    void Update()
+    void CheckPassword()
     {
-        if (keypadScreen == false)
-        {
-            mainCharacterMovement.ResumeMovement();
-        }
         if(input == curPassword)
         {
             mainCharacterMovement.StopMovement();
             mainCharacterMovement.ResumeMovement();
             input = "";
             doorOpen = true;
-            _keypadInteractableHandler.ContinueDialog(3);
+            _gatekeeperInteractableHandler.OpenDoor();
+            _gatekeeperInteractableHandler.ContinueDialog(7);
         }
-
+        else
+        {
+            mainCharacterMovement.StopMovement();
+            keypadScreen = false;
+            input = "";
+            _gatekeeperInteractableHandler.ContinueDialog(6);
+        }
+    }
+    void Update()
+    {
+        if (keypadScreen == false)
+        {
+            mainCharacterMovement.ResumeMovement();
+        }
         
     }
 
@@ -214,6 +224,11 @@ public class Keypad : MonoBehaviour {
                     keypadScreen = false;
                     onTrigger = true;
                     mainCharacterMovement.StopMovement();
+                }
+                
+                if(GUI.Button(new Rect(635, 175, 60, 60), "ENTER"))
+                {
+                    CheckPassword();
                 }
             }
         }

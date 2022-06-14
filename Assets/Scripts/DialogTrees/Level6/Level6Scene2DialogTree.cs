@@ -15,31 +15,31 @@ namespace DialogTrees
                 {
                     DialogLine =
                         "1!",
-                    SpeakerName = Speakers.Keypad,
+                    SpeakerName = Speakers.Barosan,
                 },
                 new DialogLineInfo
                 {
                     DialogLine =
                         "2! ",
-                    SpeakerName = Speakers.Keypad,
+                    SpeakerName = Speakers.Barosan,
                 },
                 new DialogLineInfo
                 {
                     DialogLine =
                         "3!",
-                    SpeakerName = Speakers.Keypad,
+                    SpeakerName = Speakers.Barosan,
                 },
                 new DialogLineInfo
                 {
                     DialogLine =
                         "4!",
-                    SpeakerName = Speakers.Keypad,
+                    SpeakerName = Speakers.Barosan,
                 },
                 new DialogLineInfo
                 {
                     DialogLine =
                         "5!",
-                    SpeakerName = Speakers.Keypad,
+                    SpeakerName = Speakers.Barosan,
                 },
             };
         }

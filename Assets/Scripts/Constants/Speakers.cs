@@ -17,6 +17,6 @@ namespace Constants
         public const string Boschetar2 = "Nelu Boschetarul";
         public const string Pescar = "Pescar";
         public const string Rata = "Rata";
-        public const string Keypad = "Keypad-ul Magic";
+        public const string Barosan = "Barosan";
     }
 }
