@@ -18,7 +18,7 @@ TODO
 
 TODO
 
-## UML Diagramn
+## UML Diagram
 
 ![MDS](https://user-images.githubusercontent.com/72194114/173590828-7d538ea8-ae7e-48fb-b5a7-f98a407a5a5f.jpg)
 
