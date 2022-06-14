@@ -13,7 +13,11 @@ Awarded "Game of the Year [Juche 111](https://en.wikipedia.org/wiki/Juche_calend
 
 ## Story & Gameplay
 
-TODO
+The idea of the game, to escape Berceni hood, came from two of us who live in Berceni and travel daily by subway to college. There are many jokes about this hood that our friends like to make, so we decided this would be our main theme. To make it more interesting, we included some of the main points in district 4.
+
+As for the method of the game, we thought it would be interesting and appropriate for us as beginners in game development to make a clicker game. This kind of games were also popular when we were little, on mobile or computer, so we concluded this would be most fun and challenging.
+
+In order to “escape Berceni”, you have to travel through the main touristic spots in this hood: Bellu Cemetery, Tineretului Lake, Children’s Town and, apart of these, through the parts of this hood which are visited by our teammates every day. On each scene you have to interact with different types of people you can find while visiting Berceni: a priest in Bellu Cemetery, homeless men in Tineretului Park, a fisherman near the lake, children and parents in Children’s Town, an old lady at the subway station and a professor in front of the college. While interacting with them, you have to overcome challenges - as quizes, anagrams, general knowledge questions and many more - and you have to collect the letters in order to go to college. 
 
 ## Demo
 
