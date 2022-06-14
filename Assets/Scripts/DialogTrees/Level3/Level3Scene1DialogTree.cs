@@ -43,7 +43,7 @@ namespace DialogTrees
                 new DialogLineInfo
                 {
                     DialogLine =
-                        "Da, vericule. Dar trebuie să faci ceva pt noi dacă vrei să îți spunem.",
+                        "Da, bossule. Dar trebuie să faci ceva pt noi dacă vrei să îți spunem.",
                     SpeakerName = Speakers.Boschetar2
                 },
                 new DialogLineInfo
@@ -73,7 +73,7 @@ namespace DialogTrees
                 new DialogLineInfo
                 {
                     DialogLine =
-                        "Baftă, vericule.",
+                        "Baftă, bossule.",
                     SpeakerName = Speakers.Boschetar1
                 },
             };

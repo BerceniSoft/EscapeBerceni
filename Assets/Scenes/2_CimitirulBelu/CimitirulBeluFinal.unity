@@ -3966,14 +3966,6 @@ PrefabInstance:
       propertyPath: answersDialogBox
       value: 
       objectReference: {fileID: 210364070}
-    - target: {fileID: 3963058003477198012, guid: dfec208f2b7a3736394df7c1529f297b, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3963058003477198012, guid: dfec208f2b7a3736394df7c1529f297b, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -175
-      objectReference: {fileID: 0}
     - target: {fileID: 6518953437808203864, guid: dfec208f2b7a3736394df7c1529f297b, type: 3}
       propertyPath: m_RootOrder
       value: 0

@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/0_Intro/Frateli.unity
     guid: cb72f276a796201c1b43652c13558059
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/1_Mausoleu/Mausoleu.unity
     guid: 95896b75fd724453fb70b4921d084d9f
   - enabled: 1
@@ -24,6 +24,15 @@ EditorBuildSettings:
     path: Assets/Scenes/2_CimitirulBelu/CimitirulBeluFinal.unity
     guid: f97fab3250bcf404d86a75648a241b39
   - enabled: 1
+    path: Assets/Scenes/3_Tineretului/3TineretuluiStart.unity
+    guid: 19c6f3175f0cc9c479720cfdf7edad37
+  - enabled: 1
+    path: Assets/Scenes/3_Tineretului/3TineretuluiDuck.unity
+    guid: 541ddc376d765f64e9401da9d3e28555
+  - enabled: 1
+    path: Assets/Scenes/3_Tineretului/3TineretuluiEnd.unity
+    guid: e3c79a9fea8bf9d43ad80eecfb2daadf
+  - enabled: 1
     path: Assets/Scenes/4_OraselulCopiilor/OraselStart.unity
     guid: 0f26d31d2a111a810906425f12330135
   - enabled: 1
@@ -35,6 +44,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/4_OraselulCopiilor/OraselTranzitie.unity
     guid: a074f7816fe299c9e9ba4269cc6af48b
+  - enabled: 1
+    path: Assets/Scenes/5_Metrou/0_Metrou_Breakers.unity
+    guid: 9c66dde472afaf646a89eca32634a1b8
+  - enabled: 1
+    path: Assets/Scenes/5_Metrou/1_Metrou_Train.unity
+    guid: e29f57f5d71411246a6184b1dac98b03
+  - enabled: 1
+    path: Assets/Scenes/6_Facultate/Metrou1.unity
+    guid: 4a4d6b01c0d60bb4ebc2654d87369057
   - enabled: 1
     path: Assets/Scenes/6_Facultate/Facultate1.unity
     guid: 581bf5370c94631478d8bedd199aeda2

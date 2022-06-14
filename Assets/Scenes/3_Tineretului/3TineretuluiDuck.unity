@@ -748,14 +748,6 @@ PrefabInstance:
       propertyPath: answersDialogBox
       value: 
       objectReference: {fileID: 826757979}
-    - target: {fileID: 3963058003477198012, guid: dfec208f2b7a3736394df7c1529f297b, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3963058003477198012, guid: dfec208f2b7a3736394df7c1529f297b, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -175
-      objectReference: {fileID: 0}
     - target: {fileID: 6518953437808203864, guid: dfec208f2b7a3736394df7c1529f297b, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -780,10 +772,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7701138797731010682, guid: dfec208f2b7a3736394df7c1529f297b, type: 3}
-      propertyPath: letters.Array.data[0]
-      value: 
-      objectReference: {fileID: 11400000, guid: a6847ed9ac40b954ea446c7e184b06aa, type: 2}
     - target: {fileID: 7701138798194009956, guid: dfec208f2b7a3736394df7c1529f297b, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
@@ -1893,7 +1881,7 @@ MonoBehaviour:
   dialogManager: {fileID: 1890143372}
   gameObject: {fileID: 768317854}
   body: {fileID: 1181840335}
-  duckHead: {fileID: 21300000, guid: d88a6faf92a94ec41b5bf927b869263f, type: 3}
+  duckHead: {fileID: -1553850456, guid: 6aee72de2a97b480ea1e1f08368d5895, type: 3}
   duckInventoryController: {fileID: 1159179334}
   _teleporter: {fileID: 1759922913}
 --- !u!1 &1976012306

@@ -97,7 +97,7 @@ namespace DialogTrees
                     SpeakerName = Speakers.Pescar,
                     Answers = new List<(string, int)>
                     {
-                        ("Camin Petrescu", 12),
+                        ("Camil Petrescu", 12),
                         ("Mihai Eminescu", 11),
                         ("Ion-Luca Caragiale", 11),
                         ("Tudor Arghezi", 11)

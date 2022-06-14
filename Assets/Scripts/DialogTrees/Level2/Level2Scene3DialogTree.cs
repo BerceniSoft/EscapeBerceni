@@ -57,7 +57,7 @@ namespace DialogTrees.Level2
                 },
                 new DialogLineInfo()
                 {
-                    DialogLine = "Afurisit sa fii Perry... adica Preotul din Berceni!!",
+                    DialogLine = "O, nu...",
                     SpeakerName = Speakers.Eminescu
                 },
                 new DialogLineInfo()
