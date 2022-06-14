@@ -18,5 +18,6 @@ namespace Constants
         public const string Pescar = "Pescar";
         public const string Rata = "Rata";
         public const string Barosan = "Barosan";
+        public const string Profesor = "Profesor";
     }
 }

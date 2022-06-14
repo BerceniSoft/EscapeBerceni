@@ -14,32 +14,50 @@ namespace DialogTrees
                 new DialogLineInfo
                 {
                     DialogLine =
-                        "1!",
-                    SpeakerName = Speakers.Barosan,
+                        "Salutări tinere student! Bine ai venit la facultate! Ai întârziat mult astăzi.",
+                    SpeakerName = Speakers.Profesor,
                 },
                 new DialogLineInfo
                 {
                     DialogLine =
-                        "2! ",
-                    SpeakerName = Speakers.Barosan,
+                        "Bună-ziua...errmm...mă scuzați... am fost printr-o... aventură...  ",
+                    SpeakerName = Speakers.Player,
                 },
                 new DialogLineInfo
                 {
                     DialogLine =
-                        "3!",
-                    SpeakerName = Speakers.Barosan,
+                        "Cum așa?",
+                    SpeakerName = Speakers.Profesor,
                 },
                 new DialogLineInfo
                 {
                     DialogLine =
-                        "4!",
-                    SpeakerName = Speakers.Barosan,
+                        "Nici nu pot să vă descriu! A trebuit să rezolv tot felul de puzzle-uri si joculețe pentru a putea ajunge la metrou.",
+                    SpeakerName = Speakers.Player,
                 },
                 new DialogLineInfo
                 {
                     DialogLine =
-                        "5!",
-                    SpeakerName = Speakers.Barosan,
+                        "De abia aștept să-mi povestești mai multe",
+                    SpeakerName = Speakers.Profesor,
+                },
+                new DialogLineInfo
+                {
+                    DialogLine =
+                        "A fost ca un vis...nici nu vă puteți imagina",
+                    SpeakerName = Speakers.Player,
+                },
+                new DialogLineInfo
+                {
+                    DialogLine =
+                        "Ok, acum hai să mergem. Avem treabă!",
+                    SpeakerName = Speakers.Profesor,
+                },
+                new DialogLineInfo
+                {
+                    DialogLine =
+                        "Hai!",
+                    SpeakerName = Speakers.Player,
                 },
             };
         }
