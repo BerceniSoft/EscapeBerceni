@@ -28,5 +28,6 @@ namespace Constants
         public const string BumperCar = "Bumper Cars";
         public const string Keypad = "Keypad-ul Magic";
         public const string Barosan = "Barosan";
+        public const string Profesor = "Profesor";
     }
 }

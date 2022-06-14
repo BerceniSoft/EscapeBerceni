@@ -1,5 +1,6 @@
 ﻿using Dialog;
 using Movement;
+using Scenes;
 using UnityEngine;
 
 namespace Interactable
@@ -8,6 +9,8 @@ namespace Interactable
     {
         public DialogManager dialogManager;
         private bool _doorOpened = false;
+        public Teleporter _teleporter;
+        
 
         private void OpenKeypad()
         {
@@ -19,7 +22,12 @@ namespace Interactable
         {
             _doorOpened = true;
         }
-    
+
+        protected override void Start()
+        {
+            base.Start();
+        }
+
         private void OnDialogLineEnded()
         {
             
@@ -33,6 +41,8 @@ namespace Interactable
             {
                 if (dialogManager.currentDialogLineIndex == 8)
                 {
+                    //level finished
+                    _teleporter.ToggleActvie();
                     base.StopInteraction();
                 }
                 else

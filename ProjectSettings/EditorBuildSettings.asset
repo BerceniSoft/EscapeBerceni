@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/4_OraselulCopiilor/OraselTranzitie.unity
     guid: a074f7816fe299c9e9ba4269cc6af48b
+  - enabled: 1
+    path: Assets/Scenes/6_Facultate/Facultate1.unity
+    guid: 581bf5370c94631478d8bedd199aeda2
   m_configObjects: {}
