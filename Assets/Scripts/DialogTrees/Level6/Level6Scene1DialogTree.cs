@@ -14,32 +14,60 @@ namespace DialogTrees
                 new DialogLineInfo
                 {
                     DialogLine =
-                        "Salutări tinere călător. Acum ca ai ajuns aproape la final am nevoie de la tine sa introduci codul pe care l-ai cules.",
-                    SpeakerName = Speakers.Keypad,
+                        "Salutări tinere călător. Ai avut un drum plin de înurcături. Să vedem daca te-ai descurcat!",
+                    SpeakerName = Speakers.Barosan,
                 },
                 new DialogLineInfo
                 {
                     DialogLine =
-                        "2 ",
-                    SpeakerName = Speakers.Keypad,
+                        "Pentru a trece de mine, este nevoie sa introduci codul. După, te voi lăsa să mergi la facultate ",
+                    SpeakerName = Speakers.Barosan,
                 },
                 new DialogLineInfo
                 {
                     DialogLine =
-                        "3",
-                    SpeakerName = Speakers.Keypad,
+                        "Care cod?",
+                    SpeakerName = Speakers.Player,
                 },
                 new DialogLineInfo
                 {
                     DialogLine =
-                        "4",
-                    SpeakerName = Speakers.Keypad,
+                        "Codul pe care l-ai strâns la etapele anterioare.",
+                    SpeakerName = Speakers.Barosan,
                 },
                 new DialogLineInfo
                 {
                     DialogLine =
-                        "5",
-                    SpeakerName = Speakers.Keypad,
+                        "Ok....",
+                    SpeakerName = Speakers.Player,
+                },
+                
+                new DialogLineInfo
+                {
+                    DialogLine =
+                        "Cred că-mi amintesc.",
+                    SpeakerName = Speakers.Player,
+                },
+                
+                new DialogLineInfo
+                {
+                    DialogLine =
+                        "Ai greșit! Ține minte...codul este format din literele pe care le-ai strâns la etapele anterioare.",
+                    SpeakerName = Speakers.Barosan,
+                },
+                
+                new DialogLineInfo
+                {
+                    DialogLine =
+                        "Bravo, ai drum liber către facultate. Baftă... o să ai nevoie.",
+                    SpeakerName = Speakers.Barosan,
+                },
+                
+                new DialogLineInfo
+                {
+                    DialogLine =
+                        "Gata. Poți să mergi la facultate. Ce mai vrei de la mine? Fugi până nu mă răzgândesc. Valea!",
+                    SpeakerName = Speakers.Barosan,
                 },
             };
         }
