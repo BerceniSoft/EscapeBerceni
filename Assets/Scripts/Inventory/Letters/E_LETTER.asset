@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: E_LETTER
   m_EditorClassIdentifier: 
   icon: {fileID: -107554265, guid: c6a6d4c74fd990037a7adcc3e4fb11dd, type: 3}
-  has: 1
+  has: 0

@@ -15,26 +15,19 @@ namespace Scenes.Level4
         [SerializeField]
         private DialogManager dialogManager;
         private SceneStorage _sceneStorage;
-        private bool debug = true;
+        private bool _hasDisplayedInitialDialogue = false;
         
         private IEnumerator OnDialogLineEnded()
         {
-            Debug.Log(dialogManager.currentDialogLineIndex);
-            //  We'll show all 8 dialog lines one after the other
+            //  We'll show first 3 dialog lines one after the other
             if (dialogManager.currentDialogLineIndex < 4)
             {
-                Debug.Log("true");
                 dialogManager.ShowDialog(() => StartCoroutine(OnDialogLineEnded()));
             }
             else
             {
-                debug = false;
-                Debug.Log(dialogManager.currentDialogLineIndex < 4);
+                _hasDisplayedInitialDialogue  = true;
                 // Done with the intro
-                
-                // _sceneStorage.SetKey(ScenesIds.OraselFinal, IsFirstLoadKey, "false");
-                
-                // After the transition is done, revert to the floating animation
                 yield return new WaitForSeconds(1.6f);
             }
         }
@@ -51,7 +44,7 @@ namespace Scenes.Level4
                 mainCharacterMovement.WalkTo(new Vector2(-6, -1), false);
                 _hasStartedMovement = true;
             }
-            if (!dialogManager.IsDialogBeingShown && !mainCharacterMovement.isMoving && debug)
+            if (!dialogManager.IsDialogBeingShown && !mainCharacterMovement.isMoving && !_hasDisplayedInitialDialogue )
             {
                 ShowDialog();
             }
