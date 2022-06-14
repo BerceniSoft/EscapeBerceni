@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/6_Facultate/Facultate1.unity
     guid: 581bf5370c94631478d8bedd199aeda2
+  - enabled: 1
+    path: Assets/Scenes/6_Facultate/Credits.unity
+    guid: f22e0f7ee25270540a4177c85e0376d3
   m_configObjects: {}

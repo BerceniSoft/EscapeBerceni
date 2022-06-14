@@ -1,5 +1,6 @@
 ﻿using Dialog;
 using Movement;
+using Scenes;
 using UnityEngine;
 
 namespace Interactable
@@ -8,6 +9,7 @@ namespace Interactable
     {
         public DialogManager dialogManager;
         private bool _firstMeetDone = false;
+        public Teleporter _teleporter;
 
       
     
@@ -20,6 +22,8 @@ namespace Interactable
                 // Stop dialog
                 base.StopInteraction();
                 _firstMeetDone = true;
+                _teleporter.ToggleActvie();
+
             }
             else
             { 
