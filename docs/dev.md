@@ -2,7 +2,9 @@
 
 ## Setup
 
-TODO
+1. Install Unity 2021.3.0f1 from [here](https://unity3d.com/get-unity/download/archive).
+2. Clone this repository.
+3. Run the game.
 
 ## Backlog
 
@@ -18,13 +20,12 @@ We handle the backlog on [trello](https://trello.com/invite/b/45cBsNcS/8a0ffe9cc
 6. As a boy living in Berceni, I want to play a game that resembles my neighbourhood in an exciting way.
 7. As a gamer, I want a game that is interesting and short.
 8. As Rachel, I would like to enjoy a funny story while playing this game.
-9. As Michael, I would like to save the game in order to be able resume it later.
+9. As Michael, a computer science student, I would like to be able to use my knowledge to solve puzzles.
 10. As a teacher, I would like to see dialogue between characters.
 11. As a lonely gamer, I would like to see at least 3 characters.
-12. As a citizen of a war-torn country, I'd like to feel better by experiencing a story where someone suffers more than I do.
-13. As Felix, I would like to see 2D characters which are drawn by hand.
-14. As a foreigner, I would like to see a game that is design to make fun of a city.
-15. As Raluca, I would like to be able to replay this game after I finished it.
+12. As Felix, I would like to see 2D characters which are drawn by hand.
+13. As a foreigner, I would like to see a game that is design to make fun of a city.
+14. As Raluca, I would like to be able to replay this game after I finished it.
 
 ## Characters
 
