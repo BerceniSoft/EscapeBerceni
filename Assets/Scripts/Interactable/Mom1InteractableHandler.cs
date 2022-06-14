@@ -3,20 +3,22 @@ using System.Collections.Generic;
 using Dialog;
 using Interactable;
 using Inventory;
+using Scenes;
 using UnityEngine;
 
 public class Mom1InteractableHandler : AbstractInteractableHandler
 {
     public DialogManager dialogManager;
     public LetterInventoryController letterInventoryController;
-    
+    [SerializeField]
+    private Teleporter _teleporter;
     protected override void StopInteraction()
     {
         base.StopInteraction();
 
         // Give the letter
         letterInventoryController.GiveLetter(3);
-        Debug.Log(letterInventoryController.letters);
+        _teleporter.gameObject.SetActive(true);
         // Then unlock the next level
     }
     

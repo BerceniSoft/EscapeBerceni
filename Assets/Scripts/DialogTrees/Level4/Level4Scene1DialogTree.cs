@@ -43,6 +43,18 @@ namespace DialogTrees
                     DialogLine =
                         "Da-ma in roata te rog!",
                     SpeakerName = Speakers.Isabela
+                },
+                new DialogLineInfo
+                {
+                    DialogLine =
+                        "Vata de zahar si porumb! Vata de zahar si porumb avem!",
+                    SpeakerName = Speakers.Boschetar
+                },
+                new DialogLineInfo
+                {
+                    DialogLine =
+                        "Hmm, n-ar fi rau niste porumb.",
+                    SpeakerName = Speakers.Player
                 }
             };
         }

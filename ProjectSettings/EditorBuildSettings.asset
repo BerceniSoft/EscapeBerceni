@@ -4,5 +4,32 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/0_Intro/Frateli.unity
+    guid: cb72f276a796201c1b43652c13558059
+  - enabled: 1
+    path: Assets/Scenes/1_Mausoleu/Mausoleu.unity
+    guid: 95896b75fd724453fb70b4921d084d9f
+  - enabled: 1
+    path: Assets/Scenes/2_CimitirulBelu/CimitirulBeluStart.unity
+    guid: adfc84e13ba81fc758f1ad320348b9ae
+  - enabled: 1
+    path: Assets/Scenes/2_CimitirulBelu/CimitirulBeluTombs.unity
+    guid: 038850f5980ab8d42918d187293c495a
+  - enabled: 1
+    path: Assets/Scenes/2_CimitirulBelu/CimitirulBeluFinal.unity
+    guid: f97fab3250bcf404d86a75648a241b39
+  - enabled: 1
+    path: Assets/Scenes/4_OraselulCopiilor/OraselStart.unity
+    guid: 0f26d31d2a111a810906425f12330135
+  - enabled: 1
+    path: Assets/Scenes/4_OraselulCopiilor/OraselRoata.unity
+    guid: 237a807b562c8d6ad8246077f4e20c9f
+  - enabled: 1
+    path: Assets/Scenes/4_OraselulCopiilor/OraselFinal.unity
+    guid: 620e3b62843a656bca38b4f927c145cd
+  - enabled: 1
+    path: Assets/Scenes/4_OraselulCopiilor/OraselTranzitie.unity
+    guid: a074f7816fe299c9e9ba4269cc6af48b
   m_configObjects: {}

@@ -3,14 +3,18 @@ using System.Collections.Generic;
 using Dialog;
 using Interactable;
 using Inventory;
+using Scenes;
 using UnityEngine;
 
 public class CalculatorInteractableHandler : AbstractInteractableHandler
 {
     public DialogManager dialogManager;
+    [SerializeField]
+    private Teleporter _teleporter;
     protected override void StopInteraction()
     {
         base.StopInteraction();
+        _teleporter.gameObject.SetActive(true);
     }
     
     private void OnDialogLineEnded()

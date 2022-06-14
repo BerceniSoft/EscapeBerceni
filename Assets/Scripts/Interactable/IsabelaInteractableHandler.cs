@@ -3,15 +3,18 @@ using System.Collections.Generic;
 using Dialog;
 using Interactable;
 using Inventory;
+using Scenes;
 using UnityEngine;
 
 public class IsabelaInteractableHandler : AbstractInteractableHandler
 {
     public DialogManager dialogManager;
-    
+    [SerializeField]
+    private Teleporter _teleporter;
     protected override void StopInteraction()
     {
         base.StopInteraction();
+        _teleporter.gameObject.SetActive(true);
     }
     
     private void OnDialogLineEnded()
@@ -21,6 +24,7 @@ public class IsabelaInteractableHandler : AbstractInteractableHandler
         {
             // Show the last dialog line
             dialogManager.ShowDialog(StopInteraction);
+            
         }
         else
         {

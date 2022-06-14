@@ -104,8 +104,19 @@ namespace DialogTrees
                 new DialogLineInfo
                 {
                     DialogLine =
-                        "Ehe! Multumesc, tinere! Drept rasplata, iti ofer o tura gratis in roata pentru pustoaica ta!",
+                        "Ehe! Multumesc, tinere! Drept rasplata, iti ofer o tura gratis in roata pentru tine si pustoaica ta!",
                     SpeakerName = Speakers.OmRoata,
+                },
+                new DialogLineInfo
+                {
+                    DialogLine =
+                        "Vino sa te dai in cea mai amuzanta si zguduitoare cursa!",
+                    SpeakerName = Speakers.BumperCar,
+                },
+                new DialogLineInfo
+                {
+                    DialogLine = "O nu! Ce s-a intamplat?",
+                    SpeakerName = Speakers.Player,
                 },
             };
         }

@@ -24,5 +24,7 @@ namespace Constants
         public const string Mom1 = "Mama Bela";
         public const string Mom2 = "Mama Anca";
         public const string Mom3 = "Mama Oana";
+        public const string Boschetar = "Om al parcului";
+        public const string BumperCar = "Bumper Cars";
     }
 }
