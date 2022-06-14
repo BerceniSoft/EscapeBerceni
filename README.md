@@ -35,3 +35,15 @@ TODO
 ## Development
 
 For details about setup, user stories and the backlog, check [docs/dev.md](./docs/dev.md).
+
+
+## Bug reporting
+
+We reported our bugs on Trello cards (we created a "Bug" label), and then fixed them. Here is an example:
+![image](https://user-images.githubusercontent.com/79978777/173692704-63c73efd-031e-4857-a503-6da456d22342.png)
+
+
+## Refactoring
+
+An exemple of refactoring can be found in this commit: https://github.com/BerceniSoft/EscapeBerceni/commit/700518a4f7a50aa406a5ca596a45074c110bbdbc, for exemple in class Level3Scene1DialogTree.cs.
+
