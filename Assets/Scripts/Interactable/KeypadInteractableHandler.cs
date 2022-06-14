@@ -11,7 +11,7 @@ namespace Interactable
         private void OpenKeypad()
         {
             Keypad k = GetComponent<Keypad>();
-            k.OpenKeypad();
+            k.OpenKeypad(this);
         }
     
         private void OnDialogLineEnded()
@@ -20,7 +20,7 @@ namespace Interactable
             if (dialogManager.currentDialogLineIndex == 2)
             {
                 // Show the last dialog line
-                dialogManager.ShowDialog(OpenKeypad);
+                OpenKeypad();
             }
             else
             {
@@ -29,9 +29,14 @@ namespace Interactable
             }
         }
 
+        public void ContinueDialog(int dialogIndex)
+        {
+            dialogManager.ShowDialog(dialogIndex,OnDialogLineEnded);
+        }
+
         protected override void OnInteract()
         {
-            dialogManager.ShowDialog(1, OnDialogLineEnded);
+            dialogManager.ShowDialog(0, OnDialogLineEnded);
         }
     }
 }
