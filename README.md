@@ -13,7 +13,7 @@ Awarded "Game of the Year [Juche 111](https://en.wikipedia.org/wiki/Juche_calend
 - [Bug Reporting](#bug-reporting)
 - [Refactoring](#refactoring)
 - [Code Standards](#code-standards)
-- [Design Patterns](design-patterns)
+- [Design Patterns](#design-patterns)
 
 ## Story & Gameplay
 
