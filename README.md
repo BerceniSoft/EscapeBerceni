@@ -7,6 +7,7 @@ Awarded "Game of the Year [Juche 111](https://en.wikipedia.org/wiki/Juche_calend
 - [Top](#escape-berceni)
 - [Story & Gameplay](#story--gameplay)
 - [Screenshots](#screenshots)
+- [UML Diagram](#uml)
 - [Development](#development)
 
 ## Story & Gameplay
@@ -16,6 +17,11 @@ TODO
 ## Screenshots
 
 TODO
+
+## UML Diagramn
+
+![MDS](https://user-images.githubusercontent.com/72194114/173590828-7d538ea8-ae7e-48fb-b5a7-f98a407a5a5f.jpg)
+
 
 ## Development
 
