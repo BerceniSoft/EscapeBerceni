@@ -7,6 +7,7 @@ namespace Interactable
     public class TeacherInteractableHandler : AbstractInteractableHandler
     {
         public DialogManager dialogManager;
+        private bool _firstMeetDone = false;
 
       
     
@@ -16,8 +17,9 @@ namespace Interactable
             // Show the next dialog line
             if (dialogManager.currentDialogLineIndex == 8)
             {
-                // Show the last dialog line
+                // Stop dialog
                 base.StopInteraction();
+                _firstMeetDone = true;
             }
             else
             { 
@@ -33,7 +35,14 @@ namespace Interactable
 
         protected override void OnInteract()
         { 
-            dialogManager.ShowDialog(0, OnDialogLineEnded);
+            if(_firstMeetDone == false)
+            {
+                dialogManager.ShowDialog(0, OnDialogLineEnded);
+            }
+            else
+            {
+                dialogManager.ShowDialog(8,base.StopInteraction);
+            }
         }
     }
 }

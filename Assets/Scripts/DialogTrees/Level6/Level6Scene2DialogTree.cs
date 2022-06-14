@@ -59,6 +59,12 @@ namespace DialogTrees
                         "Hai!",
                     SpeakerName = Speakers.Player,
                 },
+                new DialogLineInfo
+                {
+                    DialogLine =
+                        "Vin si eu după tine imediat! Ia-o înainte",
+                    SpeakerName = Speakers.Profesor,
+                },
             };
         }
     }
