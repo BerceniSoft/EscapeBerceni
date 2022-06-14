@@ -2,7 +2,9 @@
 
 ## Setup
 
-TODO
+1. Install Unity 2021.3.0f1 from [here](https://unity3d.com/get-unity/download/archive).
+2. Clone this repository.
+3. Run the game.
 
 ## Backlog
 
