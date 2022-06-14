@@ -20,50 +20,32 @@ namespace DialogTrees
                 new DialogLineInfo
                 {
                     DialogLine =
-                        "Bună-ziua...errmm...mă scuzați... am fost printr-o... aventură...  ",
+                        "Bună ziua...mă scuzați...",
                     SpeakerName = Speakers.Player,
                 },
                 new DialogLineInfo
                 {
                     DialogLine =
-                        "Cum așa?",
+                        "De ce ai întârziat?",
                     SpeakerName = Speakers.Profesor,
                 },
                 new DialogLineInfo
                 {
                     DialogLine =
-                        "Nici nu pot să vă descriu! A trebuit să rezolv tot felul de puzzle-uri si joculețe pentru a putea ajunge la metrou.",
+                        "Astăzi a fost dificil să obţin accesul la metrou pentru a evada din Berceni.",
                     SpeakerName = Speakers.Player,
                 },
                 new DialogLineInfo
                 {
                     DialogLine =
-                        "De abia aștept să-mi povestești mai multe",
+                        "Ok, acum hai să mergem. Trebuie să prezinţi proiectul!",
                     SpeakerName = Speakers.Profesor,
                 },
                 new DialogLineInfo
                 {
                     DialogLine =
-                        "A fost ca un vis...nici nu vă puteți imagina",
+                        "Desigur!",
                     SpeakerName = Speakers.Player,
-                },
-                new DialogLineInfo
-                {
-                    DialogLine =
-                        "Ok, acum hai să mergem. Avem treabă!",
-                    SpeakerName = Speakers.Profesor,
-                },
-                new DialogLineInfo
-                {
-                    DialogLine =
-                        "Hai!",
-                    SpeakerName = Speakers.Player,
-                },
-                new DialogLineInfo
-                {
-                    DialogLine =
-                        "Vin si eu după tine imediat! Ia-o înainte",
-                    SpeakerName = Speakers.Profesor,
                 },
             };
         }
