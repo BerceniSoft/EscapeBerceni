@@ -50,3 +50,8 @@ We reported our bugs on Trello cards (we created a "Bug" label), and then fixed 
 
 An exemple of refactoring can be found in this commit: https://github.com/BerceniSoft/EscapeBerceni/commit/700518a4f7a50aa406a5ca596a45074c110bbdbc, for exemple in class Level3Scene1DialogTree.cs.
 
+
+## Code Standards
+
+We followed the conventional C# code standard, https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions.
+
