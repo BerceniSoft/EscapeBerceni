@@ -40,6 +40,7 @@ For details about setup, user stories and the backlog, check [docs/dev.md](./doc
 ## Bug reporting
 
 We reported our bugs on Trello cards (we created a "Bug" label), and then fixed them. Here is an example:
+
 ![image](https://user-images.githubusercontent.com/79978777/173692704-63c73efd-031e-4857-a503-6da456d22342.png)
 
 
