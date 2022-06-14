@@ -3,14 +3,17 @@ using System.Collections.Generic;
 using Dialog;
 using Interactable;
 using Inventory;
+using Scenes;
 using UnityEngine;
 
 public class FishermanInteractableHandler : AbstractInteractableHandler
 {
     public DialogManager dialogManager;
     public GameObject gameObject;
+    public GameObject body;
     public Sprite duckHead;
     public DuckInventoryController duckInventoryController;
+    [SerializeField] private Teleporter _teleporter;
 
     protected override void StopInteraction()
     {
@@ -19,6 +22,8 @@ public class FishermanInteractableHandler : AbstractInteractableHandler
         // Give the duck
         duckInventoryController.GiveDuck();
         // Then unlock the next scene
+        
+        _teleporter.gameObject.SetActive(true);
     }
     
     private void OnDialogLineEnded()
@@ -28,7 +33,9 @@ public class FishermanInteractableHandler : AbstractInteractableHandler
         {
             SpriteRenderer spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
             spriteRenderer.sprite = duckHead;
-            spriteRenderer.transform.position = new Vector3(spriteRenderer.transform.position.x -0.2f, spriteRenderer.transform.position.y);
+            SpriteRenderer bodyRenderer = gameObject.GetComponent<SpriteRenderer>();
+            
+            spriteRenderer.transform.position = new Vector3(bodyRenderer.transform.position.x - 0.2f, bodyRenderer.transform.position.y + 1.1f);
             // Show the last dialog line
             dialogManager.ShowDialog(StopInteraction);
         }

@@ -25,6 +25,14 @@ namespace Inventory
         public void GiveLetter(int letterIndex)
         {
             letters[letterIndex].has = true;
+            // imageRenderers[letterIndex].sprite = letters[letterIndex].icon;
+            // imageRenderers[letterIndex].enabled = true;
         }
+        
+        public void RemoveLetter(int letterIndex)
+        {
+            letters[letterIndex].has = false;
+        }
+
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Dialog;
 using Interactable;
 using Inventory;
+using Scenes;
 using UnityEngine;
 
 
@@ -10,6 +11,7 @@ public class HomelessMenInteractableHandler : AbstractInteractableHandler
 {
     public DialogManager dialogManager;
     public LetterInventoryController letterInventoryController;
+    [SerializeField] private Teleporter _teleporter;
 
     protected override void StopInteraction()
     {
@@ -18,6 +20,8 @@ public class HomelessMenInteractableHandler : AbstractInteractableHandler
         // Give the letter
         // letterInventoryController.GiveLetter(2);
         // Then unlock the next level
+        
+        _teleporter.gameObject.SetActive(true);
     }
     
     private void OnDialogLineEnded()

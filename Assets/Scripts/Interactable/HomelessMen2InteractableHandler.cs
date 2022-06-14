@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Dialog;
 using Interactable;
 using Inventory;
+using Scenes;
 using UnityEngine;
 
 
@@ -15,14 +16,17 @@ public class HomelessMen2InteractableHandler : AbstractInteractableHandler
     public Sprite bbq;
     public Sprite duckWing;
     public LetterInventoryController letterInventoryController;
+    [SerializeField] private Teleporter _teleporter;
 
     protected override void StopInteraction()
     {
         base.StopInteraction();
 
         // Give the letter
-        // letterInventoryController.GiveLetter(2);
+        letterInventoryController.GiveLetter(2);
         // Then unlock the next level
+        
+        _teleporter.gameObject.SetActive(true);
     }
     
     private void OnDialogLineEnded()
@@ -62,6 +66,7 @@ public class HomelessMen2InteractableHandler : AbstractInteractableHandler
     
     protected override void OnInteract()
     {
+        letterInventoryController.RemoveLetter(2);
         dialogManager.ShowDialog(0, OnDialogLineEnded);
     }
 }
