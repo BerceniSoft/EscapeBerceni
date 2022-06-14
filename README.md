@@ -12,6 +12,8 @@ Awarded "Game of the Year [Juche 111](https://en.wikipedia.org/wiki/Juche_calend
 - [Development](#development)
 - [Bug Reporting](#bug-reporting)
 - [Refactoring](#refactoring)
+- [Code Standards](#code-standards)
+- [Design Patterns](design-patterns)
 
 ## Story & Gameplay
 
@@ -54,4 +56,10 @@ An exemple of refactoring can be found in this commit: https://github.com/Bercen
 ## Code Standards
 
 We followed the conventional C# code standard, https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions.
+
+## Design Patterns
+
+In our code we are using design patterns. For example, the SceneStorage class is a Singleton class.
+
+
 
