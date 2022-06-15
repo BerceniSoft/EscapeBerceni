@@ -7,7 +7,6 @@ Awarded "Game of the Year [Juche 111](https://en.wikipedia.org/wiki/Juche_calend
 - [Top](#escape-berceni)
 - [Story & Gameplay](#story--gameplay)
 - [Demo](#demo)
-- [Screenshots](#screenshots)
 - [UML Diagram](#uml-diagram)
 - [Development](#development)
 - [Bug Reporting](#bug-reporting)
@@ -26,10 +25,6 @@ In order to “escape Berceni”, you have to travel through the main touristic 
 ## Demo
 
 You can find our demo [here](TO DO).
-
-## Screenshots
-
-TODO
 
 ## UML Diagram
 
