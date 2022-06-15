@@ -25,7 +25,7 @@ namespace DialogTrees
                 new DialogLineInfo
                 {
                     DialogLine =
-                        "Pe aici pe undeva, la topogane..",
+                        "Pe aici pe undeva, la tobogane..",
                     SpeakerName = Speakers.Isabela,
                 },
                 new DialogLineInfo

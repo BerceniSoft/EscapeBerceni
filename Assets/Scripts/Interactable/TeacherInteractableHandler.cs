@@ -17,7 +17,7 @@ namespace Interactable
         {
             
             // Show the next dialog line
-            if (dialogManager.currentDialogLineIndex == 8)
+            if (dialogManager.currentDialogLineIndex == 5)
             {
                 // Stop dialog
                 base.StopInteraction();
